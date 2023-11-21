@@ -1,0 +1,32 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+
+/* all paragraph tags are set to "color: red;" */
+p {
+  color: red;
+}
+
+/* all elements with a class of "note" are set to "font-size: 20px;" */
+.note {
+  font-size: 20px;
+}
+
+/* the element with an id of "id-selector-demo" are set to "color: green;" */
+#id-selector-demo {
+  color: green;
+}
+
+/* li elements that have the "value" attribute set to "4" are set to have "color: blue;" */
+li[value="4"] {
+  color: blue;
+}
+
+/* all elements are set to have "font-family: sans-serif;" */
+* {
+  text-align: center;
+}
+

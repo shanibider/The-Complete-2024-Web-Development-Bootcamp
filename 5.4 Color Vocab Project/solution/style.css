@@ -1,0 +1,39 @@
+/* 
+TODOs
+IMPORTANT: You should not need to make ANY CHANGES to index.html
+All code should be written in your CSS file.
+
+1. Create a CSS file and incorporate it as an external stylesheet.
+2. Use CSS to style each of the color titles to meaning. 
+3. Use CSS to change all the color titles to have "font-weight: normal;"
+4. Use CSS (not HTML) to make all the images 200px heigh and 200px wide. 
+*/
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.color-title {
+  font-weight: normal;
+}
+
+#red {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+#orange {
+  color: orange;
+}
+
+#green {
+  color: green;
+}
+
+#yellow {
+  color: yellow;
+}

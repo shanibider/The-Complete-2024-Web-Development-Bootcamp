@@ -1,0 +1,28 @@
+/* Group */
+h1, h2 {
+  color: blueviolet;
+}
+
+/* parent > Child */
+/* we have multipule "done" class, and <p> elemnets, so we want to specify it by parent>child selector*/
+.box > p {
+  color: firebrick;
+}
+
+/* Descendent */
+/*Descendent= child of left side*/
+/*here we want to target all the dots without using <li> element (because maybe we will have more of them)*/
+.box li {
+  color: blue;
+}
+
+/* Chained */
+/*style the text that have both: <li> element (must be first) + class="done"*/
+li.done {
+  color: green;
+}
+
+/* Multiple Combiners */
+ul p.done {
+  font-size: 0.5rem;
+}
