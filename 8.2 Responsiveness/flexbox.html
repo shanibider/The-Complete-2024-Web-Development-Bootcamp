@@ -5,11 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Flexbox</title>
+  
+<!--
+  flexbox -where grid applies to 2d layouts (rows and cols), flexbox good at aloowing to create 1 layout (whter everything layout in boxes horizontally/ vertically).
+ can be used to create a responsive layout. Created with ratio 
+
+  XXX
+  /
+  X
+  X
+  X  
+-->
   <style>
     .flex-container {
       display: flex;
     }
 
+    /*attributes for all cards*/
     .card {
       background: blue;
       border: 30px solid white;
@@ -17,11 +29,14 @@
       flex: 1;
     }
 
+    /*costumizations to the defualt layout*/
     .first {
+      /*twice the width*/
       flex: 2;
     }
 
     .second {
+      /*half the width*/
       flex: 0.5;
     }
   </style>
@@ -30,6 +45,7 @@
 <body>
   <h1>CSS Flexbox</h1>
   <div class="flex-container">
+    <!--added extra classes to the first 2 divs-->
     <div class="first card"></div>
     <div class="second card"></div>
     <div class="card"></div>

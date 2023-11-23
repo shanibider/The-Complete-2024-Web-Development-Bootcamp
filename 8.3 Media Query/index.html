@@ -13,11 +13,51 @@ TODO: Change the background color for each device
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <title>Media Query</title>
+
   <style>
+
     body {
       background-color: aquamarine;
     }
+
+    /*media query-
+    @media (max-width: 600px){
+      body {
+        background-color: lightsalmon;
+      }
+    }
+    anything that less or equal to 600px will be lightsalmon.
+    We can use min-width and max-width to set the range of the screen size.
+    min-width means anything that is greater or equal to the value will be applied.
+    */
+    
+    
+    @media screen and (min-width: 319px) and (max-width: 480px) {
+      body {
+        background-color: lightsalmon;
+      }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1200px) {
+      body {
+        background-color: powderblue;
+      }
+    }
+
+    @media screen and (min-width: 1201px) and (max-width: 1600px) {
+      body {
+        background-color: limegreen;
+      }
+    }
+
+    @media screen and (min-width: 1601px) {
+      body {
+        background-color: seagreen;
+      }
+    }
+
   </style>
+
 </head>
 
 <body>

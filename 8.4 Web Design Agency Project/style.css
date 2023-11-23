@@ -19,3 +19,67 @@ footer {
   color: midnightblue;
 }
 
+/*
+index.html:
+ <div class="main">
+    <img class="logo" src="./assets/images/logo.png" alt="logo">
+    <h1>We are a Creative Design Agency</h1>
+    <div class="left card">
+    <img class="tile-image" src="./assets/images/beautiful.jpg" alt="hand and flower in water">
+      <h2 class="card-title">Beauty</h2>
+      <p class="card-text"> We strive to create the most beautiful websites for all your needs. Working closely with you
+        to design and develop an amazing website for your business.</p>
+    </div>
+*/
+
+/*Added code*/
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card{
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.creative {
+  color: midnightblue;
+}
+
+/*anything that less or equal to 680px.*/
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    /*justify- spaced to line up its left and right edges*/
+    text-align: justify;
+  }
+
+  /*another way to approach the image*/
+  .card img {
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline;
+    object-fit: cover;
+  }
+}
+
