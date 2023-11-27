@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Grid vs Flexbox</title>
+
+<!--  Grid vs Flexbox -
+Grid is a two-dimensional layout system, meaning it can handle both columns and rows, unlike flexbox which is largely a one-dimensional system. 
+defining a grid container, which becomes the parent element. 
+Then, you define grid items, which are the children.
+
+Grid is ideal for layouts that have columns and rows that are not necessarily the same height or width, 
+whereas flexbox is better suited for arranging elements in either a single row or a single column. -->
+  
+  <style>
+    /* target the container class */
+    /* define the size of columns+rows */
+    .container {
+      display: grid;    /* 1. define a grid container*/
+      grid-template-columns: 1fr 2fr;   /* 2. define the columns- two columns, where the first column takes up 1 fraction unit of the available space, and the second column takes up 2 fraction units. */
+      grid-template-rows: 1fr 1fr;      /* 3. define the rows */
+      gap: 10px                         /* 4. define the gap between  rows and columns */
+    }
+
+    /* target the children of container*/
+    .container>* {
+      background-color: cadetblue;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="one">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut error ea neque! Minima fuga deserunt delectus
+        corrupti molestiae, eos esse quos vel reiciendis neque quibusdam!</p>
+    </div>
+    <div class="two">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eius, consequuntur facere iure error fugiat
+        architecto illo, repudiandae magni doloremque non molestiae qui expedita iste!</p>
+    </div>
+    <div class="three">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae porro a harum in voluptate reprehenderit
+        necessitatibus, placeat cumque est odio accusamus! Quaerat nesciunt tempora dolorum voluptate ex dolor natus
+        fuga possimus totam ipsam, saepe odio nemo officia accusamus nam voluptates magnam soluta autem animi quia
+        veniam praesentium excepturi? Incidunt, quia.</p>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, expedita ex culpa corporis quidem amet ducimus
+        aut facilis harum atque veniam similique facere quia odio exercitationem, aliquam voluptates at molestiae!</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

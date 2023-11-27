@@ -17,9 +17,12 @@
       flex-direction: column;
     }
 
-    /* ".className>*" : children of the .container class.*/
-    /*flex basis is heigth of the row when flex-direction is column, and width when set to row*/
-    /*we target the conatiner childers with css*/
+
+    /* " .className > * "  -
+    children of the .container class.*/
+    /* flex basis is width of each element (when flex-direction is row), and height (when set to column) */
+    /* we target the conatiner childers with css */
+
     .container > * {
       flex-basis: 100px;
     }
