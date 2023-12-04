@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Components</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  
   <style>
     .feature-icon {
       width: 4rem;
@@ -14,29 +16,41 @@
       border-radius: 0.75rem;
     }
   </style>
+
 </head>
 
 <body>
-
+<!-- top right navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
+      <!--bootstrap icon (box-seam)-->
       <a class="navbar-brand" href="#"><img src="./box-seam.svg" alt="moveit brand icon" height="30"> Move It</a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- collapse navbar -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <!-- navbar-nav -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- nav-item (1)-->
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
+           <!-- nav-item (2)-->
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
+           <!-- nav-item (3)(dropdown) -->
           <li class="nav-item dropdown">
+            <!-- nav-link dropdown -->
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
+            <!-- dropdown menu (dropdown inside dropdown) -->
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -46,14 +60,18 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
+
         </ul>
+
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Postcode" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Check</button>
         </form>
-      </div>
-    </div>
-  </nav>
+
+      </div> <!--end of collapse navbar-->
+    </div>  <!--end of container-fluid-->
+  </nav>  <!--end of navbar-->
+
 
 
   <div class="px-4 pt-5 my-5 text-center border-bottom">
@@ -78,10 +96,13 @@
     </div>
   </div>
 
+<!--first container-->
   <div class="container px-4 py-5" id="featured-3">
     <h2 class="pb-2 border-bottom">Why Move With Us?</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+     
       <div class="feature col">
+        <!-- bootstrap icon -->
         <div
           class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <img src="./briefcase.svg" alt="briefcase" height="30">
@@ -94,12 +115,16 @@
           experiences. That's why we take extra care to ensure that everything is packed and transported with the utmost
           care and
           attention.</p>
+          <!-- link + bootstrap right symbol -->
         <a href="#" class="icon-link">
           Get a quote
           <img src="./chevron-right.svg" alt="chevron-right">
         </a>
       </div>
+
+
       <div class="feature col">
+                <!-- bootstrap icon -->
         <div
           class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <img src="./bus-front.svg" alt="bus-front" height="30">
@@ -112,12 +137,16 @@
           new home. And with our transparent pricing and no hidden fees, you can trust that you're getting a fair and
           competitive
           rate for our services.</p>
+                    <!-- link -->
         <a href="#" class="icon-link">
           Get a quote
           <img src="./chevron-right.svg" alt="chevron-right">
         </a>
       </div>
+
+
       <div class="feature col">
+                        <!-- bootstrap icon -->
         <div
           class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <img src="./chat-square-heart.svg" alt="chat-square-heart" height="30">
@@ -130,14 +159,19 @@
           more personalized experience for our customers. Contact us today to learn more about how we can help you with
           your next
           move.</p>
+                    <!-- link -->
         <a href="#" class="icon-link">
           Get a quote
           <img src="./chevron-right.svg" alt="chevron-right">
         </a>
-      </div>
-    </div>
-  </div>
+      </div> 
+    </div>    <!--end of row-->
+  </div>     <!--end of container-->
+
+
+  <!--second container-->
   <div class="container">
+    <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -171,6 +205,7 @@
     </div>
   </div>
 
+  <!--third container-->
   <div class="container">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col mb-3">
@@ -220,9 +255,11 @@
       </div>
     </footer>
   </div>
+  <!--bootstrap link-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
