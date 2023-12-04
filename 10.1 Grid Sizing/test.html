@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Grid Sizing Exercise</title>
   <style>
+
     body {
       font-family: Arial, sans-serif;
       display: flex;
@@ -34,15 +35,18 @@
     }
 
     .parent {
-      display: grid;
-      grid-template-rows: 1fr 1fr 2fr;
-      grid-template-columns: auto 400px minmax(200px, 500px);
-      grid-auto-rows: 50px;
-      width: 80%;
-      background-color: #ddd;
-      padding: 20px;
-      margin: 2rem;
-    }
+    display: grid; /* Using CSS grid for layout */
+    grid-template-rows: 1fr 1fr 2fr; /* Define three rows with fractional units */
+    /*auto means the first column will automatically adjust its width based on its content.
+    400px sets a fixed width of 400 pixels for the second column.
+    minmax(200px, 500px) sets a range for the third column. It can vary between 200 pixels and 500 pixels, depending on the available space. This is useful for creating a responsive layout where the column can grow or shrink within this specified range.*/
+    grid-template-columns: auto 400px minmax(200px, 500px); /* Define three columns with specific widths */
+    grid-auto-rows: 50px; /* Set the height of automatically created rows */
+    width: 80%; /* Set the width of the container */
+    background-color: #ddd; /* Set the background color */
+    padding: 20px; /* Add padding to the content inside the container */
+    margin: 2rem; /* Add margin around the container */
+}
 
     .parent>* {
       background-color: seagreen;
@@ -75,14 +79,18 @@
     <div class="child">width expands to fill space</div>
     <div class="child">400px wide</div>
     <div class="child">min 200px max 500px wide</div>
+
     <div class="child">width expands to fill space</div>
     <div class="child">400px wide</div>
     <div class="child">min 200px max 500px wide</div>
+
     <div class="child">width expands to fill space</div>
     <div class="child">400px wide</div>
     <div class="child">min 200px max 500px wide</div>
+
     <div class="child">50px high</div>
   </div>
+
   <div class="grid-container" id="container">
     <div class="grid-item">width expands to fill space</div>
     <div class="grid-item">400px wide</div>
@@ -95,6 +103,7 @@
     <div class="grid-item">min 200px max 500px wide</div>
     <div class="grid-item">50px high</div>
   </div>
+
   <textarea id="user-css" placeholder="Write your CSS code here..." rows="25">
 /* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/
 
