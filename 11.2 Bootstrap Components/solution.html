@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- for dark mode: <html lang="en" data-bs-theme="dark"> -->
 
+<!-- Create website using Bootstrap Components-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   
+    <!--custom style for the icons -->
+    <!--
+      if we will enter the link below in the browser, 
+      https://getbootstrap.com/docs/5.0/examples/features/
+      with inspect over the icon we can see it has custome css, so we copy it to here:
+    -->
   <style>
     .feature-icon {
       width: 4rem;
@@ -19,11 +27,16 @@
 
 </head>
 
+
+<!-- Snippets from bootstrap templates (heroes, features)-->
+
 <body>
-<!-- top right navbar -->
+
+ <!--First Section--> 
+<!-- Navbar Bootstrap snippet-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <!--bootstrap icon (box-seam)-->
+      <!-- icon (box-seam)-->
       <a class="navbar-brand" href="#"><img src="./box-seam.svg" alt="moveit brand icon" height="30"> Move It</a>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -33,8 +46,6 @@
 
       <!-- collapse navbar -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-        <!-- navbar-nav -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <!-- nav-item (1)-->
           <li class="nav-item">
@@ -70,10 +81,12 @@
 
       </div> <!--end of collapse navbar-->
     </div>  <!--end of container-fluid-->
-  </nav>  <!--end of navbar-->
+  </nav> 
+<!-- end of Navbar snippet-->
 
 
 
+<!-- Heroes Bootstrap snippet-->
   <div class="px-4 pt-5 my-5 text-center border-bottom">
     <h1 class="display-4 fw-bold text-body-emphasis">Move With Joy</h1>
     <div class="col-lg-6 mx-auto">
@@ -95,8 +108,13 @@
       </div>
     </div>
   </div>
+ <!--end of Heroes--> 
 
-<!--first container-->
+
+
+
+<!-- Features Bootstrap snippet-->
+<!--Second Section/ container-->
   <div class="container px-4 py-5" id="featured-3">
     <h2 class="pb-2 border-bottom">Why Move With Us?</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -105,6 +123,8 @@
         <!-- bootstrap icon -->
         <div
           class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+         <!--SVG elements-->
+          <!--Replace the svg with our own svg (image we download), and give it diffrent height-->
           <img src="./briefcase.svg" alt="briefcase" height="30">
         </div>
         <h3 class="fs-2">Professional</h3>
@@ -167,11 +187,15 @@
       </div> 
     </div>    <!--end of row-->
   </div>     <!--end of container-->
+ <!--end of Features--> 
 
 
-  <!--second container-->
+
+
+  <!--Third Section/ container-->
   <div class="container">
-    <!-- carousel -->
+    <!-- Bootstrap indicators Carousel snippet-->
+    <!-- basic carousel is too big, so i enter it to container (responsive)-->
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -204,8 +228,13 @@
       </button>
     </div>
   </div>
+<!--end of carousel-->
 
-  <!--third container-->
+
+
+
+
+  <!--Fourth Section/  container-->
   <div class="container">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col mb-3">
@@ -217,10 +246,14 @@
         <p class="text-body-secondary">© 2023</p>
       </div>
 
+      <!--mb-3: m=margin, b=bottom, 3=eliminating the margin-->
       <div class="col mb-3">
 
       </div>
 
+
+
+      <!-- bootstrap Footer (inspect over 'footer' bootstrap example -> copy element)-->
       <div class="col mb-3">
         <h5>Section</h5>
         <ul class="nav flex-column">
