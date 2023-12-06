@@ -1,5 +1,6 @@
 .gradient-background {
-  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  /* Manuel Pinto CSS Gradient Background Animation */
+  background: linear-gradient(300deg, #8D918B, #E85D75, #C76D7E);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
