@@ -5,11 +5,15 @@
   <title>Secrets</title>
 </head>
 
+<!-- When a user submits the form, the data is sent to your Node.js server at the "/check" endpoint, triggering the passwordCheck middleware you implemented earlier. The middleware checks if the password matches "ILoveProgramming" and sets userIsAuthenticated accordingly. -->
 <body>
   <h1>Secrets</h1>
+  <!-- When the form is submitted, it will send a POST request to the "/check" endpoint. This corresponds to the route in your Node.js code where the passwordCheck middleware is applied (app.use(passwordCheck)). -->
   <form action="/check" method="POST">
     <label for="password">Password:</label>
+    <!-- The name attribute is set to "password," which aligns with how the Node.js middleware accesses the password in the request body (req.body["password"]). -->
     <input type="text" id="password" name="password" required>
+    <!-- Clicking it will trigger the form submission, and the data (including the entered password) will be sent to the "/check" endpoint. -->
     <input type="submit" value="Submit">
   </form>
 </body>
