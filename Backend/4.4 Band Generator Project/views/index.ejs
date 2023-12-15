@@ -1,0 +1,24 @@
+<!-- Step 3 Add Header -->
+<%- include('partials/header.ejs') %>
+
+<!-- Step 2 - If an adjective and noun are sent to this ejs file, 
+    Change the h1 to show the adjective and noun.
+    But when the user first goes on the website and there is no adjective and noun, 
+    Show the default h1 below -->
+
+    <!-- local is a way to access all the variables sent with res.render("index.ejs", {randomAdj: randomAdj, randomNoun: randomNoun}); -->
+    <% if (locals.adjective && locals.noun) { %>
+      <h1>
+        <%= adjective %>
+          <%= noun %>
+      </h1>
+      <% } else { %>
+        <h1>Welcome to the Band Generator 🤟</h1>
+        <% } %>
+        
+<form action="/submit" method="POST">
+  <input type="submit" value="Generate Name">
+</form>
+
+<!-- Step 3 Add Footer -->
+<%- include('partials/footer.ejs') %>
