@@ -1,12 +1,13 @@
+<!-- the corresponding compose.ejs view of "/compose" route, for the form -->
+
 <%- include("partials/header"); -%>
 
-<h1>Compose</h1>
+<h1>Create a post</h1>
   <form action="/compose" method="post">
     <div class="form-group">
         <label>Title</label>
         <input class="form-control" type="text" name="postTitle">
         <label>Post</label>
-        <input class="form-control" type="text" name="postTitle">
         <textarea class="form-control" name="postBody" rows="8" cols="80"></textarea>
            </div>
         <button class="btn btn-primary" type="submit" name="button">Publish</button>

@@ -1,17 +1,36 @@
 <%- include("partials/header"); -%>
 
-<h1>Home</h1>
-<p> <%= startingContent %> </p>
+
+<section class="section-padding py-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <article class="post-grid mb-2">
+          <a class="post-thumb mb-4 d-block" href="blog-single.html">
+            <img src="images/fashion/bg-fashion.jpg" alt="" class="img-fluid w-100">
+          </a>
+
+          <% posts.forEach (function(post) { %>
+          <h2 class="mb-1 mt-2 post-title"><a href="blog-single.html">
+            <%= post.title %> 
+          </a></h2>
+          <div class="post-content mt-4 pb-5">
+            <p> <%=post.content.substring(0, 100) + " ..."%>
+              <a href="/posts/<%=post.title%>">Read More</a>
+            </p>
+            <% }); %>
+
+          </div>
+        </article>
 
 
-<% posts.forEach (function(post) { %>
-  <h1> <%= post.title %> </h1>
-  <p>
-    <%=post.content.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post.title%>">Read More</a>
-  </p>
+          </div>
+        </div>
+      </div>   
+</section>
 
-<% }); %>
+
+
 
 
 <%- include("partials/footer"); -%>

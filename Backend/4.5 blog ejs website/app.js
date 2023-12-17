@@ -39,17 +39,17 @@ app.get("/contact", function(req, res){
 });
 
 
-// GET compose:
+// set up the "/compose" route
 app.get("/compose", function(req, res){
   res.render("compose");
 });
 app.post("/compose", function(req, res){
     const post = {title: req.body.postTitle, content: req.body.postBody};
-  posts.push(post);
+  posts.push(post);   //pushing the post into the posts array
   res.redirect("/");
 });
 
-
+// route to handle displaying a single post when the user clicks on Read More
 app.get("/posts/:postName", function(req, res){
   const requestedTitle = _.lowerCase(req.params.postName);
 

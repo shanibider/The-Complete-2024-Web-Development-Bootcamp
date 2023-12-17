@@ -4,8 +4,7 @@ html {
 }
 
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 20px 0;
 }
 .navbar {
     padding-top: 15px;
@@ -35,9 +34,15 @@ html {
 
 .footer p {
 	margin-top: 25px;
-	font-size: 12px;
+	font-size: 14px;
   color: #ede8e7;
 }
+
+.footer a {
+  color: #000000;
+}
+
+
 
 /* CSS HEX color pallete-
 --alabaster: #f5efe5ff;
@@ -47,3 +52,280 @@ html {
 --isabelline-2: #eeece7ff;
 --black: #000000ff;
 */
+
+
+/* 1.1. Typography */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Lato:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans|Unna:400,700&display=swap");
+
+
+body,
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  color: #666;
+  font-weight: 400;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: #1c1c1c;
+  font-weight: 600;
+  font-family: "Unna", serif;
+}
+
+h1,
+.h1 {
+  font-size: 38px;
+  line-height: 48px;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+h6,
+.h6 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.font-extra {
+  font-family: "Lora", serif;
+}
+
+/* Common styles */
+body {
+  background: #fff;
+  color: #757272;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+  color: #000;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1F1E1E;
+}
+
+a.read-more {
+  margin-top: 10px;
+  display: inline-block;
+  color: #757272;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+a.read-more:hover {
+  color: #757272;
+}
+
+.section-padding {
+  padding: 60px 60px;
+  position: relative;
+}
+
+.section-sm {
+  padding: 20px 0;
+}
+
+a:focus {
+  outline: 0;
+}
+
+/* Input form */
+.form-control {
+  box-shadow: none;
+  border: 1px solid transparent;
+  padding: 12px 20px;
+  background: #f0f1f4;
+  font-size: 14px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #757272;
+}
+
+blockquote {
+  position: relative;
+  padding: 0px 50px 30px 40px;
+  margin: 50px 0 40px;
+  font-size: 20px;
+  line-height: 34px;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  border-radius: 0px;
+  padding: 10px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 350ms;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: #757272;
+}
+
+.btn-primary:hover {
+  background: #494646;
+  color: #fff;
+  border-color: #2A2828;
+}
+
+.btn-dark {
+  background: #494646;
+}
+
+.btn-dark:hover,
+.btn-white.btn-primary:hover {
+  background: #2A2828;
+  color: #fff;
+}
+
+.btn-grey {
+  background: #967973;
+  border-color: #757272;
+  color: #fff;
+}
+
+.btn-grey:hover {
+  background: transparent;
+  border-color: #967973;
+  color: #000;
+}
+
+.slick-slide {
+  outline: 0;
+}
+
+.letter-spacing {
+  letter-spacing: 3px;
+}
+
+.font-sm {
+  font-size: 12px !important;
+}
+
+.text-color {
+  color: #967973;
+}
+
+.bg-grey {
+  background: #f8efea;
+}
+
+.gray-bg {
+  background: #f5f5f5;
+}
+
+.padding-bottom {
+  padding-bottom: 120px;
+}
+
+.padding-top {
+  padding-top: 120px;
+}
+
+
+.bg-dark {
+  background: #111111 !important;
+}
+
+
+
+.post-article {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.post-content-grid {
+  padding-bottom: 10px;
+}
+
+.post-content-grid p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.subscribe-home .form-control {
+  background: #fff;
+}
+
+
+.post-title {
+  text-transform: capitalize;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.post-grid span {
+  font-size: 15px;
+}
+
+
