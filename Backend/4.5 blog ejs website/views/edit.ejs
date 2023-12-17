@@ -1,0 +1,28 @@
+<!--Post edit feature. include using a form to load the existing blog post and allowing the user to edit and save the post.-->
+
+<%- include("partials/header"); -%>
+
+
+  <h1>Edit Post</h1>
+
+  <form action="/edit/<%= post.title %>" method="post">
+    <div class="form-group">
+    <label for="postSubject">Subject:</label>
+    <input class="form-control" type="text" id="postSubject" name="postSubject" value="<%= post.subject %>" required>
+    <br>
+
+    <label for="postTitle">Title:</label>
+    <input class="form-control" type="text" id="postTitle" name="postTitle" value="<%= post.title %>" required>
+    <br>
+
+    <label for="postBody">Content:</label>
+    <textarea class="form-control" id="postBody" name="postBody" rows="10" required><%= post.content %></textarea>
+    <br>
+
+    <button class="btn btn-primary" type="submit">Save Changes</button>
+  </div>
+
+  </form>
+
+
+  <%- include("partials/footer"); -%>

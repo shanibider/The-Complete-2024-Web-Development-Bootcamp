@@ -1,7 +1,7 @@
 <%- include("partials/header"); -%>
 
 
-<section class="section-padding py-1">
+<section class="section-padding pt-4">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -11,23 +11,28 @@
           </a>
 
           <% posts.forEach (function(post) { %>
+            
           <h2 class="mb-1 mt-2 post-title"><a href="blog-single.html">
             <%= post.title %> 
           </a></h2>
+
+          <span class="font-sm text-color letter-spacing text-uppercase post-meta font-extra"><%= post.subject %></span>
+
           <div class="post-content mt-4 pb-5">
             <p> <%=post.content.substring(0, 100) + " ..."%>
-              <a href="/posts/<%=post.title%>">Read More</a>
+              <a class="read-more" href="/posts/<%= post.title %>">Read More</a>
             </p>
             <% }); %>
 
           </div>
         </article>
 
-
           </div>
         </div>
       </div>   
 </section>
+
+
 
 
 

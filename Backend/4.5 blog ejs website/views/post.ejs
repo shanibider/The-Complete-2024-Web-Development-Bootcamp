@@ -1,8 +1,73 @@
+<script src="node_modules/lodash/lodash.min.js"></script>
 <%- include("partials/header"); -%>
 
-<div class="post-container">
-  <h1><%=title%></h1>
-  <p><%=content%></p>
-</div>
+<body>
+  <section class="single-block-wrapper section-padding">
+      <div class="container">
+          <div class="row">
+                  <div class="single-post">
+                    
+                      <div class="post-header mb-5 text-center">
+                          <div class="meta-cat">
+                              <a class="post-category font-extra text-color text-uppercase font-sm letter-spacing-1"
+                                  href="#"> <%= subject %> </a>
+                          </div>
+                          <h2 class="post-title mt-2">
+                            <%= title %>
+                          </h2>
+                          <div class="post-meta">
+                              <span class="text-uppercase font-sm letter-spacing-1 mr-3">by Shani, </span>
+                              <span class="text-uppercase font-sm letter-spacing-1"> <script>
+                                var currentDate = new Date();
+                                var date = currentDate.getDate() + '/' + (currentDate.getMonth()+ 1) + '/' + currentDate.getFullYear();
+                                document.write(date);
+                                </script> </span>   
+                          </div>
+                          <!-- Edit button linking to the edit page -->
+                          <a href="/edit/<%= (title)%>">
+                            <button class="btn btn-primary" type="submit" name="button">Edit</button>
+                          </a>
+                          <!-- Delete button linking to the delete route (app.get("/delete/:postName",..)). This emove the post from the home page. -->
+                          <a href="/delete/<%= (title) %>">
+                            <!-- Delete button linking to the delete route -->
+                          <button class="btn btn-primary" type="button" name="button" onclick="confirmDelete()">Delete</button>
+
+                          <!-- Add this script to handle the custom delete confirmation -->
+                          <script>
+                            function confirmDelete() {
+                              Swal.fire({
+                                title: 'Are you sure?',
+                                text: 'You won\'t be able to revert this!',
+                                icon: 'warning',
+                                showCancelButton: true,
+                                confirmButtonColor: '#3085d6',
+                                cancelButtonColor: '#d33',
+                                confirmButtonText: 'Yes, delete it!'
+                              }).then((result) => {
+                                if (result.isConfirmed) {
+                                  // If the user clicks "Yes," proceed with the deletion
+                                  window.location.href = '/delete/<%= (title) %>';
+                                }
+                              });
+                            }
+                          </script>
+                         
+                         
+                         
+                          </a>
+                      </div>
+
+                      <div class="post-body">
+                          <div class="entry-content">
+                              <p> <%=content%>.</p>                                                 
+                          </div>
+                      </div>  <!--end post-body-->
+                      <button class="btn btn-dark btn-block" onclick="window.location.href='/'">Back to Blog</button>
+
+                    </div>  <!--end single post-->
+                </div>      <!-- end row -->
+              </div>        <!--end container-->
+          </section>
+</body>
 
 <%- include("partials/footer"); -%>
