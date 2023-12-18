@@ -9,8 +9,8 @@ import Swal from 'sweetalert2/dist/sweetalert2.all.min.js';
 
 
 const homeStartingContent = "Hi Everyone.";
-const aboutContent = "I'm Shani, soptware developer.";
-const contactContent = "Lwt's keep in touch.";
+const aboutTitle = "About Me"; 
+const contactTitle = "Contact";
 const notification = "";
 
 /*
@@ -44,12 +44,12 @@ app.get("/", function(req, res){
 
 // GET ABOUT:
 app.get("/about", function(req, res){
-  res.render("about", {aboutContent: aboutContent});  // render the about page and pass the aboutContent variable to it
+  res.render("about", {aboutTitle: aboutTitle});  // render the about page and pass the aboutContent variable to it
 });
 
 // GET contact:
 app.get("/contact", function(req, res){
-  res.render("contact", {contactContent: contactContent, notification: notification});  // render the contact page and pass the contactContent variable to it 
+  res.render("contact", {contactTitle: contactTitle, notification: notification});  // render the contact page and pass the contactContent variable to it 
 });
 
 

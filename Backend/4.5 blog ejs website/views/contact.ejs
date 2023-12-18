@@ -1,7 +1,5 @@
 <%-include("partials/header")%>
 
-<p> <%= contactContent %> </p>
-
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -12,7 +10,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="text-center">
-                    <h2 class="lg-title">Contact</h2>
+                    <h1 class="lg-title"><%= contactTitle %></h1>
                 </div>
             </div>
         </div>
@@ -39,7 +37,7 @@
                             hippopotamus, but then she remembered how small she was now, and she soon made out that
                             it was only a mouse that had slipped in like herself.</p>
 
-                        <h2 class="mb-4">Get In Touch</h2>
+                        <h2 class="mb-5">Get In Touch</h2>
 
                         <form id="contact-form" class="contact-form" action="/contact" method="post">
                             <div class="row">
@@ -60,7 +58,7 @@
                                     <div class="form-group">
                                         <label for="message">Your Message</label>
                                         <textarea class="form-control form-control-message" name="message"
-                                            id="message" rows="7" required></textarea>
+                                            id="message" rows="5" required></textarea>
                                     </div>
 
                                     <button class="btn btn-primary solid blank mt-3" type="submit" >Send Message </button>
