@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Express App</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #noAuth {
+      background-color: #3498db;
+    }
+
+    #basicAuth {
+      background-color: #2ecc71;
+    }
+
+    #apiKey {
+      background-color: #f1c40f;
+    }
+
+    #bearerToken {
+      background-color: #e74c3c;
+    }
+
+    .response-area {
+      margin-top: 20px;
+      background-color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <button type="submit" id="noAuth" onclick="window.location.href='/noAuth'">No Auth</button>
+  <button id="basicAuth" onclick="window.location.href='/basicAuth'">Basic Auth</button>
+  <button id="apiKey" onclick="window.location.href='/apiKey'">API Key</button>
+  <button id="bearerToken" onclick="window.location.href='/bearerToken'">Bearer Token</button>
+
+  <div class="response-area">
+    <p>
+      <%=content%>
+    </p>
+  </div>
+</body>
+
+</html>

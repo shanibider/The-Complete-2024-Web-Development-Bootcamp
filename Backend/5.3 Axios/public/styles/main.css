@@ -1,0 +1,97 @@
+/* ------------ */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+/* ------------ */
+body {
+  font-family: monospace;
+  height: 100%;
+}
+h1 {
+  width: 100%;
+  margin-bottom: 40px;
+}
+/* ------------ */
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ------------ */
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 80px;
+  grid-column-gap: 10px;
+}
+.form-submit {
+  outline: none;
+  border: 1px solid rgb(232, 232, 232);
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 36px;
+}
+.form-submit:focus {
+  box-shadow: 0 0 0 0.5px rgb(153, 153, 153);
+}
+.cards {
+  display: flex;
+  margin: 20px 0;
+  width: 100%;
+}
+.card-item {
+  width: 100%;
+  padding: 5px 20px 20px;
+  border: 1px solid rgb(232, 232, 232);
+  background-color: white;
+  border-radius: 5px;
+}
+.card-info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-activity {
+  line-height: 1.2;
+  margin-top: 10px;
+}
+.tag-error {
+  width: 100%;
+  text-align: center;
+}
+/* ------------ */
+.is-element-hidden {
+  display: none;
+}
+/* ------------ */
+@media (max-width: 620px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  .form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
