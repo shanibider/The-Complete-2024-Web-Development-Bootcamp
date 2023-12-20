@@ -24,6 +24,7 @@
         <option value="diy">DIY</option>
         <option value="music">Music</option>
       </select>
+      
       <select name="participants" class="form-select">
         <option value="">Any number of people</option>
         <option value="1">1</option>
@@ -33,17 +34,22 @@
       </select>
       <button type="submit" class="form-submit">Go</button>
     </form>
+
+
     <section id="cards" class="cards">
       <article class="card-item">
         <h2 class="card-activity">
           <!-- Show Activity -->
+          <%= data.activity %>
         </h2>
         <div class="card-info">
           <span class="card-type">
             <!-- Show Activity type -->
+            <%= data.type %>
           </span>
           <span class="card-participants">
             <!-- participants: Show participant number -->
+            <%= data.participants %> participants
             <span class="card-number"></span>
           </span>
         </div>
