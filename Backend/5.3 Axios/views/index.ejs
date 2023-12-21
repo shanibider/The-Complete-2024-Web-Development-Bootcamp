@@ -13,6 +13,8 @@
     <h1>Let's find something for you to do ✌️</h1>
 
     <form action="/" id="form" class="form" method="POST">
+     
+      <!-- type (for req.body.type) -->
       <select name="type" class="form-select">
         <option value="" data-display="Select">Random type</option>
         <option value="education">Education</option>
@@ -24,7 +26,8 @@
         <option value="diy">DIY</option>
         <option value="music">Music</option>
       </select>
-      
+
+      <!-- participants (for req.body.participants) -->      
       <select name="participants" class="form-select">
         <option value="">Any number of people</option>
         <option value="1">1</option>
@@ -37,6 +40,7 @@
 
 
     <section id="cards" class="cards">
+      <% if (locals.data) { %>
       <article class="card-item">
         <h2 class="card-activity">
           <!-- Show Activity -->
@@ -54,10 +58,13 @@
           </span>
         </div>
       </article>
+      <% } %>
 
-
+      <% if (locals.error) { %>
       <div id="tag-error" class="tag-error">
         <!-- Show any errors that were sent from the backend -->
+      <%= error %>
+      <% } %>
       </div>
 
     </section>
