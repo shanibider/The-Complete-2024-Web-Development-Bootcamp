@@ -1,109 +1,136 @@
-API endpoints-
-
-api source: https://bored-api.appbrewery.com
-<baseURL/Endpoints (diffrent routes)>
-
-Get a Random Activity-
-make an API Request via Postman to get a rabdom activity:
-GET Request: https://bored-api.appbrewery.com/random
-
-in Postman we get:
-{
-    "activity": "Volunteer and help out at a senior center",
-    "availability": 0.1,
-    "type": "charity",
-    "participants": 1,
-    "price": 0,
-    "accessibility": "Few to no challenges",
-    "duration": "hours",
-    "kidFriendly": true,
-    "link": "",
-    "key": "3920096"
-}
+Formatting API requests:
+#Endpoints #Path Parameters #query parameters
 
 
-Filter Activities-
-API request that queries: all the "social" Activities for 2 people.
-GET: https://bored-api.appbrewery.com/filter?type=education
+This is a Get request sent from Frontend, and Response request sent from server back to Frontend:
+    app.get("/", (req, res) => {
+    res.render("index.ejs");
+    });
+    app.post("/submit", (req, res) => {
+    const numLetters = req.body["fName"].length + req.body["lName"].length;
+    res.render("index.ejs", {numberOfLetters: numLetters});
+    });
 
-The Response:
-[
+I can call it private API.
+If i want my srver to talk to someone else's server and back 
+(get some data, interact with that server) - it will be also in Request and Response, but this time it's done
+via a public API.
+
+
+
+API Endpoints:
+
+Normally i will have <baseURL/endpoints (diffrent routes)>
+Endpoints will be exampled in the documentation.
+
+I will use this api source: https://bored-api.appbrewery.com
+
+    Get a Random Activity-
+    Making API Request via Postman to get a rabdom activity:
+    GET Request: https://bored-api.appbrewery.com/random
+
+    in Postman i get:
     {
-        "activity": "Text a friend you haven't talked to in a long time",
-        "availability": 0.2,
-        "type": "social",
-        "participants": 2,
-        "price": 0.05,
-        "accessibility": "Few to no challenges",
-        "duration": "minutes",
-        "kidFriendly": true,
-        "link": "",
-        "key": "6081071"
-    },
-    {
-        "activity": "Go swimming with a friend",
+        "activity": "Volunteer and help out at a senior center",
         "availability": 0.1,
-        "type": "social",
-        "participants": 2,
-        "price": 0.1,
-        "accessibility": "Major challenges",
-        "duration": "minutes",
-        "kidFriendly": true,
-        "link": "",
-        "key": "1505028"
-    },
-    {
-        "activity": "Play a game of tennis with a friend",
-        "availability": 0.4,
-        "type": "social",
-        "participants": 2,
-        "price": 0.1,
-        "accessibility": "Major challenges",
-        "duration": "minutes",
-        "kidFriendly": true,
-        "link": "",
-        "key": "1093640"
-    },
-    {
-        "activity": "Catch up with a friend over a lunch date",
-        "availability": 0.15,
-        "type": "social",
-        "participants": 2,
-        "price": 0.2,
+        "type": "charity",
+        "participants": 1,
+        "price": 0,
         "accessibility": "Few to no challenges",
         "duration": "hours",
         "kidFriendly": true,
         "link": "",
-        "key": "5590133"
-    },
-    {
-        "activity": "Compliment someone",
-        "availability": 0,
-        "type": "social",
-        "participants": 2,
-        "price": 0,
-        "accessibility": "Few to no challenges",
-        "duration": "minutes",
-        "kidFriendly": true,
-        "link": "",
-        "key": "9149470"
+        "key": "3920096"
     }
-]
 
-Path Parameters-
-Get Activity by Key-
-GET: https://bored-api.appbrewery.com/activity/3943506
+Query Parameters:
+also i can have: <baseURL/endpoints?query=value>
 
-The Response:
-{
-  "activity": "Learn Express.js",
-  "availability": 0.25,
-  "type": "education",
-  "participants": 1,
-  "price": 0.1,
-  "accessibility": "Few to no challenges",
-  "duration": "hours",
-  "kidFriendly": true,
-  "link": "https://expressjs.com/",
-  "key": "3943506"
-}
+    Filter Activities-
+    API request that queries: all the "social" Activities for 2 people.
+    GET: https://bored-api.appbrewery.com/filter?type=education
+
+    The Response:
+    [
+        {
+            "activity": "Text a friend you haven't talked to in a long time",
+            "availability": 0.2,
+            "type": "social",
+            "participants": 2,
+            "price": 0.05,
+            "accessibility": "Few to no challenges",
+            "duration": "minutes",
+            "kidFriendly": true,
+            "link": "",
+            "key": "6081071"
+        },
+        {
+            "activity": "Go swimming with a friend",
+            "availability": 0.1,
+            "type": "social",
+            "participants": 2,
+            "price": 0.1,
+            "accessibility": "Major challenges",
+            "duration": "minutes",
+            "kidFriendly": true,
+            "link": "",
+            "key": "1505028"
+        },
+        {
+            "activity": "Play a game of tennis with a friend",
+            "availability": 0.4,
+            "type": "social",
+            "participants": 2,
+            "price": 0.1,
+            "accessibility": "Major challenges",
+            "duration": "minutes",
+            "kidFriendly": true,
+            "link": "",
+            "key": "1093640"
+        },
+        {
+            "activity": "Catch up with a friend over a lunch date",
+            "availability": 0.15,
+            "type": "social",
+            "participants": 2,
+            "price": 0.2,
+            "accessibility": "Few to no challenges",
+            "duration": "hours",
+            "kidFriendly": true,
+            "link": "",
+            "key": "5590133"
+        },
+        {
+            "activity": "Compliment someone",
+            "availability": 0,
+            "type": "social",
+            "participants": 2,
+            "price": 0,
+            "accessibility": "Few to no challenges",
+            "duration": "minutes",
+            "kidFriendly": true,
+            "link": "",
+            "key": "9149470"
+        }
+    ]
+
+Path Parameters:
+also i can have: <baseURL/endpoint/{path-parameter}>
+    
+    Path Parameters-
+    Get Activity by Key (id/ user name)-
+    GET: https://bored-api.appbrewery.com/activity/3943506
+
+    The Response:
+    {
+    "activity": "Learn Express.js",
+    "availability": 0.25,
+    "type": "education",
+    "participants": 1,
+    "price": 0.1,
+    "accessibility": "Few to no challenges",
+    "duration": "hours",
+    "kidFriendly": true,
+    "link": "https://expressjs.com/",
+    "key": "3943506"
+    }

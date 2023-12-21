@@ -8,11 +8,13 @@ const port = 3000;
 
 app.get("/", (req, res) => {
   console.log(__dirname + "/public/index.html");  // we will get: C:\Users\shani\OneDrive\שולחן העבודה\Web Development Projects\Web-Development-Projects\backend\3.4 Middleware/public/index.html
+  // server sends back a file to the client (response)
   // here i dont just send html, i send the file i linked
   res.sendFile(__dirname + "/public/index.html");
 });
 
 app.post("/submit", (req, res) => {
+  // server will get the data sent from the form (frontend)
   console.log(req.body);
 });
 

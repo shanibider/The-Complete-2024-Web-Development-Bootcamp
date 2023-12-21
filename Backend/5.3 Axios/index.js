@@ -1,3 +1,6 @@
+// App where we need our server to make an API request. Axios will be used to make the request.
+// common need when we dealing with node and express in backend
+
 import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";

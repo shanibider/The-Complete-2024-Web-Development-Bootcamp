@@ -1,3 +1,22 @@
+// Structure the API request, and making my own API request from Postman and the browser.
+
+// Working with JSON
+// JSON stands for JavaScript Object Notation.
+// It is a lightweight data-interchange format.
+// It is used to exchange data between a browser and a server.
+
+// in this project i will create a server that will send a JSON object as a response to an API request.
+// I will be using the Express framework to create a server and handle the API request.
+// I will be using the body-parser middleware to parse the request body.
+// I will be using the EJS templating engine to render the HTML page.
+// I will be using the fs module to read the recipe.json file.
+// I will be using the JSON.parse() method to parse the JSON string into a JavaScript object.
+// I will be using the res.render() method to render the HTML page.
+// I will be using the res.send() method to send the recipe object as a response.
+// I will be using the res.status() method to set the status code of the response.
+// I will be using the res.json() method to send the recipe object as a response.
+
+
 import express from "express";
 import bodyParser from "body-parser";
 
