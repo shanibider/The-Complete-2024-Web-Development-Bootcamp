@@ -10,26 +10,61 @@
   <h1>Taco Town 🌮</h1>
 
   <form action="/recipe" method="POST" class="buttons">
-    <button type="submit" value="chicken" name="choice">🍗</button>
+    <button type="submit" value="chicken" name="choice">🍗</button>   <!-- name="choice" is the name of the key in the req.body object. -->
     <button type="submit" value="beef" name="choice">🥩</button>
     <button type="submit" value="fish" name="choice">🐟</button>
-  </form>
+ </form>
+
   <div id="recipeContainer" class="hidden">
+    <!-- Else, show the recipe name e.g. <h2>Recipe name</h2> -->
+    <!-- If data is sent over -->
+    <%if (locals.recipe) {%>    <!-- res.render("index.ejs", { recipe: data }); -->
 
-    <!-- If no recipe yet, show: -->
-    <h2>Pick your favourite taco ingredient 👆</h2>
-    <!-- Else, show the recipe name e.g. <h2>Recipe name</h2>-->
+      <!-- parsing the data we get from recipe -->
+      <h2 id="recipeTitle"> <%= recipe.name %> </h2>
 
-    <h3>Ingredients:</h3>
+      <!-- Show the ingredients list e.g.
+      Reccommend yo view the JSON in jason viewer to see hirarchey -->
+   <h3>Ingredients:</h3>
     <ul id="ingredientsList">
-      <li>Protein name, protein preparation</li>
-      <li>Salsa name</li>
-      <li>Every other topping</li>
+      <li><%= recipe.ingredients.protein.name %>, <%= recipe.ingredients.protein.preparation %></li>
+      <li><%= recipe.ingredients.salsa.name %></li>
+
+      <% recipe.ingredients.toppings.forEach (function (topping) { %>
+      <li><%= topping.quantity %> of <%= topping.name %></li>
+      <% }) %>
     </ul>
-
-
-
+    
+       <!-- If no recipe yet, show: -->
+       <% } else { %>
+        <h2>Pick your favourite taco ingredient 👆</h2>
+       <% }%>
   </div>
 </body>
-
 </html>
+
+
+
+<!--
+JSON VIEWER:
+id : "0001"
+type : "taco"
+name : "Chicken Taco"
+price : 2.99
+ingredients
+    protein
+        name : "Chicken"
+        preparation : "Grilled"
+    salsa
+        name : "Tomato Salsa"
+        spiciness : "Medium"
+    toppings
+        0
+            name : "Lettuce"
+            quantity : "1 cup"
+            ingredients
+                  0 : "Iceberg Lettuce"
+         1
+         2
+         3
+-->
