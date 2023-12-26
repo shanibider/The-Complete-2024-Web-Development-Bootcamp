@@ -1,5 +1,5 @@
-// App where we need our server to make an API request. Axios will be used to make the request.
-// common need when we dealing with node and express in backend
+// Server-side API requests using Axios and node
+// common need when we dealing with node and express in backend.
 
 import express from "express";
 import bodyParser from "body-parser";
@@ -19,8 +19,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //   response.data and edit the index.ejs file accordingly.
 app.get("/", async (req, res) => {
   try {
-    const response = await axios.get("https://bored-api.appbrewery.com/random");
-    console.log("Response object: ", response);   // response is an object including lots of info includint the data (object with the activity info)
+    const response = await axios.get("https://bored-api.appbrewery.com/random");  // response is an object including lots of info including the data (data is an object with the activity info)
+    console.log("Response object: ", response);   
     const result = response.data;         // extract the data from the response object
     console.log("Result (random activity): ", result);
 
@@ -34,6 +34,7 @@ app.get("/", async (req, res) => {
   }
 });
 
+
 app.post("/", async (req, res) => {
   // Step 2: Play around with the drop downs and see what gets logged.
   // Use axios to make an API request to the /filter endpoint. 
@@ -45,14 +46,16 @@ app.post("/", async (req, res) => {
   // "No activities that match your criteria."
   try {
     console.log("req.body:", req.body);
-    const type = req.body.type;
+
+    const type = req.body.type; //according to the name in the html
     const participants = req.body.participants;
+
     // important to put ` ` around the url (and not " or ')
     const response = await axios.get (`https://bored-api.appbrewery.com/filter?type=${type}&participants=${participants}`);
-    const result = response.data;
+    const result = response.data;     // array of activities that match the criteria
     console.log("Result of post request (by user choice): ", result);
 
-    res.render ("index.ejs", { data: result [Math.floor(Math.random() * result.length)] ,});  // random activity from the array of activities that match the criteria
+    res.render ("index.ejs", { data: result [Math.floor(Math.random() * result.length)] ,});  // one random activity from the array of activities that match the criteria
  
 
   } catch (error) {
