@@ -1,3 +1,19 @@
+// Making all range of requests- GET, POST, PUT, PATCH and DELETE API requests using axios.
+
+/* i saw how to make a GET request using axios in the previous project.
+to this request i can chain a .then() method to handle the response and a .catch() method to handle the error or .finally.
+axios.get ("URL", {
+         params: {        //here we can use params/auth/data/headers
+             score: 5,
+             apiKey: "abc",
+           },
+         });
+ */
+
+
+
+
+
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
