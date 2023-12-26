@@ -1,0 +1,124 @@
+AXIOS GET REQUEST include Token auth-
+const result = axios.get (API_URL + "/secrets/42", {
+    headers: {
+      Authorization: `Bearer ${yourBearerToken}`,
+    },
+  } );
+
+or:
+
+const yourBearerToken ="2c0f045e-716d-4031-b5c6-9a5a247eafd9";
+const config = {
+  headers: { Authorization: `Bearer ${yourBearerToken}` },
+};
+
+const result = await axios.get(API_URL + "/secrets/" + searchId, config);
+
+
+
+
+Continue to work with https://secrets-api.appbrewery.com/.
+for other REQUESTS like POST, PUT, PATCH. DELETE.
+
+
+* POST /secrets -
+Adds a new secret. Bearer token authentication is required.
+
+Request Body:
+{
+  "secret": "This is a new secret.",
+  "score": "Embarrassment score"
+}
+Example Request:
+POST https://secrets-api.appbrewery.com/secrets
+{
+  "secret": "This is a new secret.",
+  "score": "Updated embarrassment score"
+}
+Example Response:
+{
+  "id": "3",
+  "secret": "This is a new secret.",
+  "emScore": 3,
+  "username": "user123",
+  "timestamp": "2022-10-03T08:15:00Z"
+}
+
+
+
+
+* PUT /secrets/{id} -
+Updates the content of the secret with the specified ID. Bearer token authentication is required.
+
+URL Parameters:
+  id: The ID of the secret to update.
+
+Request Body:
+{
+  "secret": "Updated secret content.",
+  "score": 5
+}
+
+Example Request:
+PUT https://secrets-api.appbrewery.com/secrets/1
+{
+  "secret": "Updated secret content",
+  "score": "Updated embarrassment score"
+}
+
+Example Response:
+{
+  "id": "1",
+  "secret": "Updated secret content.",
+  "emScore": 3,
+  "username": "user123",
+  "timestamp": "2022-10-01T12:34:56Z"
+}
+
+
+
+
+
+* PATCH /secrets/{id} -
+Partially updates the content of the secret with the specified ID. Bearer token authentication is required.
+
+URL Parameters:
+  id: The ID of the secret to update.
+
+Request Body:
+{
+  "secret": "Updated secret content",
+  "score": "Updated embarrassment score"
+}
+
+Example Request:
+PATCH https://secrets-api.appbrewery.com/secrets/1
+{
+  "score": 2
+}
+
+Example Response:
+{
+  "id": "1",
+  "secret": "Partially updated secret content.",
+  "emScore": 3,
+  "username": "user123",
+  "timestamp": "2022-10-01T12:34:56Z"
+}
+
+
+
+
+* DELETE /secrets/{id} -
+Deletes the secret with the specified ID. Bearer token authentication is required.
+
+URL Parameters:
+  id: The ID of the secret to delete.
+
+Example Request:
+DELETE https://secrets-api.appbrewery.com/secrets/1
+
+Example Response:
+{
+  "message": "Secret with ID 1 has been deleted successfully."
+}

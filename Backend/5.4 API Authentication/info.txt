@@ -1,4 +1,5 @@
-API authentication info:
+API AUTHENTICATION INFO:
+
 we have 4 types of auth:
 1. No auth
 2. Basic auth
@@ -6,30 +7,48 @@ we have 4 types of auth:
 4. Token based auth
 
 
-- basic authenticaion uses username and password and base64 encoding to authenticate the user.
-- Token based auth is more secure, beacuse we get the user to use a username and password to log in, and once they got in we generate a token to be used with the API.
+- basic authenticaion uses username and password, and base64 encoding to authenticate the user.
+- Token based auth is more secure, beacuse we get the user to use a username and password to log in, and once they got in we generate a token, to be used with the API.
   So the API don't get involved with the username and password, and instead it's the token that is used to interacte with the API.
   Normally i'll see token based auth as OAuth 2.0, which is a standard for token based auth.
   In 3rd party apps, i'll see OAuth 2.0. for example, when i log in to a website using my google account, i'll get a token that i can use to interacte with the API.  
   (so i don't have to give my username and password of google to the 3rd party app, instead i give them a token, and they use that token to interacte with the API.)
 
 
+
+
+SECRETS API DOCUMENTATION -
 i pracitced it with this API: https://secrets-api.appbrewery.com/
 
+Authentication + REST API-
+- Basic Authentication is required for some endpoints. Use your username and password to authenticate.
+- An API Key is requred to Authorize certain endpoints. Use the API key obtained from the /generate-api-key endpoint.
+- Bearer Token Authentication is required for some endpoints. Use your username and password to get a token obtained from the /get-auth-token endpoint.
+
 this API has diffrent endpoints, for diffrent auth types.
-1. /random - no auth
-2. /all - basic auth
-3. /filter - api key auth
-4. /secrets/{id} - bearer token auth
+1. GET /random - no auth
+2. GET /all - basic auth
+3. GET /filter - api key auth
+4. GET /user-secrets - bearer token auth
+5. GET /secrets/{id} - bearer token auth
 
 
 My practice:
 1. Basic authenticaion:
-register a new user, by passing over a new username and password, in the body of post request.
+
+POST /register -
+Example Request:
+POST https://secrets-api.appbrewery.com/register
+{
+  "username": "shani",
+  "password": "123"
+}
+
+register a new user, by passing over a new username and password, in the body of post request (Body tab in postman, and select x-www-form-urlencoded).
 and once we register on the server, we can use that username and password to perform a request using basic authentication.
 
-GET https://secrets-api.appbrewery.com/all?page=1 . This endpoint requires basic authentication.
-in postman i will go to authorization tab, and select basic auth, and enter the username and password i just registered with.
+now, GET https://secrets-api.appbrewery.com/all?page=1 . This endpoint requires basic authentication.
+in postman i will go to "Authorization tab", select basic auth, and enter the username and password i just registered with.
 in headers tab i can see the authorization value, which is the username and password encoded in base64. (can be decoded in base64decode.org)
 
 * Diffrent between authenticaion and authorization:
@@ -37,18 +56,47 @@ authentication is the process of verifying who you are (user), to the API provid
 authorization is the process of verifying what the client are allowed to do. and they get an API key to authorize themself. Allows you to use an API.
 
 
+
+
 2. API key authorization:
 Get an API key, and use it to perform a request using API key authorization.
-GET https://secrets-api.appbrewery.com/generate-api-key. This endpoint get us an API key.
+
+GET /generate-api-key -
+Example Request:
+GET https://secrets-api.appbrewery.com/generate-api-key
+Example Response:
+{
+  "apiKey": "generated-api-key"
+}
+
 then i will go to: 
-GET https://secrets-api.appbrewery.com/filter?score=5&apiKey=b886c845-9989-43aa-8c60-ea4a669bb587
-route that requires API authentication, to make a request, add a parameter "score", and in Authorization tab, select API key. in Key enter: apiKey, in Value enter: the API key i just got, and in Header enter: Query Params.
+GET https://secrets-api.appbrewery.com/filter?score=5&apiKey=b886c845-9989-43aa-8c60-ea4a669bb587 route that requires API authentication,
+to make a request, add a parameter "score",
+in Authorization tab, select API key. in Key enter: "apiKey", in Value enter: the API key i just got, and in Header enter: Query Params, then send.
+
+
+
 
 
 3. Token based authenticaion:
 There is paths that protected by bearer token authenticaion. They use username and password to get a token from the server, that will used as a proxy for anybody else to interact with the API as that user.
-i can get a token by: POST https://secrets-api.appbrewery.com/get-auth-token . in body i will pass over the username and password, once it authenticate that user, the i will get a token.
 
-then i will go to: GET https://secrets-api.appbrewery.com/secrets/1 . This endpoint requires bearer token auth, so i will go to Authorization tab, and select Bearer Token, and enter the token i just got.
+POST /get-auth-token -
+Example Request:
+POST https://secrets-api.appbrewery.com/get-auth-token
+{
+  "username": "shani",
+  "password": "123"
+}
+Example Response:
+{
+  "token": "generated-auth-token"
+}
+
+in body i will pass over the username and password, once it authenticate that user, then i will get a token.
+then i will go to: GET https://secrets-api.appbrewery.com/secrets/1 . This endpoint requires bearer token auth, so i will go to "Authorization tab", select Bearer Token, and enter the token i just got.
 in Headers tab i can see the Authorization value, which is "bearer" + the token i just got.
+
+
+
 
