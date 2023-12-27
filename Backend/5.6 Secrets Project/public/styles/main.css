@@ -13,11 +13,13 @@ body {
   padding-bottom: 2rem;
   box-sizing: border-box;
 }
+
 h1 {
   color: white;
   font-family: "Titan One", cursive;
   margin-bottom: 20px;
 }
+
 .card {
   background: url("../images/whisper-img.jpg");
   background-size: cover;
@@ -41,6 +43,7 @@ h1 {
   color: rgb(88 199 250 / 100%);
   transition: color 1s;
 }
+
 .card:hover:before,
 .card:hover:after {
   animation: none;
