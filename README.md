@@ -1,4 +1,4 @@
-# Web Development: JavaScript Code Practice and Projects
+# Full-Stack Web Development: Code Practice and Projects
 
 Welcome to my Web Development repository! This comprehensive resource is designed to enhance my skills in web development and explore the exciting world of front-end and back-end development using JavaScript and React.
 
