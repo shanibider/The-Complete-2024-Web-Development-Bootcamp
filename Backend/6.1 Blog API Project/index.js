@@ -1,3 +1,8 @@
+// in this project i have 2 severs running stimultaneously.
+// one is server.js which is going to act as the backend that makes the API requests. (port 3000- backend #1 makes API requests).
+// the other is index.js which is going to be the backend for the actual API. (port 4000- backend #2 my API responds).
+// to run- nodemon server.js and nodemon index.js in 2 terminals
+
 import express from "express";
 import bodyParser from "body-parser";
 
@@ -18,7 +23,7 @@ let posts = [
     id: 2,
     title: "The Impact of Artificial Intelligence on Modern Businesses",
     content:
-      "Artificial Intelligence (AI) is no longer a concept of the future. It's very much a part of our present, reshaping industries and enhancing the capabilities of existing systems. From automating routine tasks to offering intelligent insights, AI is proving to be a boon for businesses. With advancements in machine learning and deep learning, businesses can now address previously insurmountable problems and tap into new opportunities.",
+      "Artificial Intelligence (AI) is  no longer a concept of the future. It's very much a part of our present, reshaping industries and enhancing the capabilities of existing systems. From automating routine tasks to offering intelligent insights, AI is proving to be a boon for businesses. With advancements in machine learning and deep learning, businesses can now address previously insurmountable problems and tap into new opportunities.",
     author: "Mia Williams",
     date: "2023-08-05T14:30:00Z",
   },
@@ -34,6 +39,7 @@ let posts = [
 
 let lastId = 3;
 
+
 // Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -41,6 +47,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Write your code here//
 
 //CHALLENGE 1: GET All posts
+app.get("/posts", (req, res) => {
+  res.json(posts);
+});
 
 //CHALLENGE 2: GET a specific post by id
 
@@ -49,6 +58,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //CHALLENGE 4: PATCH a post when you just want to update one parameter
 
 //CHALLENGE 5: DELETE a specific post by providing the post id.
+
+
+
+
+
 
 app.listen(port, () => {
   console.log(`API is running at http://localhost:${port}`);

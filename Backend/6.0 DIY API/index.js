@@ -1,4 +1,6 @@
 // Build Joke API- REASTful api to serve jokes.
+// https://documenter.getpostman.com/view/6048123/2s9XxsTv8Y
+
 
 import express from "express";
 import bodyParser from "body-parser";
@@ -10,25 +12,113 @@ const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT";
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+
 //1. GET a random joke
+// app.get comes from express, first argument is the endpoint, second is the callback function- what should happen when the request comes through.
+// in this case i want to tap into the request and response objects, to get hold of a random number (between 0-1), and multiply it by the length of the jokes array. then Math.floor round it down to the nearest integer.
+// This random joke i send back to the client as a response with res.json, a way to convert the data here as a json object.
+app.get("/random", (req, res) => {
+  const randomJoke= Mathh.floor (Math.random() * jokes.length);
+  res.json (jokes[randomJoke]);
+});
+
 
 //2. GET a specific joke
+app.get("/jokes/:id", (req, res) => {
+  const id = parseInt (req.params.id);    // hw to access any of the URL parameters in express
+  // array.find
+  // === checks for value and type, so if i have a string and a number, it will not be equal
+  const foundJoke = jokes.find ( (joke) => joke.id === id );
+  res.json (foundJoke);
+});
+
 
 //3. GET a jokes by filtering on the joke type
+app.get("/filter", (req, res) => {
+  const type = req.params.type; 
+  // array.filter (return an array)
+  const filteredActivities = jokes.filter ( (joke) => jokes.type === type );
+  res.json (filteredActivities);
+});
+// in postman i run a GET request to http://localhost:3000/filter?type=Math, and get back all the jokes with the type Math.
+
+
+// in postman i run a POST request to http://localhost:3000/jokes.
 
 //4. POST a new joke
+app.post("/jokes", (req, res) => {
+  const newJoke = {
+    id: jokes.length + 1,
+    jokeText: req.body.jokeText,
+    jokeType: req.body.jokeType,
+  }
+  jokes.push(newJoke);
+  console.log (jokes.slice(-1));  //print the last joke
+  res.json(newJoke);
 
-//5. PUT a joke
+});
 
-//6. PATCH a joke
+
+//5. PUT a joke (replace)
+app.get("/jokes/:id", (req, res) => {
+  const id = parseInt (req.params.id);
+  const replacementJoke = {
+    id: id,
+    jokeText: req.body.jokeText,
+    jokeType: req.body.jokeType,
+  }
+  // array.index - index is the position of the joke (object) in the array
+const searchedIndex = jokes.findIndex ((joke) => jokes.id === id );
+  res.json (searchedIndex);
+});
+
+
+//6. PATCH a joke (update)
+app.patch ("/jokes/:id", (req, res) => {
+const id = parseInt (req.params.id);
+const existingJoke = jokes.find ( (joke) => joke.id === id );
+const updatedJoke = {
+  id:id,
+  jokeText: req.body.jokeText || existingJoke.jokeText,
+  jokeType: req.body.jokeType || existingJoke.jokeType,
+};
+// now i need to replace the existing joke with the updated joke and send it back to the client
+const searchedIndex = jokes.findIndex ((joke) => jokes.id === id );
+jokes [searchedIndex] = updatedJoke;
+res.json (updatedJoke);
+});
+
+
 
 //7. DELETE Specific joke
+app.delete("/jokes/:id", (req, res) => {
+  const id = parseInt (req.params.id);
+  const  searchedIndex = jokes.findIndex ((joke) => jokes.id === id );
+  // remove 1 element- searchedIndex (position of the joke in the array)
+  jokes.splice (searchedIndex, 1);
+
+});
+
 
 //8. DELETE All jokes
+//the user need to enter the value of masterKey to delete all jokes
+app.get("/all", (req, res) => {
+const userKey = req.body.userKey;
+if (userKey === masterKey) {
+  jokes = [];
+  res.send("All jokes have been deleted.");
+} else {
+  res.status(404).json({ error: "You are not authorized to delete all jokes." });
+}
+});
+
+
 
 app.listen(port, () => {
   console.log(`Successfully started server on port ${port}.`);
 });
+
+
 
 var jokes = [
   {
