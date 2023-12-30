@@ -1,0 +1,32 @@
+What makes API a good one?
+- Data collection.
+- Algorithm/ Service.
+- Simplified interface.
+
+
+build REST API (representational state transfer) -
+
+What makes an API RESTful?
+
+1. HTTP Methods -
+that it uses standart http methods (get, post, put, patch, delete). This are the standart verbs that you use to intercact with our RESTful API.
+
+2. Json - It should have a standart data format that it responds with.
+Like the JSON format, the javaScript object notation, or xml, as response to the client.
+
+3. Client and server - in RESTful API are completly seperated.
+This architecture allows each side to be able to evolve independently without any dependency on the other side.
+
+4. Stateless - each request from the client and server should contain all the information needed to complete the request.
+So the server shoudln't be storing any sort of client side state or data between the requests.
+So each single request and response can be complete without needing to know wha happen previously.
+Every time the client make a request it gives all the information the server need.
+This rule allows the server to serve many many clients and requests.
+
+5. Resource-Based - It's an API that is based on resources and uses unique resource identifier, also known as a resource locator- URI or URL.
+
+
+Actuallty, the internat is one of the most successful implementations of RESTful architecture.
+(resources located in URL, we work with the server through HTTP methods, we get the response in JSON format/ XML, also we have strict server-client seperation.
+client is who using the browser, the server is a computer that holds the data that needs to be served when somebody requests a particular web page , 
+and finally the internet is stateless, every single request to a web page contains all of the information that's required in order to determine what web page to sent back).
