@@ -73,6 +73,7 @@ const searchedIndex = jokes.findIndex ((joke) => jokes.id === id );
 });
 
 
+
 //6. PATCH a joke (update)
 app.patch ("/jokes/:id", (req, res) => {
 const id = parseInt (req.params.id);

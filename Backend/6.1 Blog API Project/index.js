@@ -1,6 +1,6 @@
 // in this project i have 2 severs running stimultaneously.
-// one is server.js which is going to act as the backend that makes the API requests. (port 3000- backend #1 makes API requests).
-// the other is index.js which is going to be the backend for the actual API. (port 4000- backend #2 my API responds).
+// one is server.js which is going to act as backend #1 that makes the API requests. (port 3000).
+// the other is index.js which is going to be the backend #2 for the actual API. (port 4000- my API responds).
 // to run- nodemon server.js and nodemon index.js in 2 terminals
 
 import express from "express";
@@ -52,12 +52,58 @@ app.get("/posts", (req, res) => {
 });
 
 //CHALLENGE 2: GET a specific post by id
+app.get("/posts/:id", (req, res) => {
+  const id = parseInt (req.params.id);
+  const post = posts.find ( (post) =>  post.id === id);
+  if (!post) return res.status(404).json({ message: "Post not found" });
+  res.json (post);
+});
+
+
 
 //CHALLENGE 3: POST a new post
+app.post ("/posts", (req, res) => {
+const newId = lastId +=1;   
+ const newPost ={
+    id: newId,
+    title: req.body.title,
+    content: req.body.content,
+    author: req.body.author,
+    date: new Date(),
+ }
+ lastId = newId;
+  posts.push (newPost);
+  console.log (posts.slice(-1));  //log the last joke
+  res.status(201).res.json(newPost);
+});
+
 
 //CHALLENGE 4: PATCH a post when you just want to update one parameter
+app.patch ("/posts/:id")
+
+
+
+
+/*
+const id = parseInt (req.params.id);
+const existingJoke = jokes.find ( (joke) => joke.id === id );
+const updatedJoke = {
+  id:id,
+  jokeText: req.body.jokeText || existingJoke.jokeText,
+  jokeType: req.body.jokeType || existingJoke.jokeType,
+};
+// now i need to replace the existing joke with the updated joke and send it back to the client
+const searchedIndex = jokes.findIndex ((joke) => jokes.id === id );
+jokes [searchedIndex] = updatedJoke;
+res.json (updatedJoke);
+*/
+
+
+
+
 
 //CHALLENGE 5: DELETE a specific post by providing the post id.
+
 
 
 

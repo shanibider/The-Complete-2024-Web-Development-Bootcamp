@@ -1,4 +1,4 @@
-// server.js is going to act as the backend that makes the API requests. (port 3000- backend #1 makes API requests).
+// server.js is going to act as backend #1 that makes the API requests. (port 3000).
 
 import express from "express";
 import bodyParser from "body-parser";
