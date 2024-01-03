@@ -51,6 +51,8 @@ app.get("/posts", (req, res) => {
   res.json(posts);
 });
 
+
+
 //CHALLENGE 2: GET a specific post by id
 app.get("/posts/:id", (req, res) => {
   const id = parseInt (req.params.id);
@@ -79,12 +81,7 @@ const newId = lastId +=1;
 
 
 //CHALLENGE 4: PATCH a post when you just want to update one parameter
-app.patch ("/posts/:id")
-
-
-
-
-/*
+app.patch ("/posts/:id", (req, res)  => {
 const id = parseInt (req.params.id);
 const existingJoke = jokes.find ( (joke) => joke.id === id );
 const updatedJoke = {
@@ -96,15 +93,38 @@ const updatedJoke = {
 const searchedIndex = jokes.findIndex ((joke) => jokes.id === id );
 jokes [searchedIndex] = updatedJoke;
 res.json (updatedJoke);
-*/
+});
 
 
 
+// CHALLENGE 5: DELETE a specific post by providing the post id.
+// DELETE Specific joke
+// (Optional Edge Case Mangement: Can you think of a situation where we might have an issue deleting a specific joke out of the array? Can you think of a solution?)
+app.delete ("/jokes/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const searchIndex = jokes.findIndex((joke) => joke.id === id);
+  if (searchIndex > -1) {
+    jokes.splice (searchIndex, 1);
+    res.sendStatus (200);
+  } else {
+    res
+      .status(404)
+      .json({ error: `Joke with id: ${id} not found. No jokes were deleted.` });
+  }
+});
 
-
-//CHALLENGE 5: DELETE a specific post by providing the post id.
-
-
+//DELETE All jokes
+app.delete("/all", (req, res) => {
+  const userKey = req.query.key;
+  if (userKey === masterKey) {
+    jokes = [];
+    res.sendStatus(200);
+  } else {
+    res
+      .status(404)
+      .json({ error: `You are not authorised to perform this action.` });
+  }
+});
 
 
 
