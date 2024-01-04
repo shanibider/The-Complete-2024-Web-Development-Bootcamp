@@ -1,0 +1,6 @@
+SQL DB- 
+Structured Query langauge.
+some SQL sources: oracle, mySQL, postgradSQL, SQLlite. (free and paid).
+
+NoSQL DB-
+it's possible to change the Structure of the data afterwards
