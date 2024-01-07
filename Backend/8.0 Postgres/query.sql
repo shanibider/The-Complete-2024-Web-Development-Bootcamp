@@ -30,4 +30,9 @@ ORDER BY id ASC;
 
 
 
-/* Read data from table Using postgres (pgAdmin) */
+/* Query data using SELECT, WHERE, and LIKE -
+import world_food table in pgAdmin.
+and insert using Query Tool (new query).
+*/
+INSERT INTO world_food (country, rice_production, wheat_production)
+VALUES ('Italy', 1.46, 7.3)

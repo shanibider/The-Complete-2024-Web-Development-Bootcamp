@@ -1,17 +1,3 @@
-/*
-There are countries that spell longest than the user probablly enter. ("Tanzania, United Republic of").
-We want that no matter what coes post/prev the world ..Tanzania.., it will catch this.
-so we use this pattern WHERE LIKE:
-
-SELECT <COLMAN>
-FROM <TABLE>
-WHERE <COLMUN> LIKE <PATTERN>;
-
-SELECT country
-FROM world_food
-WHERE contry LIKE '%' || 'a';     // as long as it end with 'a'.
-*/
-
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -31,6 +17,13 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+let currentUserId = 1;
+
+let users = [
+  { id: 1, name: "Angela", color: "teal" },
+  { id: 2, name: "Jack", color: "powderblue" },
+];
+
 async function checkVisisted() {
   const result = await db.query("SELECT country_code FROM visited_countries");
   let countries = [];
@@ -39,20 +32,18 @@ async function checkVisisted() {
   });
   return countries;
 }
-
-
-// GET home page
 app.get("/", async (req, res) => {
   const countries = await checkVisisted();
-  res.render("index.ejs", { countries: countries, total: countries.length });
+  res.render("index.ejs", {
+    countries: countries,
+    total: countries.length,
+    users: users,
+    color: "teal",
+  });
 });
-
-//INSERT new country
 app.post("/add", async (req, res) => {
   const input = req.body["country"];
 
-  // this is the only modification i made, for this bug (__ input __).
-  // also convert the user input to lowercase, and (country_name) from db to lowercase, to be match.
   try {
     const result = await db.query(
       "SELECT country_code FROM countries WHERE LOWER(country_name) LIKE '%' || $1 || '%';",
@@ -69,23 +60,26 @@ app.post("/add", async (req, res) => {
       res.redirect("/");
     } catch (err) {
       console.log(err);
-      const countries = await checkVisisted();
-      res.render("index.ejs", {
-        countries: countries,
-        total: countries.length,
-        error: "Country has already been added, try again.",
-      });
     }
   } catch (err) {
     console.log(err);
-    const countries = await checkVisisted();
-    res.render("index.ejs", {
-      countries: countries,
-      total: countries.length,
-      error: "Country name does not exist, try again.",
-    });
   }
 });
+
+
+
+
+app.post("/user", async (req, res) => {});
+
+app.post("/new", async (req, res) => {
+  //Hint: The RETURNING keyword can return the data that was inserted.
+  //https://www.postgresql.org/docs/current/dml-returning.html
+});
+
+
+
+
+
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

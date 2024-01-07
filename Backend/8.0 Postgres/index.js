@@ -1,12 +1,8 @@
-// in order to connect to the DB with need some details to verify ourselfs.
-// we need the host, port, database, user and password.
-// we can get these details from the .env file.
-// we can use the dotenv package to get these details.
-// we can use the pg package to connect to the DB, and send queries to the DB.
-//then we connect to the DB.
-// then we can send queries to the DB, with db.query. and inside we can write SQL code (structured querey language).
-//then we close the connection to the DB.
-// and that is all we need to do to connect to the DB and send queries to it.
+// in order to connect to the DB we need some details to verify ourselfs.
+// I use pg package to connect to the DB, and send queries to the DB.
+// then I connect to the DB, send queries to the DB, with db.query. with SQL code inside (structured querey language).
+// i use PostgreSQL server, with pgAdmin DB.
+
 
 import Client from 'pg';
 
