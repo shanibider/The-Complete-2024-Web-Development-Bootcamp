@@ -148,7 +148,7 @@ CREATE TABLE visited_countries(
 */
 
 INSERT INTO users (name, color)
-VALUES ('Angela', 'teal'), ('Jack', 'powderblue');
+VALUES ('Shani', 'teal'), ('Jack', 'powderblue');
 
 INSERT INTO visited_countries (country_code, user_id)
 VALUES ('FR', 1), ('GB', 1), ('CA', 2), ('FR', 2 );
@@ -162,8 +162,8 @@ ON users.id = user_id;
 "id"	"country_code"	"user_id"	"id"	"name"	"color"
 1	"FR"	1	1	"Shani"	"teal"
 2	"IL"	1	1	"Shani"	"teal"
-3	"CA"	2	2	"Tal"	"powderblue"
-4	"FR"	2	2	"Tal"	"powderblue"
+3	"CA"	2	2	"Jack"	"powderblue"
+4	"FR"	2	2	"Jack"	"powderblue"
 */
 
 

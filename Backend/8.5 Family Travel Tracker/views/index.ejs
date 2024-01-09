@@ -11,7 +11,16 @@
 <body>
 
   <!-- iterate over an array of users, input displaying the user's ID as the value,
-    the label displaying the user's name with a background color (based on the user's color property) -->
+    the label displaying the user's name with a background color (based on the user's color property) 
+    users passes as dictionary that contains id/name/color. This is the list.
+    * We looping throught each of the items and populating different parts of the tab. 
+    For example user.id to the value of the input, so when we submit the form using POST request, we will be able to catch
+    the request, and see the value in the name set to whatever the id is chosen by the user.
+    * using user.color for the colors.
+    * using user.name for name's tab.
+    * Finnaly, the entire form get submitted when the user choose one of this inputs.
+
+  -->
   <form class="tab-view tab-view-height-auto" action="/user" method="post">
     <% users.forEach (function (user) { %>
       <input type="submit" name="user" value="<%= user.id %>" id="<%= user.id %>">

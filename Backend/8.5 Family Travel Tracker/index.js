@@ -32,13 +32,15 @@ let currentUserId = 1;
 
 let users = [
   { id: 1, name: "Shani", color: "teal" },
-  { id: 2, name: "Tal", color: "powderblue" },
+  { id: 2, name: "Jack", color: "powderblue" },
 ];
 
 
 async function checkVisisted() {
-  const result = await db.query("SELECT country_code FROM visited_countries WHERE user_id = $1; ", 
+  const result = await db.query (
+    "SELECT country_code FROM visited_countries JOIN users ON users.id = user_id WHERE user_id = $1;", 
   [currentUserId]);
+
   let countries = [];
   result.rows.forEach ( (country) => {
     countries.push(country.country_code);
@@ -50,8 +52,11 @@ async function checkVisisted() {
 async function getCurrentUser() {
   const result = await db.query ("SELECT * FROM users");
   users = result.rows;
-  console.log(users);
-  return users.find ( (user) => user.id == currentUserId);
+  console.log("users", users);
+  return users.find ( (user) => user.id == currentUserId);    // == and not === because sometimes we compare string with number
+  // console.log (typeof currentUserId);  
+  // console.log (typeof user.id);
+
 }
 
 
@@ -59,12 +64,13 @@ async function getCurrentUser() {
 
 app.get("/", async (req, res) => {
   const countries = await checkVisisted();
-  const getCurrentUser = await getCurrentUser();
+  const currentUser = await getCurrentUser();
+
   res.render("index.ejs", {
     countries: countries,
     total: countries.length,
     users: users,
-    color: currentUserId.color,
+    color: currentUser.color,
   });
 });
 
@@ -73,6 +79,8 @@ app.get("/", async (req, res) => {
 // get the countryCode from user input, then insert it into the visited_countries table.
 app.post("/add", async (req, res) => {
   const input = req.body ["country"];
+  const currentUser = await getCurrentUser();
+
 
   try {
     const result = await db.query(
@@ -84,10 +92,11 @@ app.post("/add", async (req, res) => {
     const countryCode = data.country_code;
     try {
       await db.query(
-        "INSERT INTO visited_countries (country_code) VALUES ($1)",
-        [countryCode]
+        "INSERT INTO visited_countries (country_code, user_id) VALUES ($1, $2)",
+        [countryCode, currentUserId]
       );
       res.redirect("/");
+
     } catch (err) {
       console.log(err);
     }
@@ -95,6 +104,7 @@ app.post("/add", async (req, res) => {
     console.log(err);
   }
 });
+
 
 
 // get the user id that got clicked from the form, then render the index.ejs page.
@@ -125,14 +135,7 @@ app.post("/new", async (req, res) => {
   currentUserId = id;
 
   res.redirect("/");
-
-
 });
-
-
-
-
-
 
 
 
