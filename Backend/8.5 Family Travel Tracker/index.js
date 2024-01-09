@@ -1,3 +1,13 @@
+/*
+Instructions-
+- modify to add the multi user functionality.
+-  fetch the data (country_code and color) for the selected user in the tab up top from postgres.
+- link the user to the visited_countries table. the users table should contain user names and their colors for the map.
+
+(hints: change te queries to JOIN certain tables, figure out how to query for the current user's data, add code under "/user", "/new" and "/add",
+try using the RETURNING keyword to return the data that was inserted, and use the data to render the map and the user tabs).
+*/
+
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -71,10 +81,19 @@ app.post("/add", async (req, res) => {
 
 app.post("/user", async (req, res) => {});
 
+
+
+
+
+
+
+
+
 app.post("/new", async (req, res) => {
   //Hint: The RETURNING keyword can return the data that was inserted.
   //https://www.postgresql.org/docs/current/dml-returning.html
 });
+
 
 
 
