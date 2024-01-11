@@ -1,0 +1,62 @@
+<%- include('partials/header.ejs'); -%>
+
+<!--  this code represents a dynamic list of items with the ability to delete, edit, and add items -->
+  <div class="box" id="heading">
+    <h1>
+      <%= listTitle %>
+    </h1>
+  </div>
+  
+  <div class="box">
+    <% for (let item of listItems) {%>
+
+      <div class="item"> <!-- For each item, div "item" is created. -->
+        <form action="/delete" method="post">
+          <!-- onchange event triggers form submission when the checkbox state changes. -->
+          <input type="checkbox" onchange="this.form.submit()" name="deleteItemId" value="<%= item.id %>">
+        </form>
+
+        <p id="title<%=item.id%>">    <!--displaying the item's title.-->
+          <%= item.title %>
+        </p>
+
+        <form class="edit" action="/edit" method="post">
+          <input type="hidden" name="updatedItemId" value="<%= item.id %>">
+          <input id="input<%=item.id%>" type="text" name="updatedItemTitle" value="<%= item.title %>" autocomplete="off"
+            autofocus="true" hidden="true" />
+          
+            <!--submit button (hidden initially) with an image icon for confirmation.-->
+          <button id="done<%=item.id%>" class="edit" type="submit" hidden><img class="icon"
+              src="/assets/icons/check-solid.svg" alt="tick image">
+            </button>
+        </form>
+
+        <!-- Each item has an "Edit" button with an ID based on the item's ID. Clicking this button triggers the handler JavaScript function. -->
+        <button id="edit<%=item.id%>" class="edit" onclick="handler('<%=item.id%>')"> 
+          <img class="icon" src="/assets/icons/pencil-solid.svg" alt="pencil image">
+        </button>
+
+      </div>
+      <% } %>
+
+
+      <!-- Outside the loop, form with action="/add" for adding new items, includes a text input for the new item and a submit button. -->
+        <form class="item" action="/add" method="post">
+          <input type="text" name="newItem" placeholder="New Item" autocomplete="off" autofocus="true" />
+          <button class="add" type="submit" name="list" value=<%=listTitle %> >+</button>
+        </form>
+  </div>
+
+  <!-- button handler. When an item's "Edit" button is clicked, this handler is invoked. It hides the title and edit button, shows the done button and the input field for editing. -->
+  <script>
+    function handler(id) {
+      document.getElementById("title" + id).setAttribute("hidden", true)
+      document.getElementById("edit" + id).setAttribute("hidden", true)
+      document.getElementById("done" + id).removeAttribute("hidden")
+      document.getElementById("input" + id).removeAttribute("hidden")
+    }
+  </script>
+
+
+
+  <%- include('partials/footer.ejs'); -%>
