@@ -10,6 +10,7 @@
 
 
   <div class="box">
+    <!-- loop through each of the items  -->
     <% for(let item of listItems){%>
 
       <div class="item">      <!-- For each item, div "item" is created. -->
@@ -17,9 +18,13 @@
         <!-- delete form with action="/delete" and method="post". -->
         <form action="/delete" method="post">
 
-          <!-- onchange event triggers form submission when the checkbox state changes. -->
+          <!-- Checkbox- onchange event triggers form submission when the checkbox state changes.
+          submit means making a post request to "/delete" route. 
+          it pass the value of "item.id" so that the server knows which item to delete.
+        -->
           <input type="checkbox" onchange="this.form.submit()" name="deleteItemId" value="<%= item.id %>">
         </form>
+
 
         <p id="title<%=item.id%>">      <!--displaying the item's title.-->
           <%= item.title %>
@@ -30,6 +35,8 @@
 
         <!-- edit form with action="/edit" and method="post". -->
         <form class="edit" action="/edit" method="post">
+          <!-- 2 hidden inputs that appear when user press the edit button.
+          and the value of the input is the item's title. -->
           <input type="hidden" name="updatedItemId" value="<%= item.id %>">
           <input id="input<%=item.id%>" type="text" name="updatedItemTitle" value="<%= item.title %>" autocomplete="off"
             autofocus="true" hidden="true" />
@@ -39,7 +46,7 @@
               src="/assets/icons/check-solid.svg" alt="tick image"></button>
         </form>
 
-        <!-- Pencil "Edit" button with an ID based on the item's ID. Clicking this button triggers the handler JavaScript function. -->
+        <!-- Pencil "Edit" button that is dysplayed, with an ID based on the item's ID. Clicking this button triggers the handler JavaScript function. -->
         <button id="edit<%=item.id%>" class="edit" onclick="handler('<%=item.id%>')">
           <img class="icon" src="/assets/icons/pencil-solid.svg" alt="pencil image"></button>
       </div>
@@ -47,7 +54,7 @@
 
 
 
-      
+
         <!-- Outside the loop, form with action="/add" for adding new items, includes a text input for the new item and a submit button. -->
         <form class="item" action="/add" method="post">
           <input type="text" name="newItem" placeholder="New Item" autocomplete="off" autofocus="true" />
@@ -57,8 +64,11 @@
 
 
   
-  <!-- button handler. When an item's "Edit" button is clicked, this handler is invoked. It hides the title and edit button,
-      shows the done button and the input field for editing. -->
+  <!-- button handler. When an item's "Edit" button is clicked, this handler is invoked.
+    It hides the title and edit button, and unhide the done button and the input field for editing.
+    the code in lines: 26-28 and 46-47 ,are hidden now.
+    and replace them with the input code in lines: 36-38.
+    -->
   <script>
     function handler(id) {
       document.getElementById("title" + id).setAttribute("hidden", true)

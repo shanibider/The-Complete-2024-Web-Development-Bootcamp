@@ -18,7 +18,7 @@ const port = 3000;
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "permalist",
+  database: "permalist",      //new database
   password: "123456",
   port: 5432,
 });
@@ -39,8 +39,8 @@ app.get("/", async (req, res) => {
 
   try {
   const result = await db.query (
-    "SELECT * FROM items ORDER BY (id) ASC");   // ASC - ascending order
-  items = result.rows;  
+    "SELECT * FROM items ORDER BY (id) ASC");   // ASC - ascending order, keep the original order
+  items = result.rows;    // set the array of objects (key, value pairs) to temporary list
 
   res.render("index.ejs", {
     listTitle: "Today",
@@ -56,12 +56,12 @@ app.get("/", async (req, res) => {
 
 // add POST request
 app.post("/add", async (req, res) => {
-  const item = req.body.newItem;    // name of the input field
+  const item = req.body.newItem;    // name of the input field (the value of the input field the user entered)
   //items.push ({ title: item });  
   try{
     await db.query (
       "INSERT INTO items (title) VALUES ($1)", [item]);   // insert query
-      res.redirect ("/");
+      res.redirect ("/");     // force a refresh - go back to home route, and render again the list
   } catch (err) {
     console.log(err);
   }
@@ -70,6 +70,7 @@ app.post("/add", async (req, res) => {
 
 
 // edit POST request
+// edit trigger - when the user clicks on the edit button, the edit form will be displayed
 app.post("/edit", async (req, res) => {
   const item = req.body.updatedItemTitle;    // item title
   const id = req.body.updatedItemId;    // item id
@@ -91,11 +92,11 @@ app.post("/edit", async (req, res) => {
 app.post("/delete", async (req, res) => {
 const id = req.vody.deleteItem;    // deleteItemId is the name of the input field in ejs file
 try{
-  await db.query (
+  await db.query (              // delete the item with the id that came from the delete button from the ejs file
     "DELETE FROM items WHERE id = $1",
     [id]
   );
-    res.redirect ("/");
+    res.redirect ("/");     // refresh the page, making sure the updated page display to the user
 } catch (err) {
   console.log(err);
 }
