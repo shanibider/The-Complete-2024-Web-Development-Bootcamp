@@ -8,6 +8,12 @@
 2	"Go to the gym"
 */
 
+// Upgrades for the future:
+// 1. Sort by creation date
+// 2. Multiple lists (Today, Week, Month)
+// 3. Family ToDo list
+
+
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";

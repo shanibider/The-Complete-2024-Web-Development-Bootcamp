@@ -1,7 +1,9 @@
 Instructions - 
 
 Overview -
-I read a lot of books but after I finish reading them I often don't remember all the most salient parts of the book. So I started taking notes. This capstone project is built on this idea. My friend Derek Sivers has this fantastic website where he has all the non-fiction books he has read, his notes, his ratings and when he read them. The books are sortable by rating, recency and title. It's a such cool idea for a project so I'm including it as a capstone here in this course.
+I read a lot of books but after I finish reading them I often don't remember all the most salient parts of the book. So I started taking notes.
+This capstone project is built on this idea. My friend Derek Sivers has this fantastic website where he has all the non-fiction books he has read, his notes, his ratings and when he read them.
+The books are sortable by rating, recency and title. It's a such cool idea for a project so I'm including it as a capstone here in this course.
 
 Objectives -
 * Revise how to integrate public APIs into web projects.
@@ -9,7 +11,7 @@ Objectives -
 * Demonstrate ability to Create Read Update and Delete data in a PostgreSQL Database to persist data.
 
 Example Ideas -
-* Use the Open Library Covers API to fetch book covers.
+* Use the Open Library Covers API to fetch book covers. https://openlibrary.org/dev/docs/api/covers
 * Create a database to store books you have read.
 * Have a way to add new data about books, update previous reviews and delete entries.
 * Display this information from your database in a website like https://sive.rs/book
@@ -21,7 +23,8 @@ Requirements -
 * Use CRUD methods to manipulate data in the database.
 
 2. Project Planning
-* Think through your project, researching the API documentation, project features, what data you will store, and how it will be used in your web application.
+* Think through your project, researching the API documentation, project features, what data you will store,
+  and how it will be used in your web application.
 * Draw a database diagram on draw.io and plan out any relationships.
 * Think through the PostgreSQL command you will need to write to create the schema for your database.
 

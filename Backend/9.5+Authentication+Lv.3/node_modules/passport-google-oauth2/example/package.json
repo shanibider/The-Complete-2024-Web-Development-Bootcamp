@@ -1,0 +1,14 @@
+{
+  "name": "passport-google-oauth2-example",
+  "version": "0.0.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-redis": "^3.4.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "passport": "^0.4.0",
+    "passport-google-oauth2": "file:.."
+  }
+}
