@@ -1,121 +1,111 @@
 # Full-Stack Web Development: Code Practice and Projects
 
-Welcome to my Web Development repository! This comprehensive resource is designed to enhance my skills in web development and explore the exciting world of front-end and back-end development using JavaScript and React.
+Welcome to my Web Development repository! This comprehensive resource is designed to enhance my skills in Web Development and explore the exciting world of front-end and back-end development master in JavaScript, React, HTML, CSS, Node, PostgreSQL, Web3, and DApps.
 
 <h3 align="left">Languages and Tools used in this project:</h3>
 
 [![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,jquery,heroku,mongodb,mysql,postman)](https://skillicons.dev)
 
-## Topics Covered:
+<br>
+
+### Topics Covered:
 
 ### Web Development Fundamentals
-- Websites and HTML, CSS, JavaScript
-- Internet mechanics and server-side operations
-- Git, GitHub, and version control
-- Troubleshooting and debugging skills
+- [ ] HTML, CSS, JavaScript
+- [ ] Internet mechanics and server-side operations
+- [ ] Git, GitHub, and version control
+- [ ] Troubleshooting and debugging skills
 
 ### HTML5
-- HTML syntax, structure, tags for headings, paragraphs, lists, images, and hyperlinks
-- Multi-page websites and HTML best practices
+- [ ] Syntax, structure, tags
+- [ ] Multi-page websites and best practices
 
 ### CSS3
-- CSS selectors, properties, and specificity
-- Inline, internal, and external CSS
-- CSS Box Model and positioning
-- Font styling, media queries, and float properties
-- Combine CSS selectors for efficient styling
+- [ ] Selectors, properties, specificity
+- [ ] Box Model, positioning
+- [ ] Font styling, media queries, float properties
 
 ### Flexbox
-- Purpose and usage of Flexbox in CSS
-- Flex direction and layout
-- Align and justify for child item arrangement
-- Sizing and distribution of items in a Flexbox
+- [ ] Purpose and usage
+- [ ] Direction, layout, alignment
+- [ ] Sizing and distribution
 
 ### Grid
-- Differentiation between Grid and Flexbox
-- Grid display and sizing
-- Positioning items within a grid layout
-- Combine Grid with Flexbox for complex layouts
+- [ ] Differentiation from Flexbox
+- [ ] Display, sizing, positioning
+- [ ] Combination with Flexbox for complex layouts
 
 ### Bootstrap
-- Bootstrap framework
-- 12-column layout system
-- Bootstrap components: buttons, carousels, cards, navigation bars
+- [ ] Framework, 12-column layout
+- [ ] Bootstrap components: buttons, carousels, cards, navigation bars
 
 ### Web Design
-- Fundamental principles of web design, UI, and UX
-- Color theory and typography for professional-looking websites
-- Principles of User Interface (UI) and User Experience (UX) design
+- [ ] UI/UX principles
+- [ ] Color theory, typography
+- [ ] DOM structure, traversal
 
 ### Document Object Model (DOM)
-- Tree structure of HTML-based websites
-- Traversing the document using object notation
-- Separation of concerns and coding best practices
-- Manipulating HTML elements using DOM understanding
+- [ ] Tree structure of HTML-based websites
+- [ ] Separation of concerns and coding best practices
+- [ ] Manipulating HTML elements using DOM understanding
 
 ### JavaScript ES6
-- Comparison of JS with scripting and markup/stylesheet languages
-- Basic syntax, data types, and control structures
-- Functions, higher-order functions, and arrays
-- Object-oriented programming in JavaScript
+- [ ] Syntax, data types, control structures
+- [ ] Functions, higher-order functions, arrays
+- [ ] Object-oriented programming
 
 ### React.js
-- Front-end development with React
-- React Components, Props, and JSX syntax
-- React DOM, State Management, and React Hooks
-- Differentiation between class and functional components
+- [ ] Front-end development
+- [ ] Components, Props, JSX syntax
+- [ ] DOM, State Management, Hooks
 
 ### Node.js
-- Back-end development components
-- Data types, object-oriented programming, and classes
-- Server-Side JavaScript and Node on the command line
-- NPM, JavaScript Build Processes, and the Event Loop
+- [ ] Back-end development
+- [ ] Data types, OOP, classes
+- [ ] NPM, Build Processes, Event Loop
+
 
 ### Express.js
-- Install and use Express in Node applications
-- Node and Express-based servers
-- RESTful Routing and use of middleware
+- [ ] Installation and usage
+- [ ] Servers, RESTful Routing, middleware
 
-### Application Programming Interfaces (APIs)
-- APIs and HTTP in-depth
-- API documentation
-- Basic API authentication and server-to-server communication
-- Differentiation of JSON vs. XML for data transmission
+### Application Programming Interfaces (APIs) and HTTP
+- [ ] Documentation
+- [ ] Basic authentication and server-to-server communication
+- [ ] JSON vs. XML differentiation
 
 ### EJS
-- EJS and its use with Node and Express
-- Templating, running code in EJS templates, and passing data
+- [ ] Use with Node and Express
+- [ ] Templating, running code in EJS templates, and passing data
 
 ### Database Fundamentals
-- Data relationships and designing a data model
-- Relational databases and alternative databases
-- Entity Relationship Modeling (ERM) and Object Relational Mapping (ORM)
+- [ ] Data relationships and model design
+- [ ] Relational databases, ERM, ORM
 
 ### SQL Databases
-- Working with database schemas and performing CRUD operations
-- Database joins and querying SQL databases
+- [ ] Schemas, CRUD operations
+- [ ] Joins, querying
 
-### PostgreSQL Databases
-- Executing PostgreSQL queries and practicing CRUD operations
-- Implementing One-to-Many, One-to-One, and Many-to-Many relationships
-- Working with Postgres in Node using the pg Package
+### PostgreSQL 
+- [ ] Queries, CRUD operations Databases
+- [ ] Relationship implementation
+
 
 ### Deployment
-- Hosting and deployment
-- Hosting static websites with GitHub Pages
-- Deploying server-based applications with Heroku
-- Deploying databases with Mongo Atlas
+- [ ] Hosting and deployment
+- [ ] GitHub Pages, Heroku, Mongo Atlas
+
 
 ### Building RESTful APIs
-- REST principles and API design
-- Working with MongoDB GUI Robo 3T
-- Implementing CRUD operations, chained route handlers, and RESTful routing with Express
+- [ ] REST principles, API design
+- [ ] MongoDB GUI Robo 3T usage
+
 
 ### Authentication and Security
-- Need for authentication and secure user details
-- Encryption, hashing, and salting with bcrypt
-- Using sessions and cookies for user login persistence
-- Setting up local authentication, implementing Passport, and using OAuth 2.0 for social logins
+- [ ] Need for authentication, secure user details
+- [ ] Encryption, hashing, salting with bcrypt
+- [ ] Sessions, cookies, Passport, OAuth 2.0 for logins
+
 
 <br>
 
@@ -124,7 +114,7 @@ Welcome to my Web Development repository! This comprehensive resource is designe
 Clone the project
 
 ```bash
-  git clone https://github.com/shanibider/React-Advanced-Web-Dev.git
+  git clone https://github.com/shanibider/Web-Development-Projects.git
 ```
 
 Go to the project directory
@@ -142,7 +132,7 @@ Install dependencies
 Start the server
 
 ```bash
-  npm start
+  npm start / nodemon index.js
 ```
 
 <br>
@@ -153,7 +143,7 @@ I'm a passionate full-stack developer with a strong foundation in website develo
 <br>
 
 ## 🛠 Skills
-My expertise lies in a variety of web technologies, allowing me to build dynamic and responsive applications. Here are some of the key skills in my toolbox:
+I own a diverse skill set in web technologies, enabling me to develop dynamic and responsive applications. Here are some of the key skills in my toolkit:
 
 - **JavaScript:** Proficient in both frontend and backend development using modern JavaScript frameworks and libraries.
   
