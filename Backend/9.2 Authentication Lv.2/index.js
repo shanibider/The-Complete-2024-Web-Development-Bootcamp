@@ -1,3 +1,5 @@
+// level 2 of authentication - Encrypting and Hashing passwords
+
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -29,8 +31,10 @@ app.get("/register", (req, res) => {
   res.render("register.ejs");
 });
 
+
+// POST Request from ejs, for register a user
 app.post("/register", async (req, res) => {
-  const email = req.body.username;
+  const email = req.body.username;    // recieve the email and password from the form
   const password = req.body.password;
 
   try {
@@ -53,6 +57,8 @@ app.post("/register", async (req, res) => {
   }
 });
 
+
+// POST Request from ejs, for login a user
 app.post("/login", async (req, res) => {
   const email = req.body.username;
   const password = req.body.password;
