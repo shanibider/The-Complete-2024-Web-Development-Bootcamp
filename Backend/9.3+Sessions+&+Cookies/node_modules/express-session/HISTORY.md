@@ -1,3 +1,17 @@
+1.18.0 / 2024-01-28
+===================
+
+  * Add debug log for pathname mismatch
+  * Add `partitioned` to `cookie` options
+  * Add `priority` to `cookie` options
+  * Fix handling errors from setting cookie
+  * Support any type in `secret` that `crypto.createHmac` supports
+  * deps: cookie@0.6.0
+    - Fix `expires` option to reject invalid dates
+    - perf: improve default decode speed
+    - perf: remove slow string split in parse
+  * deps: cookie-signature@1.0.7
+
 1.17.3 / 2022-05-11
 ===================
 

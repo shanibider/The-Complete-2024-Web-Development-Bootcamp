@@ -193,7 +193,11 @@ function session(options) {
 
     // pathname mismatch
     var originalPath = parseUrl.original(req).pathname || '/'
-    if (originalPath.indexOf(cookieOptions.path || '/') !== 0) return next();
+    if (originalPath.indexOf(cookieOptions.path || '/') !== 0) {
+      debug('pathname mismatch')
+      next()
+      return
+    }
 
     // ensure a secret is available or bail
     if (!secret && !req.secret) {
@@ -240,7 +244,11 @@ function session(options) {
       }
 
       // set cookie
-      setcookie(res, name, req.sessionID, secrets[0], req.session.cookie.data);
+      try {
+        setcookie(res, name, req.sessionID, secrets[0], req.session.cookie.data)
+      } catch (err) {
+        defer(next, err)
+      }
     });
 
     // proxy end() to commit the session
