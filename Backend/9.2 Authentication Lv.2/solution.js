@@ -3,6 +3,8 @@ import bodyParser from "body-parser";
 import pg from "pg";
 import bcrypt from "bcrypt";
 
+// Hashing and Salting.
+
 const app = express();
 const port = 3000;
 const saltRounds = 10;
@@ -43,7 +45,8 @@ app.post("/register", async (req, res) => {
     if (checkResult.rows.length > 0) {
       res.send("Email already exists. Try logging in.");
     } else {
-      //hashing the password and saving it in the database
+
+      // hashing the password and saving it in the database
       bcrypt.hash(password, saltRounds, async (err, hash) => {
         if (err) {
           console.error("Error hashing password:", err);
@@ -62,6 +65,10 @@ app.post("/register", async (req, res) => {
   }
 });
 
+
+
+
+
 app.post("/login", async (req, res) => {
   const email = req.body.username;
   const loginPassword = req.body.password;
@@ -73,8 +80,10 @@ app.post("/login", async (req, res) => {
     if (result.rows.length > 0) {
       const user = result.rows[0];
       const storedHashedPassword = user.password;
-      //verifying the password
-      bcrypt.compare(loginPassword, storedHashedPassword, (err, result) => {
+      // so instead of comparing the password with the one in the database, we will compare with bcrypt.
+      // the data that come form the user that try to log in, and the encrypted password that is stored in the database.
+      // and than we return a callaback, err or result.
+      bcrypt.compare (loginPassword, storedHashedPassword, (err, result) => {
         if (err) {
           console.error("Error comparing passwords:", err);
         } else {
@@ -92,6 +101,8 @@ app.post("/login", async (req, res) => {
     console.log(err);
   }
 });
+
+
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

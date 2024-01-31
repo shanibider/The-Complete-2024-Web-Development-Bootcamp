@@ -14,17 +14,24 @@ env.config();
 
 app.use(
   session({
-    secret: "TOPSECRETWORD",
+    secret: "TOPSECRETWORD",  /***** Moving this specific varaibles to .env *****/
     resave: false,
     saveUninitialized: true,
   })
 );
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+
+/**********/
+// Moving this varaibles to .env,
+// and replace it with "process.env.PG_USER..." 
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
@@ -32,6 +39,11 @@ const db = new pg.Client({
   password: "123456",
   port: 5432,
 });
+/**********/
+
+
+
+
 db.connect();
 
 app.get("/", (req, res) => {

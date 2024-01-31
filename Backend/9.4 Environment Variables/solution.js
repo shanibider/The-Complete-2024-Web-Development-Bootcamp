@@ -5,12 +5,26 @@ import bcrypt from "bcrypt";
 import passport from "passport";
 import { Strategy } from "passport-local";
 import session from "express-session";
-import env from "dotenv";
+import env from "dotenv";   // package to hide secret information
+
+// Hide secret information with Enviroment varaibles (in .env file)
+
+// Work Flow -
+// 1. Create a file called .env in the root folder
+// 2. Install the package dotenv, and import it in the file
+// 4. Use the config method to use the .env file
+// 5. Add the secret information in the .env file
+// 6. Add the .env file to the .gitignore file
+
 
 const app = express();
 const port = 3000;
 const saltRounds = 10;
+
+// config method that uses the .env file
 env.config();
+
+
 
 app.use(
   session({
@@ -19,12 +33,15 @@ app.use(
     saveUninitialized: true,
   })
 );
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+// 'process.env. ...' instead of the secret information
 const db = new pg.Client({
   user: process.env.PG_USER,
   host: process.env.PG_HOST,
@@ -33,6 +50,7 @@ const db = new pg.Client({
   port: process.env.PG_PORT,
 });
 db.connect();
+
 
 app.get("/", (req, res) => {
   res.render("home.ejs");
@@ -55,6 +73,7 @@ app.get("/logout", (req, res) => {
   });
 });
 
+
 app.get("/secrets", (req, res) => {
   // console.log(req.user);
   if (req.isAuthenticated()) {
@@ -64,6 +83,7 @@ app.get("/secrets", (req, res) => {
   }
 });
 
+
 app.post(
   "/login",
   passport.authenticate("local", {
@@ -71,6 +91,8 @@ app.post(
     failureRedirect: "/login",
   })
 );
+
+
 
 app.post("/register", async (req, res) => {
   const email = req.body.username;
@@ -105,6 +127,9 @@ app.post("/register", async (req, res) => {
   }
 });
 
+
+
+
 passport.use(
   new Strategy(async function verify(username, password, cb) {
     try {
@@ -137,6 +162,10 @@ passport.use(
     }
   })
 );
+
+
+
+
 
 passport.serializeUser((user, cb) => {
   cb(null, user);
