@@ -1,3 +1,6 @@
+// level 3 authentication - Sessions & Cookies
+// we are using bcrypt to hash the password and store it in the database - a way of hash passwords based on Blowfish algorithm
+
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -33,8 +36,7 @@ app.get("/register", (req, res) => {
 
 app.post("/register", async (req, res) => {
   const email = req.body.username;
-  const password = req.body.password;
-
+  const password = req.body.password; 
   try {
     const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
       email,
