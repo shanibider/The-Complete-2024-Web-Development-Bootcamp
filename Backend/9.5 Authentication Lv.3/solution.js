@@ -36,9 +36,6 @@ import env from "dotenv";
 //When trying logi with google i will get "Access blocked: Secrets has not completed the Google verification process", because it takes 1-3 months for google to verify my app.
 
 
-// My Client ID and Client Secret
-// {"web":{"client_id":"147654195854-e58g7a9k40q750fr5smpqls4lvfiivj9.apps.googleusercontent.com","project_id":"secrets-412813","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["http://localhost:3000/auth/google/secrets"],"javascript_origins":["http://localhost:3000"]}}
-
 
 
 const app = express();
@@ -143,25 +140,34 @@ app.post("/register", async (req, res) => {
   const password = req.body.password;
 
   try {
+        // Checking if a user with the given email already exists
     const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
       email,
     ]);
 
     if (checkResult.rows.length > 0) {
+            // Redirecting to login if the user already exists
       req.redirect("/login");
     } else {
-      bcrypt.hash(password, saltRounds, async (err, hash) => {
+
+      // Hashing the password and inserting a new user into the database
+      bcrypt.hash (password, saltRounds, async (err, hash) => {
         if (err) {
           console.error("Error hashing password:", err);
         } else {
+
+          // Inserting the new user into the database and logging them in
           const result = await db.query(
             "INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *",
             [email, hash]
           );
+
           const user = result.rows[0];
-          req.login(user, (err) => {
-            console.log("success");
-            res.redirect("/secrets");
+
+          req.login (user, (err) => {
+            // Logging success and redirecting to secrets page
+            console.log ("success");
+            res.redirect ("/secrets");
           });
         }
       });
@@ -180,17 +186,21 @@ passport.use(
   "local",
   new Strategy(async function verify(username, password, cb) {
     try {
+       // Verifying user credentials by querying the database
       const result = await db.query("SELECT * FROM users WHERE email = $1 ", [
         username,
       ]);
       if (result.rows.length > 0) {
+        // If user exists, compare hashed passwords
         const user = result.rows[0];
         const storedHashedPassword = user.password;
+
         bcrypt.compare(password, storedHashedPassword, (err, valid) => {
           if (err) {
             console.error("Error comparing passwords:", err);
             return cb(err);
           } else {
+            // Returning the user if passwords match, otherwise false
             if (valid) {
               return cb(null, user);
             } else {
@@ -230,24 +240,27 @@ passport.use(
         console.log(profile);
 
 
-
-
-
         // save the user data into the db and identify them in our system
+
+        // queries the database to select where the email matches the provided email
         const result = await db.query("SELECT * FROM users WHERE email = $1", [
           profile.email,
         ]);
 
+        // checks if the result has any rows (user with the given email), if not a new user is inserted into the "users" table with the provided email and a default password ("google").
         if (result.rows.length === 0) {
           const newUser = await db.query(
             "INSERT INTO users (email, password) VALUES ($1, $2)",
             [profile.email, "google"]
           );
 
+        // The new user's info then returned via the callback function
           return cb(null, newUser.rows[0]);
         } else {
-          return cb(null, result.rows[0]);
+          return cb(null, result.rows[0]);    // If there are rows in the result, means a user with the given email already exists, and this info returned via the cb function.
         }
+
+
       } catch (err) {
         return cb(err);
       }
@@ -257,6 +270,7 @@ passport.use(
 
 
 
+// Serialization and deserialization functions for Passport to store and retrieve user information during the authentication process.
 passport.serializeUser((user, cb) => {
   cb(null, user);
 });
@@ -265,6 +279,31 @@ passport.deserializeUser((user, cb) => {
   cb(null, user);
 });
 
+
+
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+
+
+/*
+Serialization and deserialization -
+processes used by Passport.js, an authentication middleware for Node.js, to store and retrieve user information during the authentication process.
+
+- Serialization: It's the process of transforming the user object into a format that can be stored in a session or other persistent storage.
+This is done after a user successfully logs in. The serialized user information is typically stored in a session cookie.
+
+- Deserialization: It's the opposite process of serialization. It involves taking the stored user information (often from a session cookie) and converting it back into a user object.
+This is done when a user makes subsequent requests, allowing Passport to identify the user and attach the user object to the request object.
+
+In the code above, the following Passport.js functions handle serialization and deserialization:
+- `serializeUser`: This function takes 2 parameter - a user object and a callback function.
+The user object is typically the result of a successful authentication. The callback function is used to store the user information (or a key that can be used to retrieve it) in a session.
+
+- `deserializeUser`: This function is responsible for retrieving the user information from the session.
+It takes the user object (or the key) stored during serialization and a callback function. The callback function is then called with the retrieved user information, which is attached to the `req.user` property, making it available in subsequent requests.
+
+These functions ensure that Passport can maintain user authentication across different requests by storing and retrieving user information in a secure and efficient manner.
+*/
