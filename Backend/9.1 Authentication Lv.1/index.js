@@ -1,6 +1,6 @@
-// Regestration users with email and password
+// Basic authentication - Regestration users with email and password (password stored unencrypte in db)
 
-//work flow- npm init, npm i express ejs body-parser pg, create "secrets" db in pgAdmin, and then users table.
+//work flow- npm init, npm i express ejs body-parser pg, create "secrets" db in pgAdmin, then "users" table.
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -36,12 +36,12 @@ app.get("/register", (req, res) => {
 
 
 
-// POST request from the ejs
+// POST request from ejs, for register a user
 app.post ("/register", async (req,res) => {
  const email = req.body.username;
  const password = req.body.password;
 
-
+try{        // recommended when working with pg
  //check if i already have that user in my db
     const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
         email,
@@ -57,16 +57,42 @@ app.post ("/register", async (req,res) => {
     );
     console.log(result);
     res.render("secrets.ejs");
+        }
+      } catch (err) {
+        console.log(err);
+      }
 });
 
 
 
-
+// check if the user enter email and password against my db
 app.post ("/login", async (req,res) => {
     const email = req.body.username;
     const password = req.body.password;
 
-
+    if (email) {
+        try {
+          const result = await db.query(
+            "SELECT * FROM users WHERE email = $1",
+            [email]
+          );
+          if (result.rows.length > 0) {       // it means that email exist in db and result.rows[0] is the user
+            console.log(result.rows);
+             // check if the password is correct (user input vs stored password in db)
+            if (result.rows[0].password === password) {
+              res.render("secrets.ejs");
+            } else {
+              res.send("Incorrect password");
+            }
+          } else {    // if email/user dont exist in db (result.rows.length === 0)
+            res.send("Email dont exict. Try register.");
+          }
+        } catch (err) {
+          console.log(err);
+        }
+            } else {
+        res.send("Please register");
+      }
 });
 
 
