@@ -120,6 +120,18 @@ Join me as I learn and master the exciting world of web development!
 
 # 📂Backend Based Projects:
 
+
+
+### 📁Permanent todo list (Express, Axios, EJS templates, HTML, and PostgreSQL) -
+
+![ejs blog](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/cc834e4b-9155-46f3-84ad-4ed5f02c9b91)
+
+
+
+
+
+
+
 ### 📁Family Travel Tracker (PostgreSQL) -
 ![24](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/304be783-1c7a-4a0d-b258-d0cad82b3c99)
 ###### JS Code:
@@ -156,13 +168,20 @@ Join me as I learn and master the exciting world of web development!
 
 <br>
 
-### 📁Blog API Project
+### 📁Blog API Project -
 ![19](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/9d60a18c-051a-4158-a31e-094e38b085c9)
 ##### JS Code (solution.js):
 ![19 solution a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/db21dc95-680f-4f42-8b0c-d5a38c6630ec)
 ##### JS Code (server.js):
 ![19 a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a83e9d95-8955-4f4d-8cac-b60d9a231392)
 ![19 c](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/48e8d9d5-997a-4cbd-b539-c21cd3745d7b)
+
+<br>
+
+### 📁Weather Website (Public API - openweathermap) -
+![weather api](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/221dc8e9-5702-419c-88b4-f5c3c71a09aa)
+
+
 
 <br>
 
