@@ -5,7 +5,8 @@
 ![Web Dev Syllabus 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a4c25373-cf7f-46df-a69e-eef2662b3363)
 
  
-Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both front-end and back-end development. I'm focusing on JavaScript ES6, React.js, HTML5, CSS3, Grid, Flexbox, BootStrap, DOM, Node.js, Express.js, APIs, EJS, SQL DB, PostgreSQL, deployment, authentication, Web3, and DApps through a 62-hour Udemy course.
+Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both front-end and back-end development. I'm focusing on JavaScript ES6, React.js, HTML5, CSS3, Grid, Flexbox, BootStrap, DOM, Node.js, Express.js, APIs, EJS, SQL DB, PostgreSQL, deployment, authentication, Web3, and DApps through a 62-hour Udemy course. <br>
+This course features both ***guided course projects***👩‍💻, with walkthrough code, and ***independent Capstone Projects***💻 that challenge to create original work without provided solutions or guidance, no walkthrough, and no design specs.<br>
 Join me as I learn and master the exciting world of web development!
 
 
@@ -327,6 +328,14 @@ Join me as I learn and master the exciting world of web development!
 ## Course Extra Info
 ###### css flexbox -
 ![css-flexbox-poster](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c3e68218-7c05-4e80-a3df-a1f0142a5382)
+###### html cheatsheet -
+![html cheatsheet 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ed7cb574-2b57-4a81-9358-5e7d418df39f)
+![html cheatsheet 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e6b4c4db-8ffd-456f-8d93-6ee3c12e8de9)
+###### css cheatsheet -
+![css cheatsheet 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/bd028ad2-55f3-4c07-ac5e-4f64a037f2a1)
+![css cheatsheet 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7cebfa9f-e170-4a15-86b8-23d51fef14a0)
+###### Stacking Order Flowchart -
+![Stacking Order Flowchart](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/0af09ef6-91ad-440e-b61b-e3c4265affa7)
 ###### Front End VS Back End -
 ![front vs back](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/6567292d-cb43-4689-aeef-e83e3b8602d7)
 ###### The emotions behind Fonts -
