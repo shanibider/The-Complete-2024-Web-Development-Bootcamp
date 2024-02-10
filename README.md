@@ -2,8 +2,9 @@
 
 ![Udedmy certificate](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/728d02ae-d377-4e7b-8644-a40781ddf413)
 
+![Web Dev Syllabus 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a4c25373-cf7f-46df-a69e-eef2662b3363)
 
-
+ 
 Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both front-end and back-end development. I'm focusing on JavaScript ES6, React.js, HTML5, CSS3, Grid, Flexbox, BootStrap, DOM, Node.js, Express.js, APIs, EJS, SQL DB, PostgreSQL, deployment, authentication, Web3, and DApps through a 62-hour Udemy course.
 Join me as I learn and master the exciting world of web development!
 
@@ -288,11 +289,58 @@ Join me as I learn and master the exciting world of web development!
 ### 📁HTML Portfolio Project -
 ![sitePic](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ebc89a23-328f-4f18-b8ba-e80907f0e909)
 
-
-
+<br>
 
 
 <br>
+
+# 📋Resources -
+## VSCode Extensions -
+
+### Recommended -
+- [ ] esbenp.prettier-vscode
+- [ ] formulahendry.auto-close-tag
+- [ ] hex-ci.stylelint-plus
+- [ ] dbaeumer.vscode-eslint
+- [ ] naumovs.color-highlight
+- [ ] DigitalBrainstem.javascript-ejs-support
+
+### Optional -
+- [ ] ritwickdey.LiveServer
+- [ ] erikphansen.vscode-toggle-column-selection
+- [ ] file-icons
+
+<br>
+
+
+## Course Syllabus
+![Web Dev Syllabus 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c21eb31f-3c06-4377-b270-236d49711ad1)
+![Web Dev Syllabus 3](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/df763949-90b5-4716-81ee-d60af0f99e55)
+![Web Dev Syllabus 4](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c6b1784f-ba2e-4a99-bf0d-ed90bf233b8f)
+![Web Dev Syllabus 5](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5d3906c6-b881-4af8-a61c-5aa8be2f7bab)
+![Web Dev Syllabus 6](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/448effec-a51b-4463-b583-691b284628bb)
+![Web Dev Syllabus 7](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/90a62dda-0bbc-4ccd-9005-f86db63a4015)
+
+<br>
+
+
+## Course Extra Info
+###### css flexbox -
+![css-flexbox-poster](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c3e68218-7c05-4e80-a3df-a1f0142a5382)
+###### Front End VS Back End -
+![front vs back](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/6567292d-cb43-4689-aeef-e83e3b8602d7)
+###### The emotions behind Fonts -
+![fonts](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f6c2816d-770b-425d-897b-e31d450596a0)
+###### UI- luxury vs cheap -
+![UI- luxury vs cheap](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/1b1c85b4-8dd9-492b-829d-970d3236246e)
+###### Goal Setting Question -
+![Goal Setting Questions](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/303dfa7d-c2f5-4fb3-a537-2caf6c77bbff)
+
+Click here for 👉 ['12 Rules to Learn to Code Guide' from this course.pdf](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/files/14229238/12.Rules.to.Learn.to.Code.pdf)
+
+
+<br>
+
 <br>
 
 ## Run Locally
