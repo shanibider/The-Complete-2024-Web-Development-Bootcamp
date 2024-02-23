@@ -5,8 +5,12 @@
 ![Web Dev Syllabus 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a4c25373-cf7f-46df-a69e-eef2662b3363)
 
  
-Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both front-end and back-end development. I'm focusing on JavaScript ES6, React.js, HTML5, CSS3, Grid, Flexbox, BootStrap, DOM, Node.js, Express.js, APIs, EJS, SQL DB, PostgreSQL, deployment, authentication, Web3, and DApps through a 62-hour Udemy course. <br>
+Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both Front End and Back End development. <br>
+
+I'm focusing on JavaScript ES6, React.js, HTML5, CSS3, Grid, Flexbox, BootStrap, DOM, Node.js, Express.js, APIs, EJS, SQL DB, PostgreSQL, deployment, authentication, Web3, and DApps through a 62-hour Udemy course. <br>
+
 This course features both ***guided course projects***👩‍💻, with walkthrough code, and ***independent Capstone Projects***💻 that challenge to create original work without provided solutions or guidance, no walkthrough, and no design specs.<br>
+
 Join me as I learn and master the exciting world of web development!
 
 
