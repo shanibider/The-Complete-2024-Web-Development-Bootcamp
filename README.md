@@ -243,6 +243,9 @@ Join me as I learn and master the exciting world of web development!
 
 <br>
 
+
+
+
 # 💻Frontend Based Projects:
 ### Simon Game- JQuery -
 [11.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fe226c29-29ab-4e8a-be84-6716f73a48e1)
@@ -264,7 +267,19 @@ Join me as I learn and master the exciting world of web development!
 ![8](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/dee71eb5-11bf-41c3-99c3-95a94b7cd41d)
 
 <br>
- 
+
+### 📁 Web Design- UI/UX experience- A Hotel
+##### 3 page modern looking hotel website design via Canva
+https://www.canva.com/design/DAFHf-h6aQs/Dsa0hvsbGzIJULqam9Fsow/view?website#4
+
+![1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/83cc39ed-b899-4a42-80cd-dc1e2a741695)
+![2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a5b79b5e-dd21-4fe0-b812-cd5f90641238)
+![3](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b1bd8114-42be-41b5-81eb-b92380c7b723)
+
+
+
+ <br>
+
 ### 📁Bootstrap Components -
 ![4](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e6c3b37c-394c-4a42-a68b-164cbad1cda2)
 ![5](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/2d268736-9504-447c-a420-280e45886eb0)
@@ -294,6 +309,9 @@ Join me as I learn and master the exciting world of web development!
 
 
 <br>
+
+
+
 
 # 📋Resources -
 ## VSCode Extensions -
