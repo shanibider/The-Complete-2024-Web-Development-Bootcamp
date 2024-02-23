@@ -7,7 +7,7 @@
  
 Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both Front End and Back End development. <br>
 
-I'm focusing on JavaScript ES6, React.js, HTML5, CSS3, Grid, Flexbox, BootStrap, DOM, Node.js, Express.js, APIs, EJS, SQL DB, PostgreSQL, deployment, authentication, Web3, and DApps through a 62-hour Udemy course. <br>
+I'm focusing on **JavaScript ES6, React.js, HTML5, CSS3, Grid, Flexbox, BootStrap, DOM, Node.js, Express.js, APIs, EJS, SQL DB, PostgreSQL, deployment, authentication, Web3, and DApps** through a 62-hour Udemy course. <br>
 
 This course features both ***guided course projects***👩‍💻, with walkthrough code, and ***independent Capstone Projects***💻 that challenge to create original work without provided solutions or guidance, no walkthrough, and no design specs.<br>
 
@@ -16,7 +16,7 @@ Join me as I learn and master the exciting world of web development!
 
 <h3 align="left">Languages and Tools used in this project:</h3>
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,jquery,heroku,mongodb,mysql,postman,postgresql,express)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,express,jquery,mongodb,mysql,postman,postgresql)](https://skillicons.dev)
 
 <br>
 
@@ -128,7 +128,7 @@ Join me as I learn and master the exciting world of web development!
 
 
 
-### 📁Permanent todo list (Express, Axios, EJS templates, HTML, and PostgreSQL) -
+### 📁Permanent todo list (Express, Axios, EJS templates, and PostgreSQL) -
 
 ![ejs blog](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/cc834e4b-9155-46f3-84ad-4ed5f02c9b91)
 
@@ -252,11 +252,13 @@ Join me as I learn and master the exciting world of web development!
 
 # 💻Frontend Based Projects:
 ### Simon Game- JQuery -
+![simon game](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e64b9199-b8c3-4c0e-9de8-06762c2b871d)
 [11.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fe226c29-29ab-4e8a-be84-6716f73a48e1)
 
 <br>
 
 ### 📁Drum Kit - HTML + JavaScript  -
+![drum](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b16899cf-e124-4acc-8785-090f73ae1071)
 [9.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/156e0865-061d-4a3d-9af9-e2a21e8f7433)
 
 <br>
