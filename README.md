@@ -5,32 +5,36 @@
 ![Udedmy certificate](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/728d02ae-d377-4e7b-8644-a40781ddf413)
 
  
+ 
 Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both front-end and Back-end development. I'm focusing on:
 
-#### JavaScript ES6, React.js, HTML5, CSS3, Grid, Flexbox, BootStrap, DOM, Node.js, Express.js, APIs, EJS, SQL DB, PostgreSQL, deployment, authentication, Web3, and DApps, through a 62-hour Udemy course. <br>
+### JavaScript ES6 <img height=20px src="https://skillicons.dev/icons?i=js">, React.js <img height=20px src="https://skillicons.dev/icons?i=react">, HTML5 <img height=20px src="https://skillicons.dev/icons?i=html">, CSS3  <img height=20px src="https://skillicons.dev/icons?i=css">, Grid, Flexbox, BootStrap <img height=20px src="https://skillicons.dev/icons?i=bootstrap">, DOM, Node.js   <img height=20px src="https://skillicons.dev/icons?i=nodejs">, Express.js <img height=20px src="https://skillicons.dev/icons?i=express">, APIs, EJS, SQL DB, PostgreSQL <img height=20px src="https://skillicons.dev/icons?i=postgresql">, deployment, authentication, Web3, and DApps, <br>
 
-This course features both ***guided course projects***👩‍💻, with walkthrough code, and ***independent Capstone Projects***💻 that challenge to create original work without provided solutions or guidance, no walkthrough, and no design specs.<br>
+Through a 62-hour Udemy course. This course features both ***guided course projects***👩‍💻, with walkthrough code, and ***independent Capstone Projects***💻 that challenge to create original work without provided solutions or guidance, no walkthrough, and no design specs.<br>
 
 Join me as I learn and master the exciting world of web development!
 
 
-<h3 align="left">Languages and Tools used in this project:</h3>
+**1. PERN PostgreSQL Todo List -** [Explore the live website](https://pern-postgresql-todo-list-1.onrender.com/)!
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,express,jquery,mongodb,mysql,postman,postgresql)](https://skillicons.dev)
+
+
+
 
 <br>
 
 ### Topics Covered:
+[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,express,jquery,mongodb,mysql,postman,postgresql)](https://skillicons.dev)
 
 ### Web Development Fundamentals
 - [ ] HTML, CSS, JavaScript <img height=20px src="https://skillicons.dev/icons?i=js,html,css">
 - [ ] Internet mechanics and server-side operations
 
-### HTML5  <img height=20px src="https://skillicons.dev/icons?i=html">
+### HTML5 
 - [ ] Syntax, structure, tags
 - [ ] Multi-page websites and best practices
 
-### CSS3  <img height=20px src="https://skillicons.dev/icons?i=css">
+### CSS3  
 - [ ] Selectors, properties, specificity
 - [ ] Box Model, positioning
 - [ ] Font styling, media queries, float properties
@@ -45,7 +49,7 @@ Join me as I learn and master the exciting world of web development!
 - [ ] Display, sizing, positioning
 - [ ] Combination with Flexbox for complex layouts
 
-### Bootstrap <img height=20px src="https://skillicons.dev/icons?i=bootstrap">
+### Bootstrap 
 - [ ] Framework, 12-column layout
 - [ ] Bootstrap components: buttons, carousels, cards, navigation bars
 
@@ -59,22 +63,22 @@ Join me as I learn and master the exciting world of web development!
 - [ ] Separation of concerns and coding best practices
 - [ ] Manipulating HTML elements using DOM understanding
 
-### JavaScript ES6  <img height=20px src="https://skillicons.dev/icons?i=js">
+### JavaScript ES6  
 - [ ] Syntax, data types, control structures
 - [ ] Functions, higher-order functions, arrays
 - [ ] Object-oriented programming
 
-### React.js  <img height=20px src="https://skillicons.dev/icons?i=react">
+### React.js  
 - [ ] Front-end development
 - [ ] Components, Props, JSX syntax
 - [ ] DOM, State Management, Hooks
 
-### Node.js  <img height=20px src="https://skillicons.dev/icons?i=nodejs">
+### Node.js
 - [ ] Back-end development
 - [ ] Data types, OOP, classes
 - [ ] NPM, Build Processes, Event Loop
 
-### Express.js   <img height=20px src="https://skillicons.dev/icons?i=express">
+### Express.js   
 - [ ] Installation and usage
 - [ ] Servers, RESTful Routing, middleware
 
@@ -95,7 +99,7 @@ Join me as I learn and master the exciting world of web development!
 - [ ] Schemas, CRUD operations
 - [ ] Joins, querying
 
-### PostgreSQL <img height=20px src="https://skillicons.dev/icons?i=postgresql">
+### PostgreSQL 
 - [ ] Queries, CRUD operations Databases
 - [ ] Relationship implementation
 
@@ -118,6 +122,7 @@ Join me as I learn and master the exciting world of web development!
 
 
 <br>
+
 
 
 
@@ -215,6 +220,9 @@ Check out the application 👉🏼 [here](https://api-secrets-generator.onrender
 3. apiKey
 4. bearerToken
 
+Check out the application 👉🏼 [here](https://api-authentication-qpgd.onrender.com/)!   
+
+
 ##### JS Code:
 ![17 a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ff1500d1-9e64-460e-8f0d-177dce9495ca)
 ![17 b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7e07d5b0-d91d-4935-bb81-fd328f243a4b)
@@ -222,8 +230,6 @@ Check out the application 👉🏼 [here](https://api-secrets-generator.onrender
 <br>
 
 ## 📁REST APIs (get, post, put, patch. delete requests) -
-Check out the application 👉🏼 [here](https://api-authentication-qpgd.onrender.com/)!   
-
 ![15](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a68a6c79-f2b5-466b-bdc9-363f13a045ff)
 
 
