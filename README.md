@@ -1,6 +1,6 @@
 # Full-Stack Web Development: Code Practice and Projects
 
- <img height=1000px src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a4c25373-cf7f-46df-a69e-eef2662b3363)">
+![Web Dev Syllabus 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/1c3e0b35-f98b-463c-a9c0-e55300c9e40c)
  
 ![Udedmy certificate](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/728d02ae-d377-4e7b-8644-a40781ddf413)
 
