@@ -7,8 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm i",
-    "start": "node node_modules/.bin/concurrently \"node solution.js\" \"node server.js\""
+    "start": "npm-run-all --parallel solution server"
   },
+  "server": "node server.js",
+"solution": "node solution.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
