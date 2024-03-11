@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm i",
-    "start": "node solution.js && node server.js && fg"
+    "start": "concurrently \"node solution.js\" \"node server.js\""
   },
   "keywords": [],
   "author": "",
