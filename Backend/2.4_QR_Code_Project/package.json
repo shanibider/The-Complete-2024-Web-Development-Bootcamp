@@ -9,7 +9,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "build": "npm install && npm run build",
+    "build": "npm install",
     "start": "nodemon solution.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
