@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm i && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i",
     "start": "node solution.js"
   },
   "keywords": [],
