@@ -5,6 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "npm install",
+    "start": "node solution.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
