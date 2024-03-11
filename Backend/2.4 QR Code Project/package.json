@@ -9,7 +9,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "build": "cd Backend && cd '2.4 QR Code Project' && npm install && npm run build",
+    "build": "cd '2.4 QR Code Project' && npm install && npm run build",
     "start": "nodemon solution.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
