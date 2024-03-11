@@ -129,11 +129,11 @@ Join me as I learn and master the exciting world of web development!
 
 
 ## 📁PERN PostgreSQL Todo list (PostgreSQL database, Express, React, Node.js, Ejs) -
+Check out the application 👉🏼 [here](https://pern-postgresql-todo-list-1.onrender.com/)!   
+The source code and full documentation can be found [here](https://github.com/shanibider/PERN-PostgreSQL-Todo-List).  
 
 ![ejs blog](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/cc834e4b-9155-46f3-84ad-4ed5f02c9b91)
 
-Check out the application [here](https://pern-postgresql-todo-list-1.onrender.com/)!   
-The source code and full documentation can be found [here](https://github.com/shanibider/PERN-PostgreSQL-Todo-List).  
 
 
 
@@ -189,19 +189,23 @@ The source code and full documentation can be found [here](https://github.com/sh
 <br>
 
 ## 📁Weather Website (Public API - OpenWeatherMap) -
+Check out the application 👉🏼 [here](https://fullstack-weather-website-public-api.onrender.com/)!   
+The source code and full documentation can be found [here](https://github.com/shanibider/REST-API-Node-Weather-Website).  
+
 ![weather api](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/221dc8e9-5702-419c-88b4-f5c3c71a09aa)
 
 
-Check out the application [here](https://fullstack-weather-website-public-api.onrender.com/)!   
-The source code and full documentation can be found [here](https://github.com/shanibider/REST-API-Node-Weather-Website).  
 
 
 <br>
 
 ## 📁Secrets Project (API) -
+Check out the application 👉🏼 [here](https://api-secrets-generator.onrender.com/)!   
+
 ![18](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f1a75abd-edbd-41c6-bd70-6923fd875c75)
 ##### JS Code:
 ![18 a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b86ff686-ddb2-4c23-8456-a6036490e8f5)
+
 
 <br>
 
@@ -218,9 +222,10 @@ The source code and full documentation can be found [here](https://github.com/sh
 <br>
 
 ## 📁REST APIs (get, post, put, patch. delete requests) -
+Check out the application 👉🏼 [here](https://api-authentication-qpgd.onrender.com/)!   
+
 ![15](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a68a6c79-f2b5-466b-bdc9-363f13a045ff)
 
-Check out the application [here](https://api-authentication-qpgd.onrender.com/)!   
 
 
 
