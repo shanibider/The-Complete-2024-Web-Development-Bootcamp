@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "npm install",
-    "start": "nodemon solution.js",
+    "start": "node solution.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
