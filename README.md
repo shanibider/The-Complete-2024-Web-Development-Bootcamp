@@ -4,8 +4,6 @@
  
 ![Udedmy certificate](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/728d02ae-d377-4e7b-8644-a40781ddf413)
 
- 
- 
 Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both front-end and Back-end development. I'm focusing on:
 
 ### JavaScript ES6 <img height=20px src="https://skillicons.dev/icons?i=js">, React.js <img height=20px src="https://skillicons.dev/icons?i=react">, HTML5 <img height=20px src="https://skillicons.dev/icons?i=html">, CSS3  <img height=20px src="https://skillicons.dev/icons?i=css">, Grid, Flexbox, BootStrap <img height=20px src="https://skillicons.dev/icons?i=bootstrap">, DOM, Node.js   <img height=20px src="https://skillicons.dev/icons?i=nodejs">, Express.js <img height=20px src="https://skillicons.dev/icons?i=express">, APIs, EJS, SQL DB, PostgreSQL <img height=20px src="https://skillicons.dev/icons?i=postgresql">, deployment, authentication, Web3, and DApps, <br>
@@ -15,15 +13,9 @@ Through a 62-hour Udemy course. This course features both ***guided course proje
 Join me as I learn and master the exciting world of web development!
 
 
-**1. PERN PostgreSQL Todo List -** [Explore the live website](https://pern-postgresql-todo-list-1.onrender.com/)!
-
-
-
-
-
 <br>
 
-### Topics Covered:
+## Topics Covered 📌:
 [![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,express,jquery,mongodb,mysql,postman,postgresql)](https://skillicons.dev)
 
 ### Web Development Fundamentals
@@ -139,10 +131,7 @@ Join me as I learn and master the exciting world of web development!
 
 ![ejs blog](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/cc834e4b-9155-46f3-84ad-4ed5f02c9b91)
 
-
-
-
-
+<br>
 
 ## 📁PERN - PostgreSQL -Family Travel Tracker -
 ![24](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/304be783-1c7a-4a0d-b258-d0cad82b3c99)
@@ -155,23 +144,35 @@ Join me as I learn and master the exciting world of web development!
 ![queries-family travel tracker](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/32bfb49c-793a-4833-a76a-ef414e94a4cf)
 
 
-
-
 <br>
 
 ## 📁Travel Tracker (PostgreSQL)-
 ![23a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/d26ef068-58df-448f-8e4c-d87ffdc9b4c7)
 ![23b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fea79e96-489a-4859-9814-52490424ae72)
 
+
 <br>
 
+
 ## 📁Flag quiz (Postgres Read) -
-![22](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/dbce71df-7278-480b-b254-add4aac3b162)
+#### Check out the application 👉🏼 [here](https://postgresql-flag-quiz.onrender.com/)!  
+![22](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/2f8551d7-c903-42c9-bfe1-0ee4e0b1b5fc)
+
+> [!NOTE]
+> Windows does not display flag images for emoji. Instead, Windows will show you the country code which looks this: "🇦🇫" :
+> <img height=300px src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/bb6c3ccd-573c-4ee2-8a79-442dcb9e0b18">
+>
+> <img height=30px src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7686a8b1-fafa-40a1-9574-acdea39aea90"> So as a Windows user, the easiest way to see the flags is simply to use the Mozilla Firefox browser (instead of Chrome).
+> Firefox displays flags just fine!
+
 ##### JS Code:
+
 ![22a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/01f4cdcd-7dfe-4365-836e-651ecb35ce6b)
 ![22b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/3890183d-ba82-49ac-beea-9f25c4c7c862)
 
+
 <br>
+
 
 ## 📁World Capital Quiz (PostgreSQL) - 
 #### Check out the application 👉🏼 [here](https://world-capital-quiz-srib.onrender.com/)!   
@@ -186,7 +187,9 @@ Join me as I learn and master the exciting world of web development!
 ### postgreSQL + pgAdmin tables-
 ![20 postgreSQL + pgadmin](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e1b23648-31ac-41c3-b14b-c93d38cda919)
 
+
 <br>
+
 
 ## 📁Blog API Project -
 ![19](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/9d60a18c-051a-4158-a31e-094e38b085c9)
@@ -199,7 +202,7 @@ Join me as I learn and master the exciting world of web development!
 
 <br>
 
-## 📁Weather Website (Public API - OpenWeatherMap) -
+## 📁Weather Website (Public API - OpenWeatherMap API) -
 #### Check out the application 👉🏼 [here](https://fullstack-weather-website-public-api.onrender.com/)!   
 #### The source code and full documentation can be found [here](https://github.com/shanibider/REST-API-Node-Weather-Website).  
 
@@ -208,6 +211,7 @@ Join me as I learn and master the exciting world of web development!
 
 
 <br>
+
 
 ## 📁Secrets Project (API) -
 #### Check out the application 👉🏼 [here](https://api-secrets-generator.onrender.com/)!   
@@ -219,6 +223,7 @@ Join me as I learn and master the exciting world of web development!
 
 <br>
 
+
 ## 📁API Authentication -
 1. noAuth
 2. basicAuth
@@ -227,37 +232,43 @@ Join me as I learn and master the exciting world of web development!
 
 #### Check out the application 👉🏼 [here](https://api-authentication-qpgd.onrender.com/)!   
 
-
 ##### JS Code:
 ![17 a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ff1500d1-9e64-460e-8f0d-177dce9495ca)
 ![17 b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7e07d5b0-d91d-4935-bb81-fd328f243a4b)
 
+
 <br>
+
 
 ## 📁REST APIs (get, post, put, patch. delete requests) -
 ![15](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a68a6c79-f2b5-466b-bdc9-363f13a045ff)
 
 
-
-
 <br>
+
 
 ## 📁Axios + API (Random Activity Generator) -
 ![14](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/47a33920-804b-41e0-a7a6-dae46343af6a)
 ##### JS Code:
 ![14 code](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5ef0013d-1117-4c13-827b-5f60fd22af2d)
 
+
 <br>
+
 
 ## 📁JSON + Express -
 ![13 (json, js, ejs project)](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f3d869e6-fd17-4754-8c7b-1db984152f4c)
 
+
 <br>
+
 
 ## 📁Band Generator Project (Express + ejs files) -
 [13.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7aa45cd5-c145-41d4-bc0d-937dc9af4a9a)
 
+
 <br>
+
 
 ## 📁EJS Blog Website (include CRUD actions) -
 ![1](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/b855389c-a370-45d0-b7b0-d36415afd0bf)
@@ -268,8 +279,9 @@ Join me as I learn and master the exciting world of web development!
 ![6](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/4b429ccb-e906-47a9-923a-28d2fbce3903)
 
 
-## 📁 QR code Generator -
+## 📁 QR code Generator (backend only) -
 This project utilizes the **inquirer** npm package to prompt users for input. It then employs the **qr-image** npm package to generate a QR code image based on the URL provided by the user. Finally, it utilizes the native fs node module to create a text file to store the user's input.
+![qr generator](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5e56e38d-ec92-47cf-a051-624a7473fe28)
 
 
 
@@ -277,7 +289,6 @@ This project utilizes the **inquirer** npm package to prompt users for input. It
 
 
 <br> 
-
 <br>
 
 
