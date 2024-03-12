@@ -9,7 +9,7 @@
     "build": "npm i",
     "start": "npm-run-all --parallel solution server",
     "solution": "node solution.js",
-    "server": "node server.js"
+    "server": "PORT=10000 node server.js" 
   },
   "keywords": [],
   "author": "",

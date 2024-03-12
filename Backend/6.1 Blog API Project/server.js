@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 import axios from "axios";
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000; // Default to port 3000 if PORT environment variable is not set
 const API_URL = "http://localhost:4000";
 
 
