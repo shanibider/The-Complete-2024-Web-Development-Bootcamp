@@ -1,5 +1,4 @@
 /* PostgreSQL Flag Quiz */
-
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -7,7 +6,6 @@ import dotenv from 'dotenv';
 
 const app = express();
 const port = process.env.PORT || 3000; // Use the PORT provided by the environment or default to 3000
-
 dotenv.config();
 
 const db = new pg.Client({
@@ -17,7 +15,6 @@ const db = new pg.Client({
   password: String(process.env.DB_PASSWORD), // Convert to string
   port: process.env.DB_PORT,
 });
-
 db.connect();
 
 let quiz = [];
@@ -68,7 +65,6 @@ app.post("/submit", (req, res) => {
 
 async function nextQuestion() {
   const randomCountry = quiz[Math.floor(Math.random() * quiz.length)];
-
   currentQuestion = randomCountry;
 }
 

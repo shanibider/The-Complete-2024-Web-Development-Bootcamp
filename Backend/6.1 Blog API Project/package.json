@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm i",
     "start": "npm-run-all --parallel solution server",
-    "server": "node server.js",
-    "solution": "node solution.js"
+    "solution": "node solution.js",
+    "server": "node server.js"
   },
   "keywords": [],
   "author": "",

@@ -44,7 +44,6 @@ const User = new mongoose.model("User", userSchema);        // now we have a col
 
 
 
-
 app.get ("/", function (req,res){
 
     res.render("home");
