@@ -4,37 +4,20 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
-//Step 3 - Make the styling show up.
-//Hint 1: CSS files are static files!
-//Hint 2: The header and footer are partials.
-//Hint 3: Add the CSS link in header.ejs
-
-//Step 4 - Add a dynamic year to the footer.
-//Hint: Google to find out how to get the current year using JS.
-
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  //Step 1 - render the index.ejs file.
-  res.render("index.ejs");
+  res.render("solution.ejs");
 });
 
-// When "Generate Name" button in index.ejs is clicked, it should hit up this route. => <form action="/submit" method="POST"></form>
 app.post("/submit", (req, res) => {
-  //Step 2 - 
-  //1) generate name functionality (When "Generate Name" button in index.ejs is clicked, it should hit up this route). => <form action="/submit" method="POST">
-  //2) randomly pick an adjective from the const "adj" and a noun from const "noun",(see the two arrays).
-  //3) Send the index.ejs as a response and add the adjective and noun to the res.render
-  //4) Test to make sure that the random words display in the h1 element in index.ejs
-
-  const randomAdj = adj [Math.floor(Math.random() * adj.length)];
-  const randomNoun = noun [Math.floor(Math.random() * noun.length)];
-
+  const randomAdj = adj[Math.floor(Math.random() * adj.length)];
+  const randomNoun = noun[Math.floor(Math.random() * noun.length)];
   res.render("solution.ejs", {
     adjective: randomAdj,
     noun: randomNoun,
-  });   //index.ejs sent as a response and adjective and noun added to the res.render
+  });
 });
 
 app.listen(port, () => {
