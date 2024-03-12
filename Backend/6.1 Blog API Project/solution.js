@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = process.env.PORT || 3000; // Default to port 3000 if PORT environment variable is not set
+const port = 4000;
 
 // In-memory data store
 let posts = [
