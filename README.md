@@ -15,7 +15,7 @@ Join me as I learn and master the exciting world of web development!
 
 <br>
 
-## Topics Covered:
+## Topics Covered 📌:
 [![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,express,jquery,mongodb,mysql,postman,postgresql)](https://skillicons.dev)
 
 ### Web Development Fundamentals
