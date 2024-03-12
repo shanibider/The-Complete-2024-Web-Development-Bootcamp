@@ -144,12 +144,16 @@ The source code and full documentation can be found [here](https://github.com/sh
 
 
 
-## 📁Family Travel Tracker (PostgreSQL) -
+## 📁PERN - PostgreSQL -Family Travel Tracker -
 ![24](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/304be783-1c7a-4a0d-b258-d0cad82b3c99)
 ###### JS Code:
 ![24a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/57efad76-d7d0-458f-ba82-de56c4e80e0a)
 ![24b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/82408b5a-0943-401c-be40-ee27afb31c11)
 ![24c](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/6bda71de-c4d6-4b6a-93a2-8342545fee67)
+
+###### DB Queries - JOIN 2 tables -
+![queries-family travel tracker](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/32bfb49c-793a-4833-a76a-ef414e94a4cf)
+
 
 
 
