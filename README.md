@@ -134,8 +134,8 @@ Join me as I learn and master the exciting world of web development!
 
 
 ## 📁PERN PostgreSQL Todo list (PostgreSQL database, Express, React, Node.js, Ejs) -
-Check out the application 👉🏼 [here](https://pern-postgresql-todo-list-1.onrender.com/)!   
-The source code and full documentation can be found [here](https://github.com/shanibider/PERN-PostgreSQL-Todo-List).  
+#### Check out the application 👉🏼 [here](https://pern-postgresql-todo-list-1.onrender.com/)!   
+#### The source code and full documentation can be found [here](https://github.com/shanibider/PERN-PostgreSQL-Todo-List).  
 
 ![ejs blog](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/cc834e4b-9155-46f3-84ad-4ed5f02c9b91)
 
@@ -174,6 +174,8 @@ The source code and full documentation can be found [here](https://github.com/sh
 <br>
 
 ## 📁World Capital Quiz (PostgreSQL) - 
+#### Check out the application 👉🏼 [here](https://world-capital-quiz-srib.onrender.com/)!   
+
 ![21](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/221d9072-153e-485d-a703-da1bcfa34837)
 ##### JS Code:
 ![21a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b91e4781-23cb-4cde-b187-35f2c0053223)
@@ -198,18 +200,17 @@ The source code and full documentation can be found [here](https://github.com/sh
 <br>
 
 ## 📁Weather Website (Public API - OpenWeatherMap) -
-Check out the application 👉🏼 [here](https://fullstack-weather-website-public-api.onrender.com/)!   
-The source code and full documentation can be found [here](https://github.com/shanibider/REST-API-Node-Weather-Website).  
+#### Check out the application 👉🏼 [here](https://fullstack-weather-website-public-api.onrender.com/)!   
+#### The source code and full documentation can be found [here](https://github.com/shanibider/REST-API-Node-Weather-Website).  
 
 ![weather api](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/221dc8e9-5702-419c-88b4-f5c3c71a09aa)
-
 
 
 
 <br>
 
 ## 📁Secrets Project (API) -
-Check out the application 👉🏼 [here](https://api-secrets-generator.onrender.com/)!   
+#### Check out the application 👉🏼 [here](https://api-secrets-generator.onrender.com/)!   
 
 ![18](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f1a75abd-edbd-41c6-bd70-6923fd875c75)
 ##### JS Code:
@@ -224,7 +225,7 @@ Check out the application 👉🏼 [here](https://api-secrets-generator.onrender
 3. apiKey
 4. bearerToken
 
-Check out the application 👉🏼 [here](https://api-authentication-qpgd.onrender.com/)!   
+#### Check out the application 👉🏼 [here](https://api-authentication-qpgd.onrender.com/)!   
 
 
 ##### JS Code:
