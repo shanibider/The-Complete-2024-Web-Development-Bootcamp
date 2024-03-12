@@ -17,6 +17,8 @@
   "author": "",
   "contributors": [],
   "scripts": {
+    "build": "npm i",
+    "start": "node solution.js",
     "dev": "",
     "test": ""
   },

@@ -1,4 +1,5 @@
-// Server-side API requests using Axios and node
+// Random Activity Generator -
+// Server-side API requests using Axios and Node.
 // common need when we dealing with node and express in backend.
 
 import express from "express";
