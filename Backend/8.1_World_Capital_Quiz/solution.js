@@ -1,19 +1,20 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
+import dotenv from 'dotenv';
 
 // here we use data from postgresql database, based on 2 tables - countries and capitals, i created in pgAdmin
 const app = express();
-const port = 3000;
-
+const port = process.env.PORT || 3000; // Use the PORT provided by the environment or default to 3000
+dotenv.config();
 
 //name of database is the name i created in pgAdmin, password is the password i created when install postgresql, the port is the default port postgresql run the database
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "world",
-  password: "123456",
-  port: 5432,
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_DATABASE,
+  password: String(process.env.DB_PASSWORD), // Convert to string
+  port: process.env.DB_PORT,
 });
 
 // start the connection i defined above
