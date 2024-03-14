@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// level 3 authentication - salting and hashing
-=======
 // level 2 of authentication - Encrypting and Hashing passwords
->>>>>>> 814811681fdd1e03b53a09edf7c3421c2b753700
 
 import express from "express";
 import bodyParser from "body-parser";
@@ -62,11 +58,7 @@ app.post("/register", async (req, res) => {
 });
 
 
-<<<<<<< HEAD
-
-=======
 // POST Request from ejs, for login a user
->>>>>>> 814811681fdd1e03b53a09edf7c3421c2b753700
 app.post("/login", async (req, res) => {
   const email = req.body.username;
   const password = req.body.password;
