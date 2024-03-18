@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
-//import bcrypt from "bcrypt";
+import bcryptjs from "bcryptjs";
 import passport from "passport";
 import { Strategy } from "passport-local";
 import GoogleStrategy from "passport-google-oauth2";
@@ -141,7 +141,7 @@ app.post("/register", async (req, res) => {
 
   try {
         // Checking if a user with the given email already exists
-    const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
+    const checkResult = await db.query("SELECT * FROM secrets_users WHERE email = $1", [
       email,
     ]);
 
@@ -151,14 +151,14 @@ app.post("/register", async (req, res) => {
     } else {
 
       // Hashing the password and inserting a new user into the database
-      bcrypt.hash (password, saltRounds, async (err, hash) => {
+      bcryptjs.hash (password, saltRounds, async (err, hash) => {
         if (err) {
           console.error("Error hashing password:", err);
         } else {
 
           // Inserting the new user into the database and logging them in
           const result = await db.query(
-            "INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *",
+            "INSERT INTO secrets_users (email, password) VALUES ($1, $2) RETURNING *",
             [email, hash]
           );
 
@@ -187,7 +187,7 @@ passport.use(
   new Strategy(async function verify(username, password, cb) {
     try {
        // Verifying user credentials by querying the database
-      const result = await db.query("SELECT * FROM users WHERE email = $1 ", [
+      const result = await db.query("SELECT * FROM secrets_users WHERE email = $1 ", [
         username,
       ]);
       if (result.rows.length > 0) {
@@ -195,7 +195,7 @@ passport.use(
         const user = result.rows[0];
         const storedHashedPassword = user.password;
 
-        bcrypt.compare(password, storedHashedPassword, (err, valid) => {
+        bcryptjs.compare(password, storedHashedPassword, (err, valid) => {
           if (err) {
             console.error("Error comparing passwords:", err);
             return cb(err);
@@ -243,14 +243,14 @@ passport.use(
         // save the user data into the db and identify them in our system
 
         // queries the database to select where the email matches the provided email
-        const result = await db.query("SELECT * FROM users WHERE email = $1", [
+        const result = await db.query("SELECT * FROM secrets_users WHERE email = $1", [
           profile.email,
         ]);
 
         // checks if the result has any rows (user with the given email), if not a new user is inserted into the "users" table with the provided email and a default password ("google").
         if (result.rows.length === 0) {
           const newUser = await db.query(
-            "INSERT INTO users (email, password) VALUES ($1, $2)",
+            "INSERT INTO secrets_users (email, password) VALUES ($1, $2)",
             [profile.email, "google"]
           );
 

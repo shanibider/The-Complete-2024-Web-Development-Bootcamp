@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
-import bcrypt from "bcrypt";
+import bcryptjs from "bcryptjs";
 import passport from "passport";
 import { Strategy } from "passport-local";    
 import session from "express-session";
@@ -44,7 +44,7 @@ app.use (passport.session());
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "secrets",
+  database: "permalist",
   password: "123456",
   port: 5432,
 });
@@ -100,26 +100,24 @@ app.post(
 
 
 
-
-
 app.post("/register", async (req, res) => {
   const email = req.body.username;
   const password = req.body.password;
 
   try {
-    const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
+    const checkResult = await db.query("SELECT * FROM secrets_users WHERE email = $1", [
       email,
     ]);
 
     if (checkResult.rows.length > 0) {
       req.redirect("/login");
     } else {
-      bcrypt.hash(password, saltRounds, async (err, hash) => {
+      bcryptjs.hash(password, saltRounds, async (err, hash) => {
         if (err) {
           console.error("Error hashing password:", err);
         } else {
           const result = await db.query(
-            "INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *",
+            "INSERT INTO secrets_users (email, password) VALUES ($1, $2) RETURNING *",
             [email, hash]
           );
 
@@ -142,7 +140,6 @@ app.post("/register", async (req, res) => {
 
 
 
-
 // use this as strategy for passport. verify is a callback function that take 3 parameters: username, password, callback.
 // username and password are also the name attributes in the form in login.ejs.
 // inside i put everything that i want to do to verify the user (from login).
@@ -154,7 +151,7 @@ passport.use( new Strategy(async function verify (username, password, cb) {
 
   // check if we have a user with the current email (check the username comes from the form)
     try {
-      const result = await db.query("SELECT * FROM users WHERE email = $1 ", [
+      const result = await db.query("SELECT * FROM secrets_users WHERE email = $1 ", [
         username,
       ]);
 
@@ -164,7 +161,7 @@ passport.use( new Strategy(async function verify (username, password, cb) {
         const storedHashedPassword = user.password;
 
         // using bcrypt to compare the password from the form to the hashed password in the database.
-        bcrypt.compare (password, storedHashedPassword, (err, valid) => {
+        bcryptjs.compare (password, storedHashedPassword, (err, valid) => {
           if (err) {
             //Error with password check
             console.error("Error comparing passwords:", err);

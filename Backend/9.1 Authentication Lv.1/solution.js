@@ -1,3 +1,5 @@
+// Basic authentication - Regestration users with email and password (password stored unencrypte in db)
+
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -8,7 +10,7 @@ const port = 3000;
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "secrets",
+  database: "permalist",
   password: "123456",
   port: 5432,
 });
@@ -34,7 +36,7 @@ app.post("/register", async (req, res) => {
   const password = req.body.password;
 
   try {
-    const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
+    const checkResult = await db.query("SELECT * FROM secrets_users WHERE email = $1", [
       email,
     ]);
 
@@ -42,7 +44,7 @@ app.post("/register", async (req, res) => {
       res.send("Email already exists. Try logging in.");
     } else {
       const result = await db.query(
-        "INSERT INTO users (email, password) VALUES ($1, $2)",
+        "INSERT INTO secrets_users (email, password) VALUES ($1, $2)",
         [email, password]
       );
       console.log(result);
@@ -58,7 +60,7 @@ app.post("/login", async (req, res) => {
   const password = req.body.password;
 
   try {
-    const result = await db.query("SELECT * FROM users WHERE email = $1", [
+    const result = await db.query("SELECT * FROM secrets_users WHERE email = $1", [
       email,
     ]);
     if (result.rows.length > 0) {

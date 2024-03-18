@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
-import bcrypt from "bcrypt";
+import bcryptjs from "bcryptjs";
 import passport from "passport";
 import { Strategy } from "passport-local";
 import session from "express-session";
@@ -23,7 +23,6 @@ const saltRounds = 10;
 
 // config method that uses the .env file
 env.config();
-
 
 
 app.use(
@@ -99,19 +98,19 @@ app.post("/register", async (req, res) => {
   const password = req.body.password;
 
   try {
-    const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
+    const checkResult = await db.query("SELECT * FROM secrets_users WHERE email = $1", [
       email,
     ]);
 
     if (checkResult.rows.length > 0) {
       req.redirect("/login");
     } else {
-      bcrypt.hash(password, saltRounds, async (err, hash) => {
+      bcryptjs.hash(password, saltRounds, async (err, hash) => {
         if (err) {
           console.error("Error hashing password:", err);
         } else {
           const result = await db.query(
-            "INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *",
+            "INSERT INTO secrets_users (email, password) VALUES ($1, $2) RETURNING *",
             [email, hash]
           );
           const user = result.rows[0];
@@ -129,17 +128,16 @@ app.post("/register", async (req, res) => {
 
 
 
-
 passport.use(
   new Strategy(async function verify(username, password, cb) {
     try {
-      const result = await db.query("SELECT * FROM users WHERE email = $1 ", [
+      const result = await db.query("SELECT * FROM secrets_users WHERE email = $1 ", [
         username,
       ]);
       if (result.rows.length > 0) {
         const user = result.rows[0];
         const storedHashedPassword = user.password;
-        bcrypt.compare(password, storedHashedPassword, (err, valid) => {
+        bcryptjs.compare(password, storedHashedPassword, (err, valid) => {
           if (err) {
             //Error with password check
             console.error("Error comparing passwords:", err);
@@ -162,8 +160,6 @@ passport.use(
     }
   })
 );
-
-
 
 
 

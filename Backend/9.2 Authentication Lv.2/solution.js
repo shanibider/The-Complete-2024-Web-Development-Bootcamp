@@ -1,13 +1,14 @@
+// level 2 of authentication - Encrypting and Hashing passwords
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
-import bcrypt from "bcrypt";
-
-// Hashing and Salting.
+import bcryptjs from "bcryptjs";    //using npm install bcryptjs --save (instead of bcrypt)
 
 const app = express();
 const port = 3000;
 const saltRounds = 10;
+
+app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -15,7 +16,7 @@ app.use(express.static("public"));
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "secrets",
+  database: "permalist",
   password: "123456",
   port: 5432,
 });
@@ -38,7 +39,7 @@ app.post("/register", async (req, res) => {
   const password = req.body.password;
 
   try {
-    const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
+    const checkResult = await db.query("SELECT * FROM secrets_users WHERE email = $1", [
       email,
     ]);
 
@@ -47,13 +48,13 @@ app.post("/register", async (req, res) => {
     } else {
 
       // hashing the password and saving it in the database
-      bcrypt.hash(password, saltRounds, async (err, hash) => {
+      bcryptjs.hash(password, saltRounds, async (err, hash) => {
         if (err) {
           console.error("Error hashing password:", err);
         } else {
           console.log("Hashed Password:", hash);
           await db.query(
-            "INSERT INTO users (email, password) VALUES ($1, $2)",
+            "INSERT INTO secrets_users (email, password) VALUES ($1, $2)",
             [email, hash]
           );
           res.render("secrets.ejs");
@@ -74,7 +75,7 @@ app.post("/login", async (req, res) => {
   const loginPassword = req.body.password;
 
   try {
-    const result = await db.query("SELECT * FROM users WHERE email = $1", [
+    const result = await db.query("SELECT * FROM secrets_users WHERE email = $1", [
       email,
     ]);
     if (result.rows.length > 0) {
