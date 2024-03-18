@@ -12,7 +12,6 @@ Through a 62-hour Udemy course. This course features both ***guided course proje
 
 Join me as I learn and master the exciting world of web development!
 
-
 <br>
 
 ## Topics Covered 📌:
@@ -121,8 +120,7 @@ Join me as I learn and master the exciting world of web development!
 
 # 💼Projects:
 
-# 📂Backend Based Projects:
-
+# Backend Based Projects 📂 -
 
 
 ## 📁PERN PostgreSQL Todo list (PostgreSQL database, Express, React, Node.js, Ejs) -
@@ -279,9 +277,16 @@ Join me as I learn and master the exciting world of web development!
 ![6](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/4b429ccb-e906-47a9-923a-28d2fbce3903)
 
 
-## 📁 QR code Generator (backend only) -
+## 📁 Postman -
+### <img height=30px src="https://skillicons.dev/icons?i=postman"> Test different routes, while the server running with nodemon
+![Postman requests](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/15d07931-97aa-4634-945b-ee6e38e8bbab)
+
+
+
+## 📁 QR code Generator - backend only -
 This project utilizes the **inquirer** npm package to prompt users for input. It then employs the **qr-image** npm package to generate a QR code image based on the URL provided by the user. Finally, it utilizes the native fs node module to create a text file to store the user's input.
 ![qr generator](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5e56e38d-ec92-47cf-a051-624a7473fe28)
+
 
 
 
@@ -294,7 +299,8 @@ This project utilizes the **inquirer** npm package to prompt users for input. It
 
 
 
-# 💻Frontend Based Projects:
+# Frontend Based Projects 💻 -
+
 ## Simon Game- JQuery -
 ![simon game](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e64b9199-b8c3-4c0e-9de8-06762c2b871d)
 [11.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fe226c29-29ab-4e8a-be84-6716f73a48e1)
@@ -307,7 +313,7 @@ This project utilizes the **inquirer** npm package to prompt users for input. It
 
 <br>
 
-## 📁Dicee Challenge -JQuery -
+## 📁Dicee Challenge - JQuery -
 ![10](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b2619676-0718-4d37-a963-b8d92a83de94)
 
 <br>
@@ -474,15 +480,21 @@ I own a diverse skill set in web technologies, enabling me to develop dynamic an
 
 <br>
 
-## 🔗 Connect with me 👩‍💻😊
-[![github](https://img.shields.io/badge/my_github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shanibider)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shani-bider-0848b8177/)
 
 
-<br>
+
+## 📫 Connect with me 😊
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shani-bider/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://shanibider.github.io/Portfolio/)
+[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shanibider@gmail.com)
 
 <footer>
 <p style="float:left; width: 20%;">
-Copyright © Shani Bider, 2023
+Copyright © Shani Bider, 2024
 </p>
 </footer>
+
+## License📄
+
+This project is licensed under the MIT License.
+
