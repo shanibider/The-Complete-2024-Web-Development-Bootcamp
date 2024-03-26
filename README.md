@@ -11,9 +11,11 @@
 - 🎵🌟 [Band Generator](https://band-generator-vbim.onrender.com/) 
 
 ### **Frontend Projects:**
-- 🌐🌟 [Basic Bootstrap Website](https://shanibider.github.io/Frontend-Health-Consulting-Website/) 
-- 📄🌟 [HTML Only Online Resume](https://shanibider.github.io/Online-resume/) 
+- 🌐🌟 [Basic Bootstrap Website](https://shanibider.github.io/Frontend-Health-Consulting-Website/)
+- 🐕🌟 [Tindog](https://the-complete-2024-web-development.onrender.com/)
+- 🎯🌟 [Simon Game](https://simon-game-dzc6.onrender.com/)
 - 🏠🌟 [My Personal Website](https://shanibider.github.io/Frontend-My-site/) 
+- 📄🌟 [HTML Only Online Resume](https://shanibider.github.io/Online-resume/) 
 
 ##### 📚 Udemy Certificate in Full-Stack Development:
 ![Udedmy certificate](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/728d02ae-d377-4e7b-8644-a40781ddf413)
