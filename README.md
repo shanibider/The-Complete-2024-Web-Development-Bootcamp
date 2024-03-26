@@ -1,16 +1,32 @@
-# Full-Stack Web Development: Code Practice and Projects
+<h1> Full-Stack Web Development Hub! 🚀🛠️ </h1>
 
-![Web Dev Syllabus 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/1c3e0b35-f98b-463c-a9c0-e55300c9e40c)
- 
+## 🚀 Explore the websites I've developed across various technologies:
+
+### **Backend Projects:**
+- ✉️🌟 [Mailchimp API Email Signup](https://nodejs-express-mailchimp-api-signup.onrender.com/) 
+- 🔒🌟 [Secrets Generator](https://api-secrets-generator.onrender.com/) 
+- 🔐🌟 [API Authentication](https://api-authentication-qpgd.onrender.com/) 
+- 🎲🌟 [Random Activity Generator](https://random-activity-generator-e0hw.onrender.com/) 
+- 🌮🌟 [API Taco Recipes](https://api-taco-recipes.onrender.com/) 
+- 🎵🌟 [Band Generator](https://band-generator-vbim.onrender.com/) 
+
+### **Frontend Projects:**
+- 🌐🌟 [Basic Bootstrap Website](https://shanibider.github.io/Frontend-Health-Consulting-Website/) 
+- 📄🌟 [HTML Only Online Resume](https://shanibider.github.io/Online-resume/) 
+- 🏠🌟 [My Personal Website](https://shanibider.github.io/Frontend-My-site/) 
+
+##### 📚 Udemy Certificate in Full-Stack Development:
 ![Udedmy certificate](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/728d02ae-d377-4e7b-8644-a40781ddf413)
 
-Hello and welcome to my Web Development hub! This is where I'm boosting my skills in both front-end and Back-end development. I'm focusing on:
+![Web Dev Syllabus 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/1c3e0b35-f98b-463c-a9c0-e55300c9e40c)
 
-### JavaScript ES6 <img height=20px src="https://skillicons.dev/icons?i=js">, React.js <img height=20px src="https://skillicons.dev/icons?i=react">, HTML5 <img height=20px src="https://skillicons.dev/icons?i=html">, CSS3  <img height=20px src="https://skillicons.dev/icons?i=css">, Grid, Flexbox, BootStrap <img height=20px src="https://skillicons.dev/icons?i=bootstrap">, DOM, Node.js   <img height=20px src="https://skillicons.dev/icons?i=nodejs">, Express.js <img height=20px src="https://skillicons.dev/icons?i=express">, APIs, EJS, SQL DB, PostgreSQL <img height=20px src="https://skillicons.dev/icons?i=postgresql">, deployment, authentication, Web3, and DApps, <br>
+🎓 I've completed a 62-hour Udemy course covering a range of technologies including:
+### JavaScript, React.js, HTML5, CSS3, Bootstrap, Node.js, Express.js, APIs, EJS, SQL, PostgreSQL, Deployment, Authentication, and even explored Web3 and DApps.
 
-Through a 62-hour Udemy course. This course features both ***guided course projects***👩‍💻, with walkthrough code, and ***independent Capstone Projects***💻 that challenge to create original work without provided solutions or guidance, no walkthrough, and no design specs.<br>
+This comprehensive course includes guided projects with walkthrough code, as well as challenging Capstone Projects to hone my skills independently.
 
-Join me as I learn and master the exciting world of web development!
+Join me on this journey as I continue to learn and master the exciting world of web development! 💻🚀
+
 
 <br>
 
@@ -120,107 +136,43 @@ Join me as I learn and master the exciting world of web development!
 
 # 💼Projects:
 
+<div align="center">
+<img src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e9c7f762-3537-4fd6-bf2c-57f0fd5edf0a"> </div>
+
+
 # Backend Based Projects 📂 -
 
+## 📁 QR code Generator - backend only -
+This project utilizes the **inquirer** npm package to prompt users for input. It then employs the **qr-image** npm package to generate a QR code image based on the URL provided by the user. Finally, it utilizes the native fs node module to create a text file to store the user's input.
+![qr generator](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5e56e38d-ec92-47cf-a051-624a7473fe28)
 
-## 📁PERN PostgreSQL Todo list (PostgreSQL database, Express, React, Node.js, Ejs) -
-#### Check out the application 👉🏼 [here](https://pern-postgresql-todo-list-1.onrender.com/)!   
-#### The source code and full documentation can be found [here](https://github.com/shanibider/PERN-PostgreSQL-Todo-List).  
 
-![ejs blog](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/cc834e4b-9155-46f3-84ad-4ed5f02c9b91)
+## 📁 Postman -
+### <img height=30px src="https://skillicons.dev/icons?i=postman"> Test different routes, while the server running with nodemon
+![Postman requests](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/15d07931-97aa-4634-945b-ee6e38e8bbab)
 
-<br>
 
-## 📁PERN - PostgreSQL -Family Travel Tracker -
-![24](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/304be783-1c7a-4a0d-b258-d0cad82b3c99)
-###### JS Code:
-![24a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/57efad76-d7d0-458f-ba82-de56c4e80e0a)
-![24b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/82408b5a-0943-401c-be40-ee27afb31c11)
-![24c](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/6bda71de-c4d6-4b6a-93a2-8342545fee67)
-
-###### DB Queries - JOIN 2 tables -
-![queries-family travel tracker](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/32bfb49c-793a-4833-a76a-ef414e94a4cf)
-
+## 📁 Band Generator Project (Express + ejs files) -
+[13.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7aa45cd5-c145-41d4-bc0d-937dc9af4a9a)
 
 <br>
 
-## 📁Travel Tracker (PostgreSQL)-
-![23a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/d26ef068-58df-448f-8e4c-d87ffdc9b4c7)
-![23b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fea79e96-489a-4859-9814-52490424ae72)
-
+## 📁JSON + Express -
+![13 (json, js, ejs project)](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f3d869e6-fd17-4754-8c7b-1db984152f4c)
 
 <br>
 
-
-## 📁Flag quiz (Postgres Read) -
-#### Check out the application 👉🏼 [here](https://postgresql-flag-quiz.onrender.com/)!  
-![22](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/2f8551d7-c903-42c9-bfe1-0ee4e0b1b5fc)
-
-> [!NOTE]
-> Windows does not display flag images for emoji. Instead, Windows will show you the country code which looks this: "🇦🇫" :
-> <img height=300px src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/bb6c3ccd-573c-4ee2-8a79-442dcb9e0b18">
->
-> <img height=30px src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7686a8b1-fafa-40a1-9574-acdea39aea90"> So as a Windows user, the easiest way to see the flags is simply to use the Mozilla Firefox browser (instead of Chrome).
-> Firefox displays flags just fine!
-
+## 📁 Axios + API (Random Activity Generator) -
+![14](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/47a33920-804b-41e0-a7a6-dae46343af6a)
 ##### JS Code:
-
-![22a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/01f4cdcd-7dfe-4365-836e-651ecb35ce6b)
-![22b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/3890183d-ba82-49ac-beea-9f25c4c7c862)
-
+![14 code](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5ef0013d-1117-4c13-827b-5f60fd22af2d)
 
 <br>
 
-
-## 📁World Capital Quiz (PostgreSQL) - 
-#### Check out the application 👉🏼 [here](https://world-capital-quiz-srib.onrender.com/)!   
-
-![21](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/221d9072-153e-485d-a703-da1bcfa34837)
-##### JS Code:
-![21a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b91e4781-23cb-4cde-b187-35f2c0053223)
-![21b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e70f47bb-7750-4df2-aa1d-9703dfc6c817)
+## 📁 REST APIs (get, post, put, patch. delete requests) -
+![15](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a68a6c79-f2b5-466b-bdc9-363f13a045ff)
 
 <br>
-
-### postgreSQL + pgAdmin tables-
-![20 postgreSQL + pgadmin](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e1b23648-31ac-41c3-b14b-c93d38cda919)
-
-
-<br>
-
-
-## 📁Blog API Project -
-![19](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/9d60a18c-051a-4158-a31e-094e38b085c9)
-##### JS Code (solution.js):
-![19 solution a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/db21dc95-680f-4f42-8b0c-d5a38c6630ec)
-##### JS Code (server.js):
-![19 a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a83e9d95-8955-4f4d-8cac-b60d9a231392)
-![19 c](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/48e8d9d5-997a-4cbd-b539-c21cd3745d7b)
-
-
-<br>
-
-## 📁Weather Website (Public API - OpenWeatherMap API) -
-#### Check out the application 👉🏼 [here](https://fullstack-weather-website-public-api.onrender.com/)!   
-#### The source code and full documentation can be found [here](https://github.com/shanibider/REST-API-Node-Weather-Website).  
-
-![weather api](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/221dc8e9-5702-419c-88b4-f5c3c71a09aa)
-
-
-
-<br>
-
-
-## 📁Secrets Project (API) -
-#### Check out the application 👉🏼 [here](https://api-secrets-generator.onrender.com/)!   
-
-![18](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f1a75abd-edbd-41c6-bd70-6923fd875c75)
-##### JS Code:
-![18 a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b86ff686-ddb2-4c23-8456-a6036490e8f5)
-
-
-<br>
-
 
 ## 📁API Authentication -
 1. noAuth
@@ -234,68 +186,21 @@ Join me as I learn and master the exciting world of web development!
 ![17 a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ff1500d1-9e64-460e-8f0d-177dce9495ca)
 ![17 b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7e07d5b0-d91d-4935-bb81-fd328f243a4b)
 
-
 <br>
 
 
-## 📁REST APIs (get, post, put, patch. delete requests) -
-![15](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a68a6c79-f2b5-466b-bdc9-363f13a045ff)
 
-
-<br>
-
-
-## 📁Axios + API (Random Activity Generator) -
-![14](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/47a33920-804b-41e0-a7a6-dae46343af6a)
-##### JS Code:
-![14 code](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5ef0013d-1117-4c13-827b-5f60fd22af2d)
-
+### postgreSQL + pgAdmin tables-
+![20 postgreSQL + pgadmin](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e1b23648-31ac-41c3-b14b-c93d38cda919)
 
 <br>
 
-
-## 📁JSON + Express -
-![13 (json, js, ejs project)](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f3d869e6-fd17-4754-8c7b-1db984152f4c)
-
-
-<br>
-
-
-## 📁Band Generator Project (Express + ejs files) -
-[13.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7aa45cd5-c145-41d4-bc0d-937dc9af4a9a)
-
+## 📁Travel Tracker (PostgreSQL)-
+![23a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/d26ef068-58df-448f-8e4c-d87ffdc9b4c7)
+![23b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fea79e96-489a-4859-9814-52490424ae72)
 
 <br>
-
-
-## 📁EJS Blog Website (include CRUD actions) -
-![1](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/b855389c-a370-45d0-b7b0-d36415afd0bf)
-![2](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/01da7809-9f69-496a-99f7-11f53e4b9ef3)
-![3](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/b8bd8c7d-46b1-4e46-8333-109eb03dc8af)
-![7](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/1305a87f-d0a3-4d86-9a42-83c7dc161ca1)
-![4](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/545ed88b-0f9a-42e1-b1a0-15143cea69c4)
-![6](https://github.com/shanibider/EJS-Blog-Website/assets/72359805/4b429ccb-e906-47a9-923a-28d2fbce3903)
-
-
-## 📁 Postman -
-### <img height=30px src="https://skillicons.dev/icons?i=postman"> Test different routes, while the server running with nodemon
-![Postman requests](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/15d07931-97aa-4634-945b-ee6e38e8bbab)
-
-
-
-## 📁 QR code Generator - backend only -
-This project utilizes the **inquirer** npm package to prompt users for input. It then employs the **qr-image** npm package to generate a QR code image based on the URL provided by the user. Finally, it utilizes the native fs node module to create a text file to store the user's input.
-![qr generator](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5e56e38d-ec92-47cf-a051-624a7473fe28)
-
-
-
-
-
-
-
-<br> 
 <br>
-
 
 
 
@@ -307,20 +212,24 @@ This project utilizes the **inquirer** npm package to prompt users for input. It
 
 <br>
 
-## 📁Drum Kit - HTML + JavaScript  -
+## 📁 Drum Kit - HTML + JavaScript  -
 ![drum](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b16899cf-e124-4acc-8785-090f73ae1071)
 [9.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/156e0865-061d-4a3d-9af9-e2a21e8f7433)
 
 <br>
 
-## 📁Dicee Challenge - JQuery -
+## 📁 Dicee Challenge - JQuery -
 ![10](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b2619676-0718-4d37-a963-b8d92a83de94)
 
 <br>
  
-## 📁TinDog Project - HTML Only
+## 📁 TinDog Project - HTML Only
 ![7](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/70ac0a83-b2b8-46c7-9fd2-6bf44d043b56)
 ![8](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/dee71eb5-11bf-41c3-99c3-95a94b7cd41d)
+
+### 🛠 Bootstrap snippets:
+![Bootstrap-snippets](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e688b219-3de8-404a-9dd3-38935ad3dd2a)
+
 
 <br>
 
@@ -333,44 +242,86 @@ https://www.canva.com/design/DAFHf-h6aQs/Dsa0hvsbGzIJULqam9Fsow/view?website#4
 ![3](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b1bd8114-42be-41b5-81eb-b92380c7b723)
 
 
-
  <br>
 
-## 📁Bootstrap Components -
+## 📁 Bootstrap Components -
 ![4](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e6c3b37c-394c-4a42-a68b-164cbad1cda2)
 ![5](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/2d268736-9504-447c-a420-280e45886eb0)
 ![6](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/89be32c6-dc63-4ecf-9ed7-75b100f3586c)
 
 <br>
  
-## 📁Mondrian Project - Grid -
+## 📁 Mondrian Project - Grid -
 <img width="1512" alt="dimensions" src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/64609c1e-e79d-4d0e-b9ca-806219fe6532">
 
 <br>
 
-## 📁Flexbox Pricing Table Project -
+## 📁 Flexbox Pricing Table Project -
 ![2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/74749d47-9ee3-4538-ac4e-3218ec945682)
 
 <br>
  
-## 📁Web Design Agency Project - CSS -
+## 📁 Web Design Agency Project - CSS -
 ![1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e28e9d16-1f89-4cf0-bbba-7ec2946d94e5)
 
  <br>
 
-## 📁HTML Portfolio Project -
+## 📁 HTML Portfolio Project -
 ![sitePic](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ebc89a23-328f-4f18-b8ba-e80907f0e909)
 
 
+
+<br> 
 <br>
-<br>
-
-
-
 
 
 
 # 📋Resources -
+
+## Concepts I Learned:
+
+#### ✅ Node is like js in browser -
+![node is like js in browser](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ecaccaeb-2d3a-41b9-b412-e9de21997afc)
+
+#### ✅ Server Protocol -
+![server protocol](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e4032951-ea67-4edc-9b77-ba6c85cfa7ff)
+
+#### ✅ JSON viewer- more intuative -
+![JSON viewer- more intuative](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/6f5a4d9a-f8d7-4b97-aba3-bb7380dd30d5)
+
+#### ✅ OAuth (Token based Auth) Process -
+![OAuth (Token based Auth)](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/16d2616d-04e4-4368-9932-ebc4c35dba78)
+
+#### ✅ base64 decode -
+![base64 decode](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/70c1e394-b1f5-46bf-832c-e7b7372bf068)
+
+##### ✅ JSON + API - getting all data as inquire
+![json+api - getting all data as inquire](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/1eeebc6a-33c9-4637-828b-b264c03403f5)
+
+#### ✅ One-to-one Relation -
+![one to one- db](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/17725a07-0254-4345-9571-80618e7a46b6)
+
+#### ✅ Many-to-one Relation -
+![many to one- join](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fb147c2e-3dd0-4f50-887a-20dc6d1cd546)
+
+#### ✅ Font Size -
+![font](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b9af07e1-217c-4a83-9dd6-e52f76e55cc9)
+
+#### ✅ EJS Tags -
+![ejs tags](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/84579b7d-80b3-4906-a012-e54f6de94a0e)
+
+#### ✅ Dom Tree Generator - 
+![DOM](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a7628834-e956-42e1-85fc-a2649ec119bf)
+
+#### ✅ Dev Mode Debugger
+![dev mode-debugger](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c3a10091-1182-4eea-864d-78bf21dcb8e9)
+
+##### ✅ Math random() + Math.floor() - 
+<img width="816" alt="Math random()" src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/cd12b364-78cf-4cf8-a7c8-f31709f0b0ce">
+
+<br>
+
+
 ## VSCode Extensions -
 
 ### Recommended -
@@ -411,8 +362,6 @@ https://www.canva.com/design/DAFHf-h6aQs/Dsa0hvsbGzIJULqam9Fsow/view?website#4
 ![css cheatsheet 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7cebfa9f-e170-4a15-86b8-23d51fef14a0)
 ###### Stacking Order Flowchart -
 ![Stacking Order Flowchart](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/0af09ef6-91ad-440e-b61b-e3c4265affa7)
-###### Front End VS Back End -
-![front vs back](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/6567292d-cb43-4689-aeef-e83e3b8602d7)
 ###### The emotions behind Fonts -
 ![fonts](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f6c2816d-770b-425d-897b-e31d450596a0)
 ###### UI- luxury vs cheap -
