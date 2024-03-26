@@ -227,6 +227,10 @@ This project utilizes the **inquirer** npm package to prompt users for input. It
 ![7](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/70ac0a83-b2b8-46c7-9fd2-6bf44d043b56)
 ![8](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/dee71eb5-11bf-41c3-99c3-95a94b7cd41d)
 
+### 🛠 Bootstrap snippets:
+![Bootstrap-snippets](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e688b219-3de8-404a-9dd3-38935ad3dd2a)
+
+
 <br>
 
 ## 📁 Web Design- UI/UX experience- A Hotel
