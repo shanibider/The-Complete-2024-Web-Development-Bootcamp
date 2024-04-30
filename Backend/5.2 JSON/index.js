@@ -58,10 +58,13 @@ switch (req.body.choice) {
 /*
 Explanation for res.redirect("/") in the POST route:
 
-When the user visits the root ("/") using a GET request (e.g., by entering the site or refreshing the page), the server sends the "index.ejs" template along with the current recipe data to the client for rendering.
-When the user submits the form on the page (using the button with different values), a POST request is sent to "/recipe".
+When the user visits the root ("/") using a GET request (e.g., by entering the site or refreshing the page),
+the server sends the "index.ejs" template along with the current recipe data to the client for rendering.
+When the user submits the form on the page (using the button with different values),
+a POST request is sent to "/recipe".
 The server processes this request, updates the data variable based on the user's choice, and then redirects the user back to the root ("/").
-The GET route for the root ("/") is then triggered again, and the updated recipe data is sent to the client, allowing the template to be re-rendered with the new recipe information.
+The GET route for the root ("/") is then triggered again, and the updated recipe data is sent to the client,
+allowing the template to be re-rendered with the new recipe information.
 This approach essentially uses a server-side redirect to refresh the page with the updated recipe data after the user makes a choice.
 */
 

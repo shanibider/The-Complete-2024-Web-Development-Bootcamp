@@ -16,12 +16,6 @@ footer {
   font-family: sans-serif;
 }
 
-/*setting background image*/
-.w {
-background-image: url(images/tom1.png);
-}
-
-
 .w {
   background-image: url("images/tom1.png");
 }

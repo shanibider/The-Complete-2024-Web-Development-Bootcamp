@@ -65,7 +65,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-With this middleware in place, when a client sends a request with JSON data/ URL-encoded data, req.body will be populated with the parsed content. For example, if you have a POST request with a JSON payload like this:
+With this middleware in place, when a client sends a request with JSON data/ URL-encoded data,
+req.body will be populated with the parsed content.
+For example, if you have a POST request with a JSON payload like this:
 {
   "username": "john_doe",
   "password": "secretpassword"
