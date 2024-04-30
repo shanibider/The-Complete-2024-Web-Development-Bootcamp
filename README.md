@@ -11,7 +11,7 @@
 - 🎵🌟 [Band Generator](https://band-generator-vbim.onrender.com/) 
 
 ### **Frontend Projects:**
-- 🌐🌟 [Basic Bootstrap Website](https://shanibider.github.io/Frontend-Health-Consulting-Website/)
+- 🌐🌟 [Basic Bootstrap Website](https://shanibider.github.io/HTML-CSS-Fitness-Website/)
 - 🐕🌟 [Tindog](https://the-complete-2024-web-development.onrender.com/)
 - 🎯🌟 [Simon Game](https://simon-game-dzc6.onrender.com/)
 - 🏠🌟 [My Personal Website](https://shanibider.github.io/Frontend-My-site/) 
