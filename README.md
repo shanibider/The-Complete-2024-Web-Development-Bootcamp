@@ -1,36 +1,44 @@
-<h1> Full-Stack Web Development Hub! 🚀🛠️ </h1>
+# Full-Stack Web Development Hub! 🚀
+[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,express,jquery,mongodb,mysql,postman,postgresql)](https://skillicons.dev)
 
 #### 🚀 Explore the websites I've developed across various technologies:
 
-### **Backend Projects:**
-- ✉️🌟 [Mailchimp API Email Signup](https://nodejs-express-mailchimp-api-signup.onrender.com/) 
-- 🔒🌟 [Secrets Generator](https://api-secrets-generator.onrender.com/) 
-- 🔐🌟 [API Authentication](https://api-authentication-qpgd.onrender.com/) 
-- 🎲🌟 [Random Activity Generator](https://random-activity-generator-e0hw.onrender.com/) 
-- 🌮🌟 [API Taco Recipes](https://api-taco-recipes.onrender.com/) 
-- 🎵🌟 [Band Generator](https://band-generator-vbim.onrender.com/) 
+### Backend Projects:
+- ✉️ [Mailchimp API Email Signup](https://nodejs-express-mailchimp-api-signup.onrender.com/) 
+- 🔒 [Secrets Generator](https://api-secrets-generator.onrender.com/) 
+- 🔐 [API Authentication](https://api-authentication-qpgd.onrender.com/) 
+- 🎲 [Random Activity Generator](https://random-activity-generator-e0hw.onrender.com/) 
+- 🌮 [API Taco Recipes](https://api-taco-recipes.onrender.com/) 
+- 🎵 [Band Generator](https://band-generator-vbim.onrender.com/) 
 
-### **Frontend Projects:**
-- 🌐🌟 [Basic Bootstrap Website](https://shanibider.github.io/HTML-CSS-Fitness-Website/)
-- 🐕🌟 [Tindog](https://the-complete-2024-web-development.onrender.com/)
-- 🎯🌟 [Simon Game](https://simon-game-dzc6.onrender.com/)
-- 🏠🌟 [My Personal Website](https://shanibider.github.io/Frontend-My-site/) 
-- 📄🌟 [HTML Only Online Resume](https://shanibider.github.io/Online-resume/) 
+### Frontend Projects:
+- 🌐 [Basic Bootstrap Website](https://shanibider.github.io/HTML-CSS-Fitness-Website/)
+- 🐕 [Tindog](https://the-complete-2024-web-development.onrender.com/)
+- 🎯 [Simon Game](https://simon-game-dzc6.onrender.com/)
+- 🏠 [My Personal Website](https://shanibider.github.io/Frontend-My-site/)
+- 🥁 [Drum Kit](https://drum-kit-i2ts.onrender.com/)
+- 🎲 [Dice Challenge](https://dicee-challenge.onrender.com/)
+- 📄 [HTML Only Online Resume](https://shanibider.github.io/Online-resume/) 
 
-##### 📚 Udemy Certificate in Full-Stack Development:
+
+
+### Web Design - UI/UX experience - 
+3 page hotel website design via Canva:
+- 🌟 [A Hotel](https://www.canva.com/design/DAFHf-h6aQs/Dsa0hvsbGzIJULqam9Fsow/view?website#4)
+
+<br>
+
+---
+
+
+🎓 I've completed a 62-hour Udemy course covering a range of technologies including: **JavaScript, React.js, HTML5, CSS3, Bootstrap, Node.js, Express.js, APIs, EJS, SQL, PostgreSQL, Deployment, Authentication, and even explored Web3 and DApps.** <br>
+Join me on this journey as I continue to learn and master the exciting world of web development! 💻🚀
+<br>
+
 ![Udedmy certificate](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/728d02ae-d377-4e7b-8644-a40781ddf413)
 
 ![Web Dev Syllabus 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/1c3e0b35-f98b-463c-a9c0-e55300c9e40c)
 
-🎓 I've completed a 62-hour Udemy course covering a range of technologies including:
-### JavaScript, React.js, HTML5, CSS3, Bootstrap, Node.js, Express.js, APIs, EJS, SQL, PostgreSQL, Deployment, Authentication, and even explored Web3 and DApps.
-[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,bootstrap,nodejs,express,jquery,mongodb,mysql,postman,postgresql)](https://skillicons.dev)
-
-
-This comprehensive course includes guided projects with walkthrough code, as well as challenging Capstone Projects to hone my skills independently.
-
-Join me on this journey as I continue to learn and master the exciting world of web development! 💻🚀
-<br>
 
 <div align="center">
 <img height=350px" src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e9c7f762-3537-4fd6-bf2c-57f0fd5edf0a"> </div>
@@ -1589,9 +1597,8 @@ United States,8.70,44.8
 
 <br>
 
-## 📁 Web Design- UI/UX experience- A Hotel
-##### 3 page modern looking hotel website design via Canva
-https://www.canva.com/design/DAFHf-h6aQs/Dsa0hvsbGzIJULqam9Fsow/view?website#4
+## 📁 Web Design - UI/UX experience - 
+🛏 3 page hotel website design via Canva: [A Hotel](https://www.canva.com/design/DAFHf-h6aQs/Dsa0hvsbGzIJULqam9Fsow/view?website#4)
 
 ![1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/83cc39ed-b899-4a42-80cd-dc1e2a741695)
 ![2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a5b79b5e-dd21-4fe0-b812-cd5f90641238)
