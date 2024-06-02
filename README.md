@@ -3,6 +3,8 @@
 
 #### 🚀 Explore the websites I've developed across various technologies:
 
+> Please be patient, some of these websites may take up to one minute to render due to the deployment process.
+
 ### Backend Projects:
 - ✉️ [Mailchimp API Email Signup](https://nodejs-express-mailchimp-api-signup.onrender.com/) 
 - 🔒 [Secrets Generator](https://api-secrets-generator.onrender.com/) 
