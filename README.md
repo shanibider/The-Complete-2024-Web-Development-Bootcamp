@@ -6,27 +6,51 @@
 > Please be patient, some of these websites may take up to one minute to render due to the deployment process.
 
 ### Backend Projects:
-- ✉️ [Mailchimp API Email Signup](https://nodejs-express-mailchimp-api-signup.onrender.com/) 
-- 🔒 [Secrets Generator](https://api-secrets-generator.onrender.com/) 
-- 🔐 [API Authentication](https://api-authentication-qpgd.onrender.com/) 
-- 🎲 [Random Activity Generator](https://random-activity-generator-e0hw.onrender.com/) 
-- 🌮 [API Taco Recipes](https://api-taco-recipes.onrender.com/) 
-- 🎵 [Band Generator](https://band-generator-vbim.onrender.com/) 
+- [ ] ✉️ [Mailchimp API Email Signup](https://nodejs-express-mailchimp-api-signup.onrender.com/) 
+- [ ] 🔒 [Secrets Generator](https://api-secrets-generator.onrender.com/) 
+- [ ] 🔐 [API Authentication](https://api-authentication-qpgd.onrender.com/) 
+- [ ] 🎲 [Random Activity Generator](https://random-activity-generator-e0hw.onrender.com/) 
+- [ ] 🌮 [API Taco Recipes](https://api-taco-recipes.onrender.com/) 
+- [ ] 🎵 [Band Generator](https://band-generator-vbim.onrender.com/) 
 
 ### Frontend Projects:
-- 🌐 [Basic Bootstrap Website](https://shanibider.github.io/HTML-CSS-Fitness-Website/)
-- 🐕 [Tindog](https://the-complete-2024-web-development.onrender.com/)
-- 🎯 [Simon Game](https://simon-game-dzc6.onrender.com/)
-- 🏠 [My Personal Website](https://shanibider.github.io/Frontend-My-site/)
-- 🥁 [Drum Kit](https://drum-kit-i2ts.onrender.com/)
-- 🎲 [Dice Challenge](https://dicee-challenge.onrender.com/)
-- 📄 [HTML Only Online Resume](https://shanibider.github.io/Online-resume/) 
-
+- [ ] 🌐 [Basic Bootstrap Website](https://shanibider.github.io/HTML-CSS-Fitness-Website/)
+- [ ] 🐕 [Tindog](https://the-complete-2024-web-development.onrender.com/)
+- [ ] 🎯 [Simon Game](https://simon-game-dzc6.onrender.com/)
+- [ ] 🏠 [My Personal Website](https://shanibider.github.io/Frontend-My-site/)
+- [ ] 🥁 [Drum Kit](https://drum-kit-i2ts.onrender.com/)
+- [ ] 🎲 [Dice Challenge](https://dicee-challenge.onrender.com/)
+- [ ] 📄 [HTML Only Online Resume](https://shanibider.github.io/Online-resume/) 
 
 
 ### Web Design - UI/UX experience - 
 3 page hotel website design via Canva:
-- 🌟 [A Hotel](https://www.canva.com/design/DAFHf-h6aQs/Dsa0hvsbGzIJULqam9Fsow/view?website#4)
+- [ ] 🛏 [A Hotel](https://www.canva.com/design/DAFHf-h6aQs/Dsa0hvsbGzIJULqam9Fsow/view?website#4)
+
+---
+
+### Useful Resources for Web development:
+- [x] [codestitch - HTML and CSS Template Library](https://codestitch.app/app)
+- [x] [Get started with Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/#cdn-links)
+- [x] [Fontawesome - Best icon library and toolkit]()
+```javascript
+// The classic way to use a Font Awesome Kit - Copy this unique code into your HTML's <head>
+<script src="https://kit.fontawesome.com/045589ed9c.js" crossorigin="anonymous"></script>
+```
+- [x] [CSS Selector Reference](https://www.w3schools.com/csSref/css_selectors.php)
+- [x] [UI Designs](https://collectui.com/)
+- [x] [Repeatable SVG Patterns](https://pattern.monster/)
+- [x] [Google Fonts](https://fonts.google.com/)
+- [x] [Responsice Website Example](https://tastybasics.nl/)
+- [x] [Json Viewer](https://jsonviewer.stack.hu/)
+
+- [ ] [Flex Layout Example](https://appbrewery.github.io/flex-layout/)
+- [ ] [Flexbox Sizing Exercise](https://appbrewery.github.io/flexbox-sizing-exercise/)
+- [ ] [CSS Display Property](https://appbrewery.github.io/css-display/)
+
+
+
+
 
 <br>
 
@@ -55,8 +79,41 @@ Join me on this journey as I continue to learn and master the exciting world of 
 
 ## 📁 QR code Generator - backend only -
 This project utilizes the **inquirer** npm package to prompt users for input. It then employs the **qr-image** npm package to generate a QR code image based on the URL provided by the user. Finally, it utilizes the native fs node module to create a text file to store the user's input.
+```javascript
+import inquirer from "inquirer";
+import qr from "qr-image";
+import fs from "fs";
+
+inquirer.prompt([
+    {
+      message: "Type in your URL: ",
+      name: "URL",
+    },
+  ]).then((answers) => {
+    const url = answers.URL;
+    var qr_svg = qr.image(url);
+    qr_svg.pipe(fs.createWriteStream("qr_img.png"));
+
+    fs.writeFile("URL.txt", url, (err) => {
+      if (err) throw err;
+      console.log("The file has been saved!");
+    });
+  }).catch((error) => {
+    if (error.isTtyError) {
+      // Prompt couldn't be rendered in the current environment
+    } else { // Something else went wrong  }
+  });
+/* Work Flow
+1. Use the inquirer npm package to get user input.
+2. Use the qr-image npm package to turn the user entered URL into a QR code image.
+3. Create a txt file to save the user input using the native fs node module.
+*/
+```
+
 ![qr generator](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5e56e38d-ec92-47cf-a051-624a7473fe28)
 
+---
+<br>
 
 ## 📁 HTTP Requests 🌏
 HTTP - language that allows computers to talk to each other across the internet.
@@ -94,6 +151,7 @@ app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
 ```
+---
 <br>
 
 
@@ -134,6 +192,7 @@ app.listen(port, () => {
 ```
 
 ![Postman requests](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/15d07931-97aa-4634-945b-ee6e38e8bbab)
+---
 <br>
 
 
@@ -176,7 +235,6 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 ```
-<br>
 
 
 #### `app.use(bodyParser.urlencoded({ extended: true }));`
@@ -225,6 +283,7 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 ```
+---
 <br>
 
 
@@ -270,6 +329,7 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 ```
+---
 <br>
 
 
@@ -328,6 +388,7 @@ app.listen(port, () => {
 
 </html>
 ```
+---
 <br>
 
 
@@ -350,6 +411,7 @@ via a public API.
     res.render("index.ejs", {numberOfLetters: numLetters});
     });
 ```
+---
 <br>
 
 
@@ -358,6 +420,7 @@ via a public API.
 ## 📁 Band Generator Project (Express + ejs files) -
 [13.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7aa45cd5-c145-41d4-bc0d-937dc9af4a9a)
 
+---
 <br>
 
 
@@ -366,7 +429,6 @@ via a public API.
 
 
 #### res.redirect("/") in POST route:
-
 When the user visits the root ("/") using a GET request (e.g., by entering the site or refreshing the page),
 the server sends the "index.ejs" template along with the current recipe data to the client for rendering.
 When the user submits the form on the page (using the button with different values), a POST request is sent to "/recipe". The server processes this request, updates the data variable based on the user's choice, and then redirects the user back to the root ("/"). The GET route for the root ("/") is then triggered again, and the updated recipe data is sent to the client, allowing the template to be re-rendered with the new recipe information. This approach essentially uses a server-side redirect to refresh the page with the updated recipe data after the user makes a choice.
@@ -469,6 +531,7 @@ app.listen(port, () => {
 </body>
 </html>
 ```
+---
 <br>
 
 
@@ -530,6 +593,8 @@ app.listen(port, () => {
 ![14](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/47a33920-804b-41e0-a7a6-dae46343af6a)
 ##### JS Code:
 ![14 code](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5ef0013d-1117-4c13-827b-5f60fd22af2d)
+
+---
 <br>
 
 
@@ -561,7 +626,6 @@ I practiced it with this API: `https://secrets-api.appbrewery.com/`
 
 
 ### 🔒 My practice:
-
 #### This API has different endpoints, for different auth types:
 1. `GET /random` - no auth
 2. `GET /all` - basic auth
@@ -590,6 +654,8 @@ in the headers tab, I can see the `authorization value`, which is the username a
 #### Difference between Authentication and Authorization:
 Authentication is the process of `verifying who you are (user`, to the API provider.
 Authorization is the process of verifying  what the client is allowed to do. and they get an  `API key to authorize themself`. Allows you to use an API.
+
+---
 <br>
 
 
@@ -605,12 +671,13 @@ Example Response:
   "apiKey": "generated-api-key"
 }`
 
-then I will go to: 
+Then I will go to: 
 `GET https://secrets-api.appbrewery.com/filter?score=5&apiKey=b886c845-9989-43aa-8c60-ea4a669bb587` route that requires `API authentication`, to make a request, add the parameter "score",
 in the Authorization tab, select the API key.
 `in Key enter: "apiKey", in Value enter: the API key i just got, and in Header enter: Query Params`, then send.
-<br>
 
+---
+<br>
 
 ### 3. Token based authentication 🔑:
 Some paths are protected by `bearer token authentication`. They use username and password to get a token from the server, that will used as a proxy for anybody else to interact with the API as that user.
@@ -731,13 +798,13 @@ app.listen(port, () => {
 ##### JS Code:
 ![17 a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ff1500d1-9e64-460e-8f0d-177dce9495ca)
 ![17 b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7e07d5b0-d91d-4935-bb81-fd328f243a4b)
+
+---
 <br>
 
 
 
 ## 📁 REST APIs (get, post, put, patch. delete requests) -
-
-
 #### index.js:
 ```javascript
 import express from "express";
@@ -821,13 +888,13 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 ```
+---
 <br>
 
 
 
 
 #### Explanation:
-
 ```
 //AXIOS GET REQUEST include Token auth-
 const result = axios.get (API_URL + "/secrets/42", {
@@ -841,10 +908,7 @@ const yourBearerToken ="2c0f045e-716d-4031-b5c6-9a5a247eafd9";
 const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
 };
-
 const result = await axios.get(API_URL + "/secrets/" + searchId, config);
-
-
 
 
 //Continue to work with https://secrets-api.appbrewery.com/.
@@ -950,8 +1014,9 @@ Deletes the secret with the specified ID. Bearer token authentication is require
 ```
 <br>
 
-
 ![15](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/a68a6c79-f2b5-466b-bdc9-363f13a045ff)
+
+---
 <br>
 
 
@@ -960,7 +1025,6 @@ What makes API a good one?
 - [x] Data collection.
 - [x] Algorithm/ Service.
 - [x] Simplified interface.
-
 
 #### build REST API (representational state transfer) -
 ##### What makes an API RESTful?
@@ -1103,9 +1167,13 @@ var jokes = [
     jokeType: "Science",
   }, ....]
 ```
+---
+<br>
+
+
+
 
 ## 📁 Blog API Project
-
 ##### index.js:
 ```javascript
 import express from "express";
@@ -1360,7 +1428,9 @@ app.listen(port, () => {
   console.log(`Backend server is running on http://localhost:${port}`);
 });
 ```
+---
 <br>
+
 
 
 ## 📁 Databases -
@@ -1437,7 +1507,8 @@ SELECT orders.order_number, customers.first_name, customers.last_name, customers
 FROM orders
 INNER JOIN customers ON orders.customer_id = customers.id
 ```
-
+---
+<br>
 
 
 ## 📁 postgreSQL + pgAdmin tables -
@@ -1552,13 +1623,16 @@ United States,8.70,44.8
 <br>
 
 ![20 postgreSQL + pgadmin](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e1b23648-31ac-41c3-b14b-c93d38cda919)
-<br
 
+---
+<br>
  
 
 ## 📁 Travel Tracker (PostgreSQL) -
 ![23a](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/d26ef068-58df-448f-8e4c-d87ffdc9b4c7)
 ![23b](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fea79e96-489a-4859-9814-52490424ae72)
+
+
 
 <br>
 
@@ -1575,6 +1649,7 @@ United States,8.70,44.8
 
 [11.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/fe226c29-29ab-4e8a-be84-6716f73a48e1)
 
+---
 <br>
 
 ## 📁 Drum Kit - HTML + JavaScript  -
@@ -1582,11 +1657,13 @@ United States,8.70,44.8
 
 [9.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/156e0865-061d-4a3d-9af9-e2a21e8f7433)
 
+---
 <br>
 
 ## 📁 Dicee Challenge - JQuery -
 ![10](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b2619676-0718-4d37-a963-b8d92a83de94)
 
+---
 <br>
  
 ## 📁 TinDog Project - HTML Only
@@ -1597,6 +1674,7 @@ United States,8.70,44.8
 ![Bootstrap-snippets](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e688b219-3de8-404a-9dd3-38935ad3dd2a)
 
 
+---
 <br>
 
 ## 📁 Web Design - UI/UX experience - 
@@ -1607,7 +1685,8 @@ United States,8.70,44.8
 ![3](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/b1bd8114-42be-41b5-81eb-b92380c7b723)
 
 
- <br>
+---
+<br>
 
 ## 📁 Bootstrap Components -
 ![4](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e6c3b37c-394c-4a42-a68b-164cbad1cda2)
@@ -1619,17 +1698,20 @@ United States,8.70,44.8
 ## 📁 Mondrian Project - Grid -
 <img width="1512" alt="dimensions" src="https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/64609c1e-e79d-4d0e-b9ca-806219fe6532">
 
+---
 <br>
 
 ## 📁 Flexbox Pricing Table Project -
 ![2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/74749d47-9ee3-4538-ac4e-3218ec945682)
 
+---
 <br>
- 
+
 ## 📁 Web Design Agency Project - CSS -
 ![1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e28e9d16-1f89-4cf0-bbba-7ec2946d94e5)
 
- <br>
+---
+<br>
 
 ## 📁 HTML Portfolio Project -
 ![sitePic](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ebc89a23-328f-4f18-b8ba-e80907f0e909)
@@ -1742,7 +1824,6 @@ United States,8.70,44.8
 
 
 # 📋Resources -
-
 ## Concepts I Learned:
 
 #### ✅ Node is like js in browser -
@@ -1790,7 +1871,6 @@ United States,8.70,44.8
 
 
 ## VSCode Extensions -
-
 ### Recommended -
 - [ ] esbenp.prettier-vscode
 - [ ] formulahendry.auto-close-tag
@@ -1810,13 +1890,27 @@ United States,8.70,44.8
 
 
 
-## Course Syllabus
-![Web Dev Syllabus 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c21eb31f-3c06-4377-b270-236d49711ad1)
-![Web Dev Syllabus 3](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/df763949-90b5-4716-81ee-d60af0f99e55)
-![Web Dev Syllabus 4](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c6b1784f-ba2e-4a99-bf0d-ed90bf233b8f)
-![Web Dev Syllabus 5](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5d3906c6-b881-4af8-a61c-5aa8be2f7bab)
-![Web Dev Syllabus 6](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/448effec-a51b-4463-b583-691b284628bb)
-![Web Dev Syllabus 7](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/90a62dda-0bbc-4ccd-9005-f86db63a4015)
+
+## Course Extra Info
+#### css flexbox -
+![css-flexbox-poster](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c3e68218-7c05-4e80-a3df-a1f0142a5382)
+#### html cheatsheet -
+![html cheatsheet 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ed7cb574-2b57-4a81-9358-5e7d418df39f)
+![html cheatsheet 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e6b4c4db-8ffd-456f-8d93-6ee3c12e8de9)
+#### css cheatsheet -
+![css cheatsheet 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/bd028ad2-55f3-4c07-ac5e-4f64a037f2a1)
+![css cheatsheet 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7cebfa9f-e170-4a15-86b8-23d51fef14a0)
+#### Stacking Order Flowchart -
+![Stacking Order Flowchart](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/0af09ef6-91ad-440e-b61b-e3c4265affa7)
+#### The emotions behind Fonts -
+![fonts](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f6c2816d-770b-425d-897b-e31d450596a0)
+#### UI- luxury vs cheap -
+![UI- luxury vs cheap](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/1b1c85b4-8dd9-492b-829d-970d3236246e)
+#### Goal Setting Question -
+![Goal Setting Questions](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/303dfa7d-c2f5-4fb3-a537-2caf6c77bbff)
+
+Click here for 👉 ['12 Rules to Learn to Code Guide' from this course.pdf](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/files/14229238/12.Rules.to.Learn.to.Code.pdf)
+
 
 <br>
 
@@ -1824,27 +1918,13 @@ United States,8.70,44.8
 <br>
 
 
-
-## Course Extra Info
-###### css flexbox -
-![css-flexbox-poster](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c3e68218-7c05-4e80-a3df-a1f0142a5382)
-###### html cheatsheet -
-![html cheatsheet 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/ed7cb574-2b57-4a81-9358-5e7d418df39f)
-![html cheatsheet 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/e6b4c4db-8ffd-456f-8d93-6ee3c12e8de9)
-###### css cheatsheet -
-![css cheatsheet 1](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/bd028ad2-55f3-4c07-ac5e-4f64a037f2a1)
-![css cheatsheet 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7cebfa9f-e170-4a15-86b8-23d51fef14a0)
-###### Stacking Order Flowchart -
-![Stacking Order Flowchart](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/0af09ef6-91ad-440e-b61b-e3c4265affa7)
-###### The emotions behind Fonts -
-![fonts](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/f6c2816d-770b-425d-897b-e31d450596a0)
-###### UI- luxury vs cheap -
-![UI- luxury vs cheap](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/1b1c85b4-8dd9-492b-829d-970d3236246e)
-###### Goal Setting Question -
-![Goal Setting Questions](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/303dfa7d-c2f5-4fb3-a537-2caf6c77bbff)
-
-Click here for 👉 ['12 Rules to Learn to Code Guide' from this course.pdf](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/files/14229238/12.Rules.to.Learn.to.Code.pdf)
-
+## Course Syllabus
+![Web Dev Syllabus 2](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c21eb31f-3c06-4377-b270-236d49711ad1)
+![Web Dev Syllabus 3](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/df763949-90b5-4716-81ee-d60af0f99e55)
+![Web Dev Syllabus 4](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/c6b1784f-ba2e-4a99-bf0d-ed90bf233b8f)
+![Web Dev Syllabus 5](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/5d3906c6-b881-4af8-a61c-5aa8be2f7bab)
+![Web Dev Syllabus 6](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/448effec-a51b-4463-b583-691b284628bb)
+![Web Dev Syllabus 7](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/90a62dda-0bbc-4ccd-9005-f86db63a4015)
 
 <br>
 
