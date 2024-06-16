@@ -76,7 +76,6 @@ Join me on this journey as I continue to learn and master the exciting world of 
 # 💼 My Projects:
 
 ## Backend Based Projects 📂 -
-
 ## 📁 QR code Generator - backend only -
 This project utilizes the **inquirer** npm package to prompt users for input. It then employs the **qr-image** npm package to generate a QR code image based on the URL provided by the user. Finally, it utilizes the native fs node module to create a text file to store the user's input.
 ```javascript
@@ -278,11 +277,14 @@ app.post("/submit", (req, res) => {
   res.send(`<h1>Your band name is:</h1><h2>${bandName}✌️</h2>`);
 });
 
-
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 ```
+
+
+
+
 ---
 <br>
 
@@ -420,6 +422,8 @@ via a public API.
 ## 📁 Band Generator Project (Express + ejs files) -
 [13.webm](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/7aa45cd5-c145-41d4-bc0d-937dc9af4a9a)
 
+![band-generator](https://github.com/shanibider/The-Complete-2024-Web-Development-Bootcamp/assets/72359805/da2d4d2c-d54a-4c62-9210-cdd531e6d99d)
+
 ---
 <br>
 
@@ -531,13 +535,14 @@ app.listen(port, () => {
 </body>
 </html>
 ```
+
+
 ---
 <br>
 
 
 
 ## 📁 Axios + API (Random Activity Generator) -
-
 ```javascript
 import express from "express";
 import bodyParser from "body-parser";
@@ -1634,10 +1639,19 @@ United States,8.70,44.8
 
 
 
+
+
+
 <br>
 
 ---
 <br>
+
+
+
+
+
+
 
 
 
